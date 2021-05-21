@@ -2,9 +2,15 @@ footer {
   display: flex;
 }
 .footer__logo {
-  height: 2rem;
+  height: 4rem;
+}
+.footer__logo {
+  height: 4rem;
 }
 
+.footer__copyright {
+  height: 1rem;
+}
 .footer__text {
   display: flex;
 }

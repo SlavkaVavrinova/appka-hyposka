@@ -9,6 +9,7 @@ import { Quiz } from './components/Quiz/index';
 import { Map } from './components/Map/index';
 import { Bonus } from './components/Bonus/index';
 import { Contact } from './components/Contact/index';
+import logo from './img/logo.svg';
 
 import './style.css';
 
@@ -16,7 +17,7 @@ const App = () => (
   <Router>
     <nav>
       <Link to="/">
-        <img src="./img/logo.svg" alt="logo" />{' '}
+        <img src={logo} alt="logo" />{' '}
       </Link>
 
       <ul>
