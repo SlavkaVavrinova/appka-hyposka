@@ -1,0 +1,10 @@
+footer {
+  display: flex;
+}
+.footer__logo {
+  height: 2rem;
+}
+
+.footer__text {
+  display: flex;
+}
