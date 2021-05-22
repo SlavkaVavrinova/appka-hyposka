@@ -1,4 +1,11 @@
 /*vyměnit pozadí!!!*/
 .banner {
-  background-image: url(img/dum.jpg);
+  background-image: url(img/banner.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+}
+
+.banner p {
+  width: 55vw;
 }

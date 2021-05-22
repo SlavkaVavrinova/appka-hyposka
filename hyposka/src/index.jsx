@@ -17,24 +17,34 @@ const App = () => (
   <Router>
     <nav>
       <Link to="/">
-        <img src={logo} alt="logo" />{' '}
+        <img className="logo" src={logo} alt="logo" />{' '}
       </Link>
 
-      <ul>
+      <ul className="main-nav">
         <li>
-          <Link to="/appka">Appka HYPOŠKA</Link>
+          <Link className="main-nav__link" to="/appka">
+            Appka HYPOŠKA
+          </Link>
         </li>
         <li>
-          <Link to="/quiz">Kvíz</Link>
+          <Link className="main-nav__link" to="/quiz">
+            Kvíz
+          </Link>
         </li>
         <li>
-          <Link to="/map">Mapa</Link>
+          <Link className="main-nav__link" to="/map">
+            Mapa
+          </Link>
         </li>
         <li>
-          <Link to="/bonus">Bonusy</Link>
+          <Link className="main-nav__link" to="/bonus">
+            Bonusy
+          </Link>
         </li>
         <li>
-          <Link to="/contact">Kontakty</Link>
+          <Link className="main-nav__link" to="/contact">
+            Kontakty
+          </Link>
         </li>
       </ul>
     </nav>
@@ -45,7 +55,7 @@ const App = () => (
           <Home />
         </Route>
         <Route path="/appka" exact>
-          <Appka />
+          <Object />
         </Route>
         <Route path="/quiz" exact>
           <Quiz />
