@@ -1,11 +1,12 @@
 footer {
   display: flex;
+  background-color: #0c3932;
+  color: #ffffff;
+
+  padding: 0 30px;
 }
 .footer__logo {
-  height: 4rem;
-}
-.footer__logo {
-  height: 4rem;
+  width: 4vw;
 }
 
 .footer__copyright {
@@ -13,4 +14,6 @@ footer {
 }
 .footer__text {
   display: flex;
+  align-items: center;
+  padding-left: 39vw;
 }
