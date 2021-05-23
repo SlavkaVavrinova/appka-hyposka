@@ -1,3 +1,7 @@
+.second-nav {
+  display: block;
+  width: 100wv;
+}
 .second-nav ul {
   display: flex;
   background-color: #ffffff;
