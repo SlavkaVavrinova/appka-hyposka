@@ -1,28 +1,26 @@
-.second-nav {
-  display: block;
-  width: 100wv;
-}
 .second-nav ul {
   display: flex;
   background-color: #ffffff;
   list-style-type: none;
+  justify-content: center;
 }
 .second-nav a {
   color: #0c3932;
-  font-size: 150%;
+  font-size: 100%;
   text-decoration: none;
 }
 
 nav.second-nav {
   background-color: #ffffff;
   width: 100vw;
+  display: block;
 }
-
 .second-nav__item {
   text-align: center;
-  width: 25vw;
+  width: 15vw;
 }
 
 .second-nav__img {
-  width: 4vw;
+  width: 3vw;
+  margin: 0.5rem;
 }

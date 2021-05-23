@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import './style.css';
+import dot from './img/dot.svg';
 
 export const Card = (props) => {
   const [display, setDisplay] = useState(false);
@@ -8,22 +10,25 @@ export const Card = (props) => {
   };
 
   return (
-    <div className="container">
-      <img className="container__photo" src={props.photo} alt={props.alt} />
-      <div className="container__right-side">
-        <h2>{props.title}</h2>
-        <p>{props.text}</p>
-        <button onClick={handleClick}>VSTOUPIT</button>
-        <div
-          className={display !== true ? 'object-no-display' : 'object-display'}
-        >
-          {props.children}
+    <div className="card">
+      <div className="container">
+        <img className="dot" src={dot} alt="Tečka" />
+        <picture>
+          <img className="container__photo" src={props.photo} alt={props.alt} />
+        </picture>
+        <div className="container__right-side">
+          <h2>{props.title}</h2>
+          <p>{props.text}</p>
+          <button className="container__button" onClick={handleClick}>
+            VSTOUPIT
+          </button>
         </div>
+      </div>
+      <div
+        className={display !== true ? 'object-no-display' : 'object-display'}
+      >
+        {props.children}
       </div>
     </div>
   );
 };
-
-/*
-const style = { display: display !== true ? 'none' : 'block' };
-style={style}*/

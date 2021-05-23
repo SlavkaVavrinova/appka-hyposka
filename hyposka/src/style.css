@@ -12,7 +12,7 @@ světlá #94B1AC
 nejsvětlejší #CAD8D6
 
 červená #4E1A23
-        #632E37
+       světlá častější #632E37
 */
 
 html {
@@ -20,7 +20,7 @@ html {
 }
 body {
   padding: 0;
-  margin: 0 auto;
+  margin: 100px auto;
   background-color: #ffffff;
   font-family: 'Montserrat', 'Arial', sans-serif;
   line-height: 1.5;

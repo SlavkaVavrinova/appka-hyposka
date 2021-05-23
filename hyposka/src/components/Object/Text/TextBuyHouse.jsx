@@ -28,19 +28,23 @@ export const TextBuyHouse = () => {
       <h3>Co pro odhadce?</h3>
       <p>
         Vytiskni<strong> elektronický výpis z katastru</strong>
-        zde https://nahlizenidokn.cuzk.cz/ Hledej v něm překvapení v podobě
-        omezení. Není třeba se lekat, nemusí to být exekuce, ale hypotéka
-        původních majitelů. Ta se dá zaplatit, ale musí se pohlídat, že bude
-        zaplacena.
+        <a href="https://nahlizenidokn.cuzk.cz/" target="_blank">
+          <strong> ZDE</strong>
+        </a>
+      </p>
+      <p>
+        Hledej v něm překvapení v podobě omezení. Není třeba se lekat, nemusí to
+        být exekuce, ale hypotéka původních majitelů. Ta se dá zaplatit, ale
+        musí se pohlídat, že bude zaplacena.
       </p>
 
       <p>
-        Problematická jsou věcná břemena, týkající se užívání. Nechceš kupovat
-        dům, kde někdo může bydlet s tebou. Naopak věcná břemena pro energetické
-        společnosti, vadit nebudou. V případě havárie je jen pustíš ke kabelu či
-        přípojce na tvém pozemku. U každého věcného břemene se informuj na
-        smlouvu a co přesně umožňuje Soused jezdící traktorem tvým pozemkem by
-        bance vadit nemusel, ale tobě třeba ano.
+        Problematická jsou <strong>věcná břemena</strong>, týkající se užívání.
+        Nechceš kupovat dům, kde někdo může bydlet s tebou. Naopak věcná břemena
+        pro energetické společnosti, vadit nebudou. V případě havárie je jen
+        pustíš ke kabelu či přípojce na tvém pozemku. U každého věcného břemene
+        se informuj na smlouvu a co přesně umožňuje. Soused jezdící traktorem
+        tvým pozemkem by bance vadit nemusel, ale tobě třeba ano.
       </p>
 
       <p>

@@ -7,11 +7,17 @@ import picture2 from './img/2.svg';
 import picture3 from './img/3.svg';
 import picture4 from './img/4.svg';
 
+import pictureBuyHouse from './img/buy-house.jpg';
+
+import pictureBuyLand from './img/land.jpg';
+import pictureBuyFlat from './img/buy-flat.jpg';
+
 import { Card } from '../Card/index';
 import { TextBuyHouse } from './Text/TextBuyHouse';
+import { TextBuyLand } from './Text/TextBuyLand';
+import { TextBuyFlat } from './Text/TextBuyFlat';
 
 export const Object = () => {
-  const information = <div>Pokus</div>;
   return (
     <>
       <nav className="second-nav">
@@ -51,10 +57,10 @@ export const Object = () => {
         </ul>
       </nav>
       <h1>Účely</h1>
-      <p>Jaký je tvůj plán? Co zaplatíš hypotékou? Vyber si:</p>
+      <p>Jaký je tvůj plán? Jak hypotéka pomůže? Vyber si:</p>
 
       <Card
-        photo="./img/buy-house.jpg"
+        photo={pictureBuyHouse}
         alt="Rodinný dům"
         title="Koupit dům"
         text="Chci koupit rodinný dům, kde plánuji bydlet. Pouze koupě bez rekonstrukce"
@@ -62,11 +68,21 @@ export const Object = () => {
         <TextBuyHouse />
       </Card>
       <Card
-        photo="./img/land.jpg"
+        photo={pictureBuyLand}
         alt="Stavební pozemek"
         title="Koupit stavební pozemek"
         text="Chci koupit pozemek, kde budu stavět, ale zatím ho jen kupuji."
-      ></Card>
+      >
+        <TextBuyLand />
+      </Card>
+      <Card
+        photo={pictureBuyFlat}
+        alt="Byt"
+        title="Koupit byt"
+        text="Chci koupit byt ihned k nastěhování. Rekonstrukce není v plánu"
+      >
+        <TextBuyFlat />
+      </Card>
     </>
   );
 };
