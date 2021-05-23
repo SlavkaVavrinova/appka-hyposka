@@ -44,3 +44,6 @@ main {
 }
 
 /*html {}*/
+.object-no-display {
+  display: none;
+}

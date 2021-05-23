@@ -7,7 +7,11 @@ import picture2 from './img/2.svg';
 import picture3 from './img/3.svg';
 import picture4 from './img/4.svg';
 
+import { Card } from '../Card/index';
+import { TextBuyHouse } from './Text/TextBuyHouse';
+
 export const Object = () => {
+  const information = <div>Pokus</div>;
   return (
     <>
       <nav className="second-nav">
@@ -46,28 +50,23 @@ export const Object = () => {
           </li>
         </ul>
       </nav>
-
       <h1>Účely</h1>
       <p>Jaký je tvůj plán? Co zaplatíš hypotékou? Vyber si:</p>
 
-      {purposes.map((purpose) => (
-        <Card {...purpose} key={purpose.title} />
-      ))}
+      <Card
+        photo="./img/buy-house.jpg"
+        alt="Rodinný dům"
+        title="Koupit dům"
+        text="Chci koupit rodinný dům, kde plánuji bydlet. Pouze koupě bez rekonstrukce"
+      >
+        <TextBuyHouse />
+      </Card>
+      <Card
+        photo="./img/land.jpg"
+        alt="Stavební pozemek"
+        title="Koupit stavební pozemek"
+        text="Chci koupit pozemek, kde budu stavět, ale zatím ho jen kupuji."
+      ></Card>
     </>
   );
 };
-
-const purposes = [
-  {
-    photo: './img/buy-house.jpg',
-    alt: 'Rodinný dům',
-    title: 'Koupit dům',
-    text: 'Chci koupit rodinný dům, kde plánuji bydlet. Pouze koupě bez rekonstrukce',
-  },
-  {
-    photo: './img/land.jpg',
-    alt: 'Stavební pozemek',
-    title: 'Koupit stavební pozemek',
-    text: 'Chci koupit pozemek, kde budu stavět, ale zatím ho jen kupuji.',
-  },
-];
