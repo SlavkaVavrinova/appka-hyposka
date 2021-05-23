@@ -2,6 +2,8 @@ import React from 'react';
 
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
+import picture1 from './img/1.svg';
+import { Object } from '../Object/index';
 import { Income } from '../Income/index';
 import { Costs } from '../Costs/index';
 import { Bank } from '../Bank/index';
@@ -12,7 +14,9 @@ export const Mortgage = () => {
       <nav>
         <ul>
           <li>
-            <Link to="/hypoteka">1. krok</Link>
+            <Link to="/hypoteka">
+              1. krok <img src={picture1} alt="1" />
+            </Link>
           </li>
           <li>
             <Link to="/prijem">2. krok</Link>
@@ -28,7 +32,9 @@ export const Mortgage = () => {
 
       <main>
         <Switch>
-          <Route path="hypoteka" exact></Route>
+          <Route path="hypoteka" exact>
+            <Object />
+          </Route>
           <Route path="/prijem" exact>
             <Income />
           </Route>
@@ -39,9 +45,6 @@ export const Mortgage = () => {
             <Bank />
           </Route>
         </Switch>
-
-        <h1>ÚČEL HYPOTÉKY</h1>
-        <p>Jaký je tvůj plán? Co zaplatíš hypotékou? Vyber si:</p>
       </main>
     </>
   );
