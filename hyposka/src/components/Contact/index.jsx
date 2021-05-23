@@ -18,6 +18,7 @@ export const Contact = () => {
       <div className="contact">
         <img className={github} src="img/logo-git.svg" alt="Logo GitHub" />
         <p>SlavkaVavrinova</p>
+        <button>Více o Slávce</button>
       </div>
       <h2>Veronika Sípalová</h2>
       <div className="contact">
@@ -27,6 +28,7 @@ export const Contact = () => {
       <div class="contact">
         <img className={github} src="img/logo-git.svg" alt="Logo GitHub" />
         <p>Veronika Sípalová</p>
+        <button>Více o Verče</button>
       </div>
     </>
   );
