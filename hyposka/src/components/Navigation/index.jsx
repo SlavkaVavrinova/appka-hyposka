@@ -1,3 +1,9 @@
+import React from 'react';
+import './style.css';
+import { Link } from 'react-router-dom';
+
+import logo from './img/logo.svg';
+
 export const Navigation = () => {
   return (
     <>

@@ -1,0 +1,25 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 10rem;
+  background-color: #0c3932;
+  padding: 0 30px;
+}
+.logo {
+  height: 10rem;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.main-nav li {
+  text-decoration: none;
+  list-style-type: none;
+}
+.main-nav__link {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 2rem 1rem;
+  font-size: 150%;
+  display: block;
+}

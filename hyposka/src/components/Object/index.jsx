@@ -1,26 +1,48 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import './style.css';
 
 import picture1 from './img/1.svg';
+import picture2 from './img/2.svg';
+import picture3 from './img/3.svg';
+import picture4 from './img/4.svg';
 
 export const Object = () => {
   return (
     <>
-      <nav>
+      <nav className="second-nav">
         <ul>
           <li>
-            <Link to="/hypoteka">
-              1. krok <img src={picture1} alt="1" />
-            </Link>
+            <div className="second-nav__item">
+              <Link to="/hypoteka">
+                Účel hypotéky <br />
+                <img className="second-nav__img" src={picture1} alt="1" />
+              </Link>
+            </div>
           </li>
           <li>
-            <Link to="/prijem">2. krok</Link>
+            <div className="second-nav__item">
+              <Link to="/prijem">
+                Příjem <br />
+                <img className="second-nav__img" src={picture2} alt="2" />
+              </Link>
+            </div>
           </li>
           <li>
-            <Link to="/vydaje">3. krok</Link>
+            <div className="second-nav__item">
+              <Link to="/vydaje">
+                Výdaje <br />
+                <img className="second-nav__img" src={picture3} alt="3" />
+              </Link>
+            </div>
           </li>
           <li>
-            <Link to="/banka">4. krok</Link>
+            <div className="second-nav__item">
+              <Link to="/banka">
+                Banka / poradce <br />
+                <img className="second-nav__img" src={picture4} alt="4" />
+              </Link>
+            </div>
           </li>
         </ul>
       </nav>

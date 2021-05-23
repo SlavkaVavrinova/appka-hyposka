@@ -1,0 +1,17 @@
+header,
+.main-nav {
+}
+
+nav.second-nav {
+  background-color: #ffffff;
+  width: 100vw;
+}
+
+.second-nav__item {
+  text-align: center;
+  text-decoration: none;
+  width: 25vw;
+}
+.second-nav__img {
+  width: 4vw;
+}

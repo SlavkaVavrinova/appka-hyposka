@@ -1,10 +1,13 @@
 import React from 'react';
 import './style.css';
 import { Link } from 'react-router-dom';
+import { Navigation } from '../Navigation/index';
+
 export const Header = () => {
   return (
     <>
       <header>
+        <Navigation />
         <div className="banner">
           <h1>Appka HYPOŠKA</h1>
           <div>U bydlení kámoška</div>

@@ -10,45 +10,11 @@ import { Quiz } from './components/Quiz/index';
 import { Map } from './components/Map/index';
 import { Bonus } from './components/Bonus/index';
 import { Contact } from './components/Contact/index';
-import logo from './img/logo.svg';
 
 import './style.css';
 
 const App = () => (
   <Router>
-    <nav>
-      <Link to="/">
-        <img className="logo" src={logo} alt="logo" />{' '}
-      </Link>
-
-      <ul className="main-nav">
-        <li>
-          <Link className="main-nav__link" to="/hypoteka">
-            Appka HYPOŠKA
-          </Link>
-        </li>
-        <li>
-          <Link className="main-nav__link" to="/kviz">
-            Kvíz
-          </Link>
-        </li>
-        <li>
-          <Link className="main-nav__link" to="/mapa">
-            Mapa
-          </Link>
-        </li>
-        <li>
-          <Link className="main-nav__link" to="/bonus">
-            Bonusy
-          </Link>
-        </li>
-        <li>
-          <Link className="main-nav__link" to="/kontakt">
-            Kontakty
-          </Link>
-        </li>
-      </ul>
-    </nav>
     <Header />
     <main>
       <Switch>
