@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-
+import { Link } from 'react-router-dom';
 export const Header = () => {
   return (
     <>
@@ -16,7 +16,9 @@ export const Header = () => {
             </strong>
             , co tě se mnou čeká.
           </p>
-          <button>Vstoupit</button>
+          <Link to="/hypoteka">
+            <button>vstoupit</button>
+          </Link>
         </div>
       </header>
     </>

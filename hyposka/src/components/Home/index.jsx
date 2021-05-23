@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './style.css';
 
 import object from './img/object.svg';
@@ -37,7 +38,9 @@ export const Home = () => {
         <img src={costs} alt="náklady" />
         <img src={bank} alt="banka" />
       </div>
-      <button>vstoupit</button>
+      <Link to="/hypoteka">
+        <button>vstoupit</button>
+      </Link>
     </>
   );
 };
