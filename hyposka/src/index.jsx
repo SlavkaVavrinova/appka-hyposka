@@ -3,7 +3,8 @@ import { render } from 'react-dom';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { Header } from './components/Header/index';
 import { Home } from './components/Home/index';
-import { Appka } from './components/Appka/index';
+
+import { Mortgage } from './components/Mortgage/index';
 import { Footer } from './components/Footer/index';
 import { Quiz } from './components/Quiz/index';
 import { Map } from './components/Map/index';
@@ -22,17 +23,17 @@ const App = () => (
 
       <ul className="main-nav">
         <li>
-          <Link className="main-nav__link" to="/appka">
+          <Link className="main-nav__link" to="/hypoteka">
             Appka HYPOŠKA
           </Link>
         </li>
         <li>
-          <Link className="main-nav__link" to="/quiz">
+          <Link className="main-nav__link" to="/kviz">
             Kvíz
           </Link>
         </li>
         <li>
-          <Link className="main-nav__link" to="/map">
+          <Link className="main-nav__link" to="/mapa">
             Mapa
           </Link>
         </li>
@@ -42,7 +43,7 @@ const App = () => (
           </Link>
         </li>
         <li>
-          <Link className="main-nav__link" to="/contact">
+          <Link className="main-nav__link" to="/kontakt">
             Kontakty
           </Link>
         </li>
@@ -54,20 +55,19 @@ const App = () => (
         <Route path="/" exact>
           <Home />
         </Route>
-        <Route path="/appka" exact>
-          <Object />
+        <Route path="/hypoteka" exact>
+          <Mortgage />
         </Route>
-        <Route path="/quiz" exact>
+        <Route path="/kviz" exact>
           <Quiz />
         </Route>
-        <Route path="/map" exact>
+        <Route path="/mapa" exact>
           <Map />
         </Route>
-
         <Route path="/bonus" exact>
           <Bonus />
         </Route>
-        <Route path="/contact" exact>
+        <Route path="/kontakt" exact>
           <Contact />
         </Route>
       </Switch>
@@ -77,8 +77,3 @@ const App = () => (
 );
 
 render(<App />, document.querySelector('#app'));
-
-/*        
-          <Route path="/map" exact></Route>
-          <Route path="/bonus" exact></Route>
-          <Route path="/contact" exact></Route>*/
