@@ -1,7 +1,7 @@
 import React from 'react';
 
-import email from './img/1.svg';
-import github from './img/2.svg';
+import email from './img/email.svg';
+import github from './img/git.svg';
 import './style.css';
 
 export const Contact = () => {
