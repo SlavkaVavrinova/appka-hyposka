@@ -1,0 +1,27 @@
+.contact {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.contact__img {
+  height: 1rem;
+}
+
+.email {
+  width: 5vw;
+  padding: 5px;
+}
+.github {
+  width: 5vw;
+  padding: 5px;
+}
+
+.btn-about {
+  padding: 20px 30px;
+  font-size: large;
+  text-transform: uppercase;
+  border: 5px solid #0c3932;
+  border-radius: 5px;
+  background-color: #632e37;
+  color: #ffffff;
+}

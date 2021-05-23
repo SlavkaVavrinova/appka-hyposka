@@ -1,7 +1,8 @@
 import React from 'react';
 
-import email from './img/email.svg';
-import github from './img/logo-git.svg';
+import email from './img/1.svg';
+import github from './img/2.svg';
+import './style.css';
 
 export const Contact = () => {
   return (
@@ -18,7 +19,9 @@ export const Contact = () => {
       <div className="contact">
         <img className="github" src={github} alt="Logo GitHub" />
         <p>SlavkaVavrinova</p>
-        <button>Více o Slávce</button>
+        <button class="btn-about" /*onClick={handleClick}*/>
+          Více o Slávce
+        </button>
       </div>
       <h2>Veronika Sípalová</h2>
       <div className="contact">
@@ -28,7 +31,9 @@ export const Contact = () => {
       <div className="contact">
         <img className="github" src={github} alt="Logo GitHub" />
         <p>Veronika Sípalová</p>
-        <button>Více o Verče</button>
+        <button className="btn-about" /*onClick={handleClick}*/>
+          Více o Verče
+        </button>
       </div>
     </>
   );
