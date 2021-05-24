@@ -22,8 +22,9 @@ import { TextBuyFlat } from './Text/TextBuyFlat';
 import { TextBuyCottage } from './Text/TextBuyCottage';
 import { TextBuyPension } from './Text/TextBuyPension';
 import { TextRefinancing } from './Text/TextRefinancing';
-import { TextReconstruction } from './Text/TextReconstruction';
 import { TextBuild } from './Text/TextBuild';
+import { TextReconstruction } from './Text/TextReconstruction';
+import { TextBuyWithReconstruction } from './Text/TextBuyWithReconstruction';
 
 export const Object = () => {
   return (
@@ -116,6 +117,7 @@ export const Object = () => {
       >
         <TextRefinancing />
       </Card>
+      <p className="text-between">Nebo něco odvážnějšího?</p>
       <Card
         photo=""
         alt="Výstavba"
@@ -131,6 +133,15 @@ export const Object = () => {
         text="Mám nemovitost kterou si chci zvelebit a potřebuji peníze na rekonstrukci"
       >
         <TextReconstruction />
+      </Card>
+      <p className="text-between">Jsi fajnšmekr?</p>
+      <Card
+        photo=""
+        alt="Koupě s rekonstrukcí"
+        title=" Koupit starší nemovitost a opravit jí "
+        text="Naskytla se skvělá koupě starší nemovitosti, jen nutně potřebuje rekonstrukci"
+      >
+        <TextBuyWithReconstruction />
       </Card>
     </>
   );

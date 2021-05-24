@@ -25,7 +25,7 @@ export const TextBuild = () => {
         poskytne většinou vzor k vyplnění, ale já doporučuji si nad to sednout,
         již před návštěvou banky a hrubě si vše sepsat. Nejlepší je odborně
         vypracovaný rozpočet už stavební firmou (ideálně na referenci, aby se
-        pak nenavyšoval).{' '}
+        pak nenavyšoval).
       </p>
       <p>
         <strong>Plánuješ stavět svépomocí?</strong> O to víc se nad rozpočtem
@@ -89,7 +89,7 @@ export const TextBuild = () => {
       <p>
         <strong>Tip:</strong> Většina bank nabízí možnost nějakou část hypotéky
         nevyčerpat. Pokud je dostatečná zástavní hodnota, tak doporučuji
-        promyslet, jestli rezervu nenastavit a pak ji nedočerpat. Je ale
+        promyslet, jestli rezervu nenastavit a pak ji nedočerpat. Je aley
         pravdou, že náklady na stavbu se většinou navyšují a nedočerpání se moc
         často nepodaří. Je ale určitě levnější než hypotéku nedočerpat.
       </p>
