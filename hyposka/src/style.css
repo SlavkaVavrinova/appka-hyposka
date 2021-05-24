@@ -31,7 +31,8 @@ h1 {
 }
 
 button {
-  padding: 15px 45px;
+  width: 20vw;
+  padding: 1rem;
   font-size: large;
   text-transform: uppercase;
   border: 5px solid #0c3932;

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const TextBuyLand = () => {
   return (
@@ -47,6 +48,9 @@ export const TextBuyLand = () => {
         Není možné stavět dům na pozemku, který je vedený jako ostatní plocha -
         parkoviště.
       </p>
+      <Link to="/prijem">
+        <button>2. Příjem</button>
+      </Link>
     </>
   );
 };

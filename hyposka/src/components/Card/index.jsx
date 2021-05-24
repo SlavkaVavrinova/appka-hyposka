@@ -20,7 +20,7 @@ export const Card = (props) => {
           <h2>{props.title}</h2>
           <p>{props.text}</p>
           <button className="container__button" onClick={handleClick}>
-            VSTOUPIT
+            {display === true ? 'Zavřít' : 'Vstoupit'}
           </button>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const TextBuyHouse = () => {
   return (
@@ -52,6 +53,9 @@ export const TextBuyHouse = () => {
         konkrétní požadavek vybrané banky. Kdyby dokumentace nebyla, tak neboj,
         metrem se to dá zvládnout také.
       </p>
+      <Link to="/prijem">
+        <button>2. Příjem</button>
+      </Link>
     </>
   );
 };

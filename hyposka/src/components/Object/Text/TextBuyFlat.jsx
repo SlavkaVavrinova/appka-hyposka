@@ -1,24 +1,28 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const TextBuyFlat = () => {
   return (
     <>
       <p> Vezmi do banky něco, kde je vidět cena bytu:</p>
       <ul>
-        <li>Ideální je kupní smlouva, ale tu dostaneš až za hodně dlouho.</li>
-
         <li>
-          Alternativa je smlouva o smlouvě budoucí. To je skoro to stejné a taky
-          se bude dělat většinou později.
-        </li>
-        <li>
-          Fajn je rezervační smlouva, ale tu ti dají jen za podpis. Podepíšeš 🡪
-          platíš rezervační poplatek a prostě kupuješ.
+          Ideální je <strong>kupní smlouva</strong>, ale tu dostaneš až za hodně
+          dlouho.
         </li>
 
         <li>
-          Takže jak, nemáme nic. Vezmi s sebou alespoň inzerát, kde je cena a
-          údaje k tomu, co se bude kupovat.
+          Alternativa je <strong>smlouva o smlouvě budoucí</strong>. To je skoro
+          to stejné a taky se bude dělat většinou později.
+        </li>
+        <li>
+          Fajn je <strong>rezervační smlouva</strong>, ale tu ti dají jen za
+          podpis. Podepíšeš 🡪 platíš rezervační poplatek a prostě kupuješ.
+        </li>
+
+        <li>
+          Takže jak, nemáme nic. Vezmi s sebou alespoň
+          <strong>inzerát s cenou a údaji k tomu, co se bude kupovat</strong>.
         </li>
       </ul>
       <p>
@@ -54,13 +58,20 @@ export const TextBuyFlat = () => {
         byt, kde někdo může bydlet s tebou.
       </p>
       <p>
-        <strong> Tip:</strong> Kupovaný byt je družstevní. Je možné koupit
-        hypotékou družstevní byt? Ano, ALE nemůžeš jím ručit. Kupuješ si podíl
-        na celém, která není ofiko rozdělená na byty. Z toho důvodu by družstvo
-        muselo podepsat zástavu celé “bytovky” a to co? Neudělá. Zaplatit ho
-        hypotékou proto můžeš, ale do zástavy musíš dát nějakou jinou nemovitost
-        (druhý byt, chatu, dům extramilujících rodičů atd.)
+        <strong> Tip:</strong> Kupovaný byt je <strong>družstevní</strong>. Je
+        možné koupit hypotékou družstevní byt? Ano, ALE nemůžeš jím ručit.
+        Kupuješ si podíl na celém, která není ofiko rozdělená na byty. Z toho
+        důvodu by družstvo muselo podepsat zástavu celé <em>“bytovky”</em> a to
+        co? Neudělá.
       </p>
+      <p>
+        Neudělá. Zaplatit ho hypotékou proto můžeš, ale
+        <strong>do zástavy musíš dát nějakou jinou nemovitost</strong>
+        (druhý byt, chatu, dům extramilujících rodičů atd.) Neudělá.
+      </p>
+      <Link to="/prijem">
+        <button>2. Příjem</button>
+      </Link>
     </>
   );
 };

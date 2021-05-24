@@ -9,13 +9,21 @@ import picture4 from './img/4.svg';
 
 import pictureBuyHouse from './img/buy-house.jpg';
 
-import pictureBuyLand from './img/land.jpg';
+import pictureBuyLand from './img/buy-land.jpg';
 import pictureBuyFlat from './img/buy-flat.jpg';
+import pictureBuyCottage from './img/buy-cottage.jpg';
+import pictureBuyPension from './img/buy-pension.jpg';
+import pictureReconstruction from './img/reconstruction.jpg';
 
 import { Card } from '../Card/index';
 import { TextBuyHouse } from './Text/TextBuyHouse';
 import { TextBuyLand } from './Text/TextBuyLand';
 import { TextBuyFlat } from './Text/TextBuyFlat';
+import { TextBuyCottage } from './Text/TextBuyCottage';
+import { TextBuyPension } from './Text/TextBuyPension';
+import { TextRefinancing } from './Text/TextRefinancing';
+import { TextReconstruction } from './Text/TextReconstruction';
+import { TextBuild } from './Text/TextBuild';
 
 export const Object = () => {
   return (
@@ -82,6 +90,47 @@ export const Object = () => {
         text="Chci koupit byt ihned k nastěhování. Rekonstrukce není v plánu"
       >
         <TextBuyFlat />
+      </Card>
+
+      <Card
+        photo={pictureBuyCottage}
+        alt="Chata"
+        title="Koupit chatu"
+        text="Chci si pořádit chatu a rekreovat se. Žádná práce, pouze odpočinek"
+      >
+        <TextBuyCottage />
+      </Card>
+      <Card
+        photo={pictureBuyPension}
+        alt="Penzion Gerta"
+        title="Koupit penzion, hotel, fabriku benzínku ..."
+        text="Chci pořídit nemovitost pro svoje podnikání a vydělat peníze."
+      >
+        <TextBuyPension />
+      </Card>
+      <Card
+        photo=""
+        alt="Smlouva o hypotečním úvěru"
+        title="Refinancování"
+        text="Blíží se ti výročí hypotéky a chceš si sjednat nejlepší podmínky pro další fixaci."
+      >
+        <TextRefinancing />
+      </Card>
+      <Card
+        photo=""
+        alt="Výstavba"
+        title="Výstavba"
+        text="Chci si postavit dům nebo chatu. Svépomocí nebo mi pomůže firma."
+      >
+        <TextBuild />
+      </Card>
+      <Card
+        photo={pictureReconstruction}
+        alt="Rekonstrukce"
+        title="Opravit si byt, dům nebo chatu"
+        text="Mám nemovitost kterou si chci zvelebit a potřebuji peníze na rekonstrukci"
+      >
+        <TextReconstruction />
       </Card>
     </>
   );
