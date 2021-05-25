@@ -3,6 +3,7 @@ import React from 'react';
 import email from './img/email.svg';
 import github from './img/git.svg';
 import './style.css';
+import { FormContact } from './../FormContact/index';
 
 export const Contact = () => {
   return (
@@ -35,6 +36,7 @@ export const Contact = () => {
           Více o Verče
         </button>
       </div>
+      <FormContact />
     </>
   );
 };
