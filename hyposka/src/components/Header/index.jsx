@@ -7,7 +7,6 @@ export const Header = () => {
   return (
     <>
       <header>
-        <Navigation />
         <div className="banner">
           <h1>Appka HYPOŠKA</h1>
           <div>U bydlení kámoška</div>

@@ -19,8 +19,6 @@ html {
   background-color: #cad8d6;
 }
 body {
-  padding: 0;
-  margin: 100px auto;
   background-color: #ffffff;
   font-family: 'Montserrat', 'Arial', sans-serif;
   line-height: 1.5;
@@ -28,6 +26,8 @@ body {
 
 h1 {
   font-size: 200%;
+  margin: 0;
+  padding: 1rem 0;
 }
 
 button {
@@ -39,9 +39,6 @@ button {
   border-radius: 5px;
   background-color: #632e37;
   color: #ffffff;
-}
-main {
-  padding: 30px;
 }
 
 /*html {}*/

@@ -10,7 +10,7 @@ export const TextBuyWithReconstruction = () => {
         dál.
       </p>
       <p>
-        Doporučuji si to opravdu hodně rozmyslet a{' '}
+        Doporučuji si to opravdu hodně rozmyslet a
         <strong> důkladně si vše zjisti.</strong> Nemyslím tím postup mého
         vyřízení, ale kolik přesně bude potřeba peněz. Každá nízká cena většinou
         znamená velikou a o to dražší rekonstrukci.
@@ -40,13 +40,13 @@ export const TextBuyWithReconstruction = () => {
         <strong>
           Místo navýšení hodnoty o první část rekonstrukce, dojde k snížení
           celkové současné hodnoty.
-        </strong>{' '}
+        </strong>
         Dům bez stropu a s rozbouranou koupelnou má menší hodnotu než původní
         plán, výměna podlah a kohoutků v koupelně. To byl jen příklad, u
         rekonstrukce domu, který neznáme a může se vyvrbit kde co.
       </p>
       <p>
-        Určitě doporučuji se do toho pouštět s{' '}
+        Určitě doporučuji se do toho pouštět s
         <strong> rezervou v penězích</strong>. Nebo když je možnost dát bance
         <strong> do zástavy něco jiného</strong>. Ne auto, ale jiný dům, byt,
         chatu. Tam banka peníze pošle a dl v tom už nešťourá. Ale to nic nemění
@@ -67,7 +67,7 @@ export const TextBuyWithReconstruction = () => {
         stejného místa. Firmy v oboru se dost často znají. A i tak pak při
         stavbě je dobré hlídat, aby se spolu nezačali domlouvat.
       </p>
-      <input type="checkbox" checked name="skrtatko" value="ano"></input>
+
       <button className="">Skrýt</button>
       <Link to="/prijem">
         <button>2. Příjem</button>

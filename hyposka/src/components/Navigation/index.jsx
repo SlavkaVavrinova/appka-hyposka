@@ -14,11 +14,6 @@ export const Navigation = () => {
 
         <ul className="main-nav">
           <li>
-            <Link className="main-nav__link" to="/hypoteka">
-              Appka HYPOŠKA
-            </Link>
-          </li>
-          <li>
             <Link className="main-nav__link" to="/kviz">
               Kvíz
             </Link>
@@ -43,3 +38,10 @@ export const Navigation = () => {
     </>
   );
 };
+
+/*V menu i appka, jen přidat nahoru
+ <li>
+          <Link className="main-nav__link" to="/hypoteka">
+              Appka HYPOŠKA
+            </Link>
+          </li>*/

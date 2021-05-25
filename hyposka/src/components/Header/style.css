@@ -3,7 +3,7 @@
   background-image: url(img/banner.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 30px;
+  padding: 0 30px 30px 30px;
 }
 
 .banner p {
