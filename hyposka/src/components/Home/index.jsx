@@ -2,10 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './style.css';
 
+import { Card } from '../Card/index';
+
 import mortgage from './img/object.svg';
 import income from './img/income.svg';
 import costs from './img/costs.svg';
 import bank from './img/bank.svg';
+
+import cr from './img/cr.svg';
+import quiz from './img/quiz.svg';
+import bonus from './img/bonus.svg';
 
 export const Home = () => {
   return (
@@ -41,6 +47,29 @@ export const Home = () => {
       <Link to="/hypoteka">
         <button>vstoupit</button>
       </Link>
+      <div className="home-container__item">
+        <Card
+          className="home-container"
+          photo={cr}
+          alt="Mapa České Republiky"
+          title="Kde to umí"
+          text="Zadej referenci na bankéře či poradce nebo najdi vhodného."
+        ></Card>
+        <Card
+          className="home-container__item"
+          photo={quiz}
+          alt="Kvíz"
+          title="Kvíz"
+          text="Ověř si své znalosti"
+        ></Card>
+        <Card
+          className="home-container__item"
+          photo={bonus}
+          alt="Dárek"
+          title="Bonusy"
+          text="Fáze jednání, pojištění, čerpání hypotéky, důvěřuj ale prověřuj, nesplácení."
+        ></Card>
+      </div>
     </>
   );
 };

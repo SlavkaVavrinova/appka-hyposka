@@ -1,6 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import './style.css';
+
 import { Header } from './components/Header/index';
 import { Home } from './components/Home/index';
 
@@ -17,7 +19,6 @@ import { Bonus } from './components/Bonus/index';
 import { Contact } from './components/Contact/index';
 import { Navigation } from './components/Navigation/index';
 
-import './style.css';
 import { SecondNav } from './components/SecondNav';
 
 const App = () => (
