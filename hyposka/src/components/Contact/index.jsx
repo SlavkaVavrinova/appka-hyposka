@@ -11,7 +11,6 @@ export const Contact = () => {
       <header>
         <h1>Kontakty</h1>
       </header>
-      <p>Máš pro nás radu? Napiš, budeme rády!</p>
       <h2>Slávka Vavřinová</h2>
       <div className="contact">
         <img className="email" src={email} alt="E-mail" />
@@ -36,6 +35,8 @@ export const Contact = () => {
           Více o Verče
         </button>
       </div>
+
+      <p>Máš pro nás radu? Napiš, budeme rády!</p>
       <FormContact />
     </>
   );
