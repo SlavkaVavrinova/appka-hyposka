@@ -5,7 +5,7 @@ import { Header } from './components/Header/index';
 import { Home } from './components/Home/index';
 
 import { Mortgage } from './components/Mortgage/index';
-import { Object } from './components/Object/index';
+
 import { Income } from './components/Income/index';
 import { Costs } from './components/Costs/index';
 import { Bank } from './components/Bank/';

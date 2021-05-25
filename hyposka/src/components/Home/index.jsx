@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './style.css';
 
-import object from './img/object.svg';
+import mortgage from './img/object.svg';
 import income from './img/income.svg';
 import costs from './img/costs.svg';
 import bank from './img/bank.svg';
@@ -33,7 +33,7 @@ export const Home = () => {
       </p>
 
       <div className="conteiner__img">
-        <img src={object} alt="účel" />
+        <img src={mortgage} alt="účel" />
         <img src={income} alt="příjem" />
         <img src={costs} alt="náklady" />
         <img src={bank} alt="banka" />
