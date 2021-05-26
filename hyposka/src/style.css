@@ -29,6 +29,11 @@ h1 {
   margin: 0;
   padding: 1rem 0;
 }
+h1,
+h2,
+h3 {
+  color: #0c3932;
+}
 
 button {
   width: 20vw;

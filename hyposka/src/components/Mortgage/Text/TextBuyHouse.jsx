@@ -53,6 +53,13 @@ export const TextBuyHouse = () => {
         konkrétní požadavek vybrané banky. Kdyby dokumentace nebyla, tak neboj,
         metrem se to dá zvládnout také.
       </p>
+
+      <label htmlFor="">
+        Přidat do tisku: <input type="checkbox" />
+      </label>
+      <Link to="/">
+        <button>Domů</button>
+      </Link>
       <Link to="/prijem">
         <button>2. Příjem</button>
       </Link>

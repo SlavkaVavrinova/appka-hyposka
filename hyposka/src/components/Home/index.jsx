@@ -47,28 +47,34 @@ export const Home = () => {
       <Link to="/hypoteka">
         <button>vstoupit</button>
       </Link>
-      <div className="home-container__item">
-        <Card
-          className="home-container"
-          photo={cr}
-          alt="Mapa České Republiky"
-          title="Kde to umí"
-          text="Zadej referenci na bankéře či poradce nebo najdi vhodného."
-        ></Card>
-        <Card
-          className="home-container__item"
-          photo={quiz}
-          alt="Kvíz"
-          title="Kvíz"
-          text="Ověř si své znalosti"
-        ></Card>
-        <Card
-          className="home-container__item"
-          photo={bonus}
-          alt="Dárek"
-          title="Bonusy"
-          text="Fáze jednání, pojištění, čerpání hypotéky, důvěřuj ale prověřuj, nesplácení."
-        ></Card>
+      <div className="home-container">
+        <div>
+          <Card
+            className="home-container__item"
+            photo={cr}
+            alt="Mapa České Republiky"
+            title="Kde to umí"
+            text="Zadej referenci na bankéře či poradce nebo najdi vhodného."
+          ></Card>
+        </div>
+        <div>
+          <Card
+            className="home-container__item"
+            photo={quiz}
+            alt="Kvíz"
+            title="Kvíz"
+            text="Ověř si své znalosti"
+          ></Card>
+        </div>
+        <div>
+          <Card
+            className="home-container__item"
+            photo={bonus}
+            alt="Dárek"
+            title="Bonusy"
+            text="Fáze jednání, pojištění, čerpání hypotéky, důvěřuj ale prověřuj, nesplácení."
+          ></Card>
+        </div>
       </div>
     </>
   );
