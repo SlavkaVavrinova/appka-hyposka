@@ -6,6 +6,12 @@ import { Revenue } from './Text/Revenue';
 import { Employee } from './Text/Employee';
 import { Rentier } from './Text/Rentier';
 
+import oznameni from './img/oznameni.jpeg';
+import pasky from './img/pasky.jpeg';
+import najem from './img/najem.jpeg';
+import relax from './img/pohoda.jpeg';
+import priznani from './img/priznani.jpeg';
+
 export const Income = () => {
   return (
     <>
@@ -27,7 +33,7 @@ export const Income = () => {
       </p>
       <p>Vyber, kdo jsi, odkud tečou tvé příjmy:</p>
       <Card
-        photo=""
+        photo={pasky}
         alt="Výplatní páska"
         title="Zaměstnanec "
         text="Příjem mi vyplácí zaměstnavatel."
@@ -35,7 +41,7 @@ export const Income = () => {
         <Employee />
       </Card>
       <Card
-        photo=""
+        photo={priznani}
         alt="Daňové přiznání"
         title="Podnikatel"
         text="Podnikám, příjem mám od zákazníků a na konci roku si zpracovávám daňové přiznání."
@@ -43,7 +49,7 @@ export const Income = () => {
         <Entrepreneur />
       </Card>
       <Card
-        photo=""
+        photo={oznameni}
         alt="Výměr dávky / důchodu"
         title="Jsem na mateřské /v důchodu"
         text="Příjem mi posílá Okresní správa sociálního zabezpečení nebo pracovní úřad."
@@ -51,7 +57,7 @@ export const Income = () => {
         <Revenue />
       </Card>
       <Card
-        photo=""
+        photo={relax}
         alt="Pohoda"
         title="Rentiér "
         text="Šťastlivec, který pobírá nějakou rentu "

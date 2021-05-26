@@ -6,3 +6,8 @@
 .conteiner__img img {
   width: 25vw;
 }
+
+.home-container {
+  display: flex;
+  width: 90vw;
+}
