@@ -7,7 +7,7 @@ export const Bonus = () => {
       <h2>Proces vyřízení hypotéky</h2>
       <h2>Čerpání Hypotéky</h2>
       <h2>Pojištění</h2>
-      <h2>Důvěřuj ale prověřuj</h2>
+      <h2>Důvěřuj, ale prověřuj</h2>
       <p>
         U hypotéky více než kde jinde platí „důvěřuj, ale prověřuj“. Asi se
         shodneme, když si bereš hypotéku, tak jde o hodně peněz. Vyplatí se být
@@ -17,13 +17,13 @@ export const Bonus = () => {
       <ol>
         <li>
           Koukni na výpis z katastru nemovitostí k tomu, co chceš koupit. Někdy
-          už tam může být něco co není ideální. Můžeš tam najít zástavu vůči
+          už tam může být něco, co není ideální. Můžeš tam najít zástavu vůči
           jeho hypotéce. To je v pohodě, to jde vyplatit. Pak tam ale můžeš
-          vidět nějakou exekuci a to už je moc špatně. Exekuce mají tu špatnou
+          vidět nějakou exekuci a to už je špatně. Exekuce mají tu špatnou
           vlastnost, že často mají nějakou sestřičku. Když se nesplácí třeba
           jeden úvěr a jeho majitel má v záloze ještě druhý úvěr, tak se může za
           chvilku objevit exekuce právě kvůli tomu druhému. Rozhodně doporučuji
-          našetřit v této situaci na právníkovi.
+          nešetřit v této situaci na právníkovi.
         </li>
         <li>
           Někdy může vyjít i Big Brother na Facebooku či jiné sociální síti.
@@ -37,8 +37,8 @@ export const Bonus = () => {
 
         <li>
           Omrknu i realitní kancelář. Co v těch databázích vůbec hledat. Nějaká
-          firma v konkurzu se stejným zaměřením. Hlídat kam posílám peníze,
-          jestli nejsou do úschovy té realitní kanceláři, která by se mi
+          firma v konkurzu se stejným zaměřením. Hlídat, kam posílám peníze,
+          jestli nejdou do úschovy té realitní kanceláři, která by se mi
           nezdála.
         </li>
       </ol>
