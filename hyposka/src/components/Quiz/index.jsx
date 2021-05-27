@@ -1,5 +1,9 @@
 import React from 'react';
 
 export const Quiz = () => {
-  return <h1>Kvíz</h1>;
+  return (
+    <main>
+      <h1>Kvíz</h1>;
+    </main>
+  );
 };

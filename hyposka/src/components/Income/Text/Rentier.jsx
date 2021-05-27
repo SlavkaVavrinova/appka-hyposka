@@ -5,9 +5,15 @@ export const Rentier = () => {
   return (
     <>
       <p>Tady tě pošlu hned do banky, protože to asi nebude úplně jednoduché</p>
-
+      <label className="" htmlFor="">
+        Přidat do tisku:
+      </label>
+      <input className="print" type="checkbox" />
+      <Link to="/">
+        <button className="button__back ">Domů</button>
+      </Link>
       <Link to="/vydaje">
-        <button>3. Vydaje</button>
+        <button>Pokračovat Výdaje</button>
       </Link>
     </>
   );

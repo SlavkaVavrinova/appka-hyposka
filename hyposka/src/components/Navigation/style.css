@@ -3,7 +3,7 @@ nav {
   justify-content: space-between;
   height: 10rem;
   background-color: #0c3932;
-  padding: 0 30px;
+  padding: 0;
 }
 .logo {
   height: 10rem;
@@ -11,6 +11,7 @@ nav {
 .main-nav {
   display: flex;
   align-items: center;
+  padding: 0 30px;
 }
 .main-nav li {
   text-decoration: none;

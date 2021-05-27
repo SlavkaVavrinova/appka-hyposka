@@ -11,8 +11,15 @@ export const Revenue = () => {
         příjem. Ale i zde platí, vše potřebné se dozvíš až u konkrétní banky.
       </p>
 
+      <label className="" htmlFor="">
+        Přidat do tisku:
+      </label>
+      <input className="print" type="checkbox" />
+      <Link to="/">
+        <button className="button__back ">Domů</button>
+      </Link>
       <Link to="/vydaje">
-        <button>3. Vydaje</button>
+        <button>Pokračovat Výdaje</button>
       </Link>
     </>
   );

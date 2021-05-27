@@ -27,6 +27,10 @@ body {
   text-align: justify;
 }
 
+main {
+  margin: 30px;
+}
+
 h1 {
   font-size: 200%;
   margin: 0;
@@ -36,10 +40,11 @@ h1,
 h2,
 h3 {
   color: #0c3932;
+  text-align: left;
 }
 
 button {
-  width: 20vw;
+  width: 15vw;
   padding: 1rem;
   font-size: large;
   text-transform: uppercase;
@@ -47,6 +52,41 @@ button {
   border-radius: 5px;
   background-color: #632e37;
   color: #ffffff;
+}
+.button__small {
+  width: 10vw;
+}
+
+.button__small:hover {
+  width: 10vw;
+}
+
+button:hover {
+  width: 15vw;
+  padding: 1rem;
+  font-size: large;
+  text-transform: uppercase;
+  border: 5px solid #0c3932;
+  border-radius: 5px;
+  background-color: #632e37;
+  box-shadow: 2px 2px 5px #0c3932;
+}
+
+.button__back {
+  border: 5px solid #0c3932;
+  border-radius: 5px;
+  background-color: #cad8d6;
+  color: #0c3932;
+  width: 15vw;
+  margin: 0 30px;
+}
+.button__back:hover {
+  width: 15vw;
+  padding: 1rem;
+  border: 5px solid #1a4e45;
+  border-radius: 5px;
+  background-color: #94b1ac;
+  box-shadow: 2px 2px 5px #0c3932;
 }
 
 /*html {}*/

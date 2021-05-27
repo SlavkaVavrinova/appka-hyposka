@@ -25,48 +25,48 @@ const App = () => (
   <Router>
     <Navigation />
 
-    <main>
-      <Switch>
-        <Route path="/" exact>
-          <Header />
-          <Home />
-        </Route>
+    <Switch>
+      <Route path="/" exact>
+        <Header />
 
-        <Route path="/hypoteka" exact>
-          <SecondNav />
-          <Mortgage />
-        </Route>
+        <Home />
+      </Route>
 
-        <Route path="/prijem" exact>
-          <SecondNav />
-          <Income />
-        </Route>
-        <Route path="/vydaje" exact>
-          <SecondNav />
-          <Costs />
-        </Route>
-        <Route path="/banka" exact>
-          <SecondNav />
-          <Bank />
-        </Route>
-        <Route path="/kviz" exact>
-          <Header />
-          <Quiz />
-        </Route>
-        <Route path="/mapa" exact>
-          <Header />
-          <Map />
-        </Route>
-        <Route path="/bonus" exact>
-          <Header />
-          <Bonus />
-        </Route>
-        <Route path="/kontakt" exact>
-          <Header />
-          <Contact />
-        </Route>
-      </Switch>
-    </main>
+      <Route path="/hypoteka" exact>
+        <SecondNav />
+        <Mortgage />
+      </Route>
+
+      <Route path="/prijem" exact>
+        <SecondNav />
+        <Income />
+      </Route>
+      <Route path="/vydaje" exact>
+        <SecondNav />
+        <Costs />
+      </Route>
+      <Route path="/banka" exact>
+        <SecondNav />
+        <Bank />
+      </Route>
+      <Route path="/kviz" exact>
+        <Header />
+        <Quiz />
+      </Route>
+      <Route path="/mapa" exact>
+        <Header />
+        <Map />
+      </Route>
+      <Route path="/bonus" exact>
+        <Header />
+        <Bonus />
+      </Route>
+      <Route path="/kontakt" exact>
+        <Header />
+        <Contact />
+      </Route>
+    </Switch>
+
     <Footer />
   </Router>
 );

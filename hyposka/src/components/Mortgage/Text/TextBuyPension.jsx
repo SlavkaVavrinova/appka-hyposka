@@ -15,9 +15,15 @@ export const TextBuyPension = () => {
         banky a tam se informuj na přesné podmínky. Jistě nějaké řešení najdeš,
         ale o <em>"provozovně"</em> se zmiň hned v začátku.
       </p>
-
+      <label className="" htmlFor="">
+        Přidat do tisku:
+      </label>
+      <input className="print" type="checkbox" />
+      <Link to="/">
+        <button className="button__back ">Domů</button>
+      </Link>
       <Link to="/prijem">
-        <button>2. Příjem</button>
+        <button>Pokračovat Příjem</button>
       </Link>
     </>
   );

@@ -16,14 +16,6 @@
   box-shadow: 2px 2px 5px #0c3932;
 }
 
-.container__button {
-  margin-left: 30vw;
-}
-
-.container__right-side {
-  position: relative;
-}
-
 .dot {
   position: absolute;
   align-self: flex-start;

@@ -69,8 +69,15 @@ export const TextBuyFlat = () => {
         <strong>do zástavy musíš dát nějakou jinou nemovitost</strong>
         (druhý byt, chatu, dům extramilujících rodičů atd.) Neudělá.
       </p>
+      <label className="" htmlFor="">
+        Přidat do tisku:
+      </label>
+      <input className="print" type="checkbox" />
+      <Link to="/">
+        <button className="button__back ">Domů</button>
+      </Link>
       <Link to="/prijem">
-        <button>2. Příjem</button>
+        <button>Pokračovat Příjem</button>
       </Link>
     </>
   );

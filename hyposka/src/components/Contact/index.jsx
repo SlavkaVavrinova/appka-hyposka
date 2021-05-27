@@ -8,36 +8,36 @@ import { FormContact } from './../FormContact/index';
 export const Contact = () => {
   return (
     <>
-      <header>
+      <main>
         <h1>Kontakty</h1>
-      </header>
-      <h2>Slávka Vavřinová</h2>
-      <div className="contact">
-        <img className="email" src={email} alt="E-mail" />
-        <p>slavka.vav@gmail.com</p>
-      </div>
-      <div className="contact">
-        <img className="github" src={github} alt="Logo GitHub" />
-        <p>SlavkaVavrinová</p>
-        <button className="btn-about" /*onClick={handleClick}*/>
-          Více o Slávce
-        </button>
-      </div>
-      <h2>Veronika Sípalová</h2>
-      <div className="contact">
-        <img className="email" src={email} alt="E-mail" />
-        <p>ver.kosik@gmail.com</p>
-      </div>
-      <div className="contact">
-        <img className="github" src={github} alt="Logo GitHub" />
-        <p>Veronika Sípalová</p>
-        <button className="btn-about" /*onClick={handleClick}*/>
-          Více o Verče
-        </button>
-      </div>
+        <h2>Slávka Vavřinová</h2>
+        <div className="contact">
+          <img className="email" src={email} alt="E-mail" />
+          <p>slavka.vav@gmail.com</p>
+        </div>
+        <div className="contact">
+          <img className="github" src={github} alt="Logo GitHub" />
+          <p>SlavkaVavrinová</p>
+          <button className="btn-about" /*onClick={handleClick}*/>
+            Více o Slávce
+          </button>
+        </div>
+        <h2>Veronika Sípalová</h2>
+        <div className="contact">
+          <img className="email" src={email} alt="E-mail" />
+          <p>ver.kosik@gmail.com</p>
+        </div>
+        <div className="contact">
+          <img className="github" src={github} alt="Logo GitHub" />
+          <p>Veronika Sípalová</p>
+          <button className="btn-about" /*onClick={handleClick}*/>
+            Více o Verče
+          </button>
+        </div>
 
-      <p>Máš pro nás radu? Napiš, budeme rády!</p>
-      <FormContact />
+        <p>Máš pro nás radu? Napiš, budeme rády!</p>
+        <FormContact />
+      </main>
     </>
   );
 };

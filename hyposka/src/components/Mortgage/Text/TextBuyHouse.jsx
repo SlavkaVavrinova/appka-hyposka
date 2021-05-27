@@ -54,14 +54,15 @@ export const TextBuyHouse = () => {
         metrem se to dá zvládnout také.
       </p>
 
-      <label htmlFor="">
-        Přidat do tisku: <input type="checkbox" />
+      <label className="" htmlFor="">
+        Přidat do tisku:
       </label>
+      <input className="print" type="checkbox" />
       <Link to="/">
-        <button>Domů</button>
+        <button className="button__back ">Domů</button>
       </Link>
       <Link to="/prijem">
-        <button>2. Příjem</button>
+        <button> Pokračovat Příjem</button>
       </Link>
     </>
   );
