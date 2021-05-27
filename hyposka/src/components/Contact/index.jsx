@@ -18,8 +18,8 @@ export const Contact = () => {
       </div>
       <div className="contact">
         <img className="github" src={github} alt="Logo GitHub" />
-        <p>SlavkaVavrinova</p>
-        <button class="btn-about" /*onClick={handleClick}*/>
+        <p>SlavkaVavrinová</p>
+        <button className="btn-about" /*onClick={handleClick}*/>
           Více o Slávce
         </button>
       </div>

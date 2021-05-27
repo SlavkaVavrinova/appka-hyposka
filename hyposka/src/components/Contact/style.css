@@ -17,6 +17,7 @@
 }
 
 .btn-about {
+  width: 200px;
   padding: 20px 30px;
   font-size: large;
   text-transform: uppercase;
