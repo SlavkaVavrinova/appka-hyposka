@@ -19,9 +19,12 @@ html {
   background-color: #cad8d6;
 }
 body {
+  margin: 0 auto;
   background-color: #ffffff;
   font-family: 'Montserrat', 'Arial', sans-serif;
   line-height: 1.5;
+  max-width: 1200px;
+  text-align: justify;
 }
 
 h1 {

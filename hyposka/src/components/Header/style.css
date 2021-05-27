@@ -2,12 +2,18 @@
 .banner {
   background-image: url(img/banner.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  padding: 0 30px 30px 30px;
-  width: 963px;
-  height: 341px;
+  background-size: contain;
+  height: 381px;
+  max-width: 1204px;
+  padding: 1rem 30px;
 }
 
 .banner p {
-  width: 55vw;
+  max-width: 45vw;
+}
+
+.banner h1 {
+  padding-bottom: 0;
+
+  max-width: 60vw;
 }

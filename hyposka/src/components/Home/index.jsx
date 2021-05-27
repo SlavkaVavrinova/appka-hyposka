@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './style.css';
 
-import { Card } from '../Card/index';
+import dot from './img/dot.svg';
 
 import mortgage from './img/object.svg';
 import income from './img/income.svg';
@@ -47,30 +47,43 @@ export const Home = () => {
       <Link to="/hypoteka">
         <button>vstoupit</button>
       </Link>
+
       <div className="home-container">
-        <Card
-          className="home-container__item"
-          photo={cr}
-          alt="Mapa České Republiky"
-          title="Kde to umí"
-          text="Zadej referenci na bankéře či poradce nebo najdi vhodného."
-        ></Card>
+        <div className="home-container__card">
+          <img className="dot__home" src={dot} alt="Tečka" />
+          <h2>Kvíz</h2>
+          <div className="home-container__card-in">
+            <img src={quiz} alt="Kvíz" />
+            <p>Ověř své teoretické znalosti zpracování hypotéky.</p>
+          </div>
+          <Link to="/kviz">
+            <button className="button__small">vstoupit</button>
+          </Link>
+        </div>
 
-        <Card
-          className="home-container__item"
-          photo={quiz}
-          alt="Kvíz"
-          title="Kvíz"
-          text="Ověř si své znalosti"
-        ></Card>
+        <div className="home-container__card">
+          <img className="dot__home" src={dot} alt="Tečka" />
+          <h2>Kde to umí</h2>
+          <div className="home-container__card-in">
+            <img src={cr} alt="Mapa České Republiky" />
+            <p>Zadej referenci na bankéře či poradce nebo ho najdi.</p>
+          </div>
+          <Link to="/mapa">
+            <button className="button__small">vstoupit</button>
+          </Link>
+        </div>
 
-        <Card
-          className="home-container__item"
-          photo={bonus}
-          alt="Dárek"
-          title="Bonusy"
-          text="Fáze jednání, pojištění, čerpání hypotéky, důvěřuj ale prověřuj, nesplácení."
-        ></Card>
+        <div className="home-container__card">
+          <img className="dot__home" src={dot} alt="Tečka" />
+          <h2>Bonusy</h2>
+          <div className="home-container__card-in">
+            <img src={bonus} alt="Dárek" />
+            <p>Fáze jednání, pojištění, čerpání, důvěřuj ale prověřuj.</p>
+          </div>
+          <Link to="/bonus">
+            <button className="button__small">vstoupit</button>
+          </Link>
+        </div>
       </div>
     </>
   );

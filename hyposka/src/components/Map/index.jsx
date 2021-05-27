@@ -1,5 +1,7 @@
 import React from 'react';
 import { FormMap } from './../FormMap/index';
+import { MapBox } from './../MapBox/index';
+
 import './style.css';
 
 export const Map = () => {
@@ -31,7 +33,9 @@ export const Map = () => {
         změně na skládku těch špatných.
       </p>
       <h2></h2>
-      <img src="" alt="Mapa" />
+
+      <MapBox />
+
       <h3>Zadej poradce</h3>
       <p>Jsi spokojen se zpracovatelem hypotéky. Zadej svou zkušenost</p>
       <FormMap />
