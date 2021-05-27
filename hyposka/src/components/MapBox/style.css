@@ -1,0 +1,9 @@
+.mapa__marker button {
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+.mapboxgl-popup {
+  z-index: 1;
+}
