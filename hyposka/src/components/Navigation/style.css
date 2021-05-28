@@ -1,22 +1,28 @@
 nav {
   display: flex;
   justify-content: space-between;
-  height: 10rem;
+  height: 8rem;
   background-color: #0c3932;
   padding: 0;
 }
 .logo {
-  height: 10rem;
+  height: 8rem;
 }
 .main-nav {
   display: flex;
   align-items: center;
-  padding: 0 30px;
+  align-content: stretch;
+  padding: 0;
 }
 .main-nav li {
   text-decoration: none;
   list-style-type: none;
 }
+
+.main-nav__link a {
+  display: block;
+}
+
 .main-nav__link {
   text-decoration: none;
   color: #ffffff;

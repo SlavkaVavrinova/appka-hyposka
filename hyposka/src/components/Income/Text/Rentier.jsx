@@ -12,11 +12,11 @@ export const Rentier = () => {
           </label>
           <input className="print" type="checkbox" />
         </div>
-        <Link to="/">
-          <button className="button__back ">Domů</button>
+        <Link to="/hypoteka">
+          <button className="button__back ">Zpět</button>
         </Link>
         <Link to="/vydaje">
-          <button>Pokračovat Výdaje</button>
+          <button>Pokračovat</button>
         </Link>
       </div>
     </>

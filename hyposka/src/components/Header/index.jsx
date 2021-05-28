@@ -8,15 +8,21 @@ export const Header = () => {
     <>
       <header>
         <div className="banner">
-          <h1>Appka HYPOŠKA u bydlení kámoška</h1>
-          <p>Jednoduché kroky k vysněnému bydlení s hypotékou.</p>
-          <p>
-            Nejsem banka, finanční poradce, nic nenabízím!
-            <strong> Poskytuji informace</strong>, co tě se mnou čeká.
+          <div className="banner__h">
+            <h1>Appka Hypoška </h1> <p>u bydlení kámoška</p>
+          </div>
+          <p className="banner__p">
+            Jednoduché kroky k vysněnému bydlení s hypotékou.
           </p>
-          <Link to="/hypoteka">
-            <button>vstoupit</button>
-          </Link>
+          <div className="banner__button">
+            <p>
+              Nejsem banka, finanční poradce, nic nenabízím!
+              <strong> Poskytuji informace</strong>, co tě se mnou čeká.
+            </p>
+            <Link to="/hypoteka">
+              <button>vstoupit</button>
+            </Link>
+          </div>
         </div>
       </header>
     </>

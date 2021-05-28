@@ -78,7 +78,7 @@ export const TextBuyWithReconstruction = () => {
           <button className="button__back ">Domů</button>
         </Link>
         <Link to="/prijem">
-          <button>Pokračovat Příjem</button>
+          <button>Pokračovat</button>
         </Link>
       </div>
     </>

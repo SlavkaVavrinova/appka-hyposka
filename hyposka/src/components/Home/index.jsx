@@ -33,8 +33,8 @@ export const Home = () => {
           <strong> Kdo je připraven, není zaskočen.</strong>
         </p>
         <p>
-          Nečekej radu, kam si dojít pro nenižší úrok.
-          <strong>Já ti poskytnu informace</strong> na co se připravit, jak to
+          Nečekej radu, kam si dojít pro nejnižší úrok.
+          <strong> Já ti poskytnu informace</strong> na co se připravit, jak to
           proběhne, co vzít s sebou na první návštěvu banky a na co dát pozor.
           <strong> Jsi připraven?</strong>
         </p>

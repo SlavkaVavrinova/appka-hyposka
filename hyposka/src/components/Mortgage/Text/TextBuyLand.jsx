@@ -19,7 +19,7 @@ export const TextBuyLand = () => {
           podpis. Podepíšeš 🡪 platíš rezervační poplatek a prostě kupuješ.
         </li>
         <li>
-          Nic z toho nemáš? Vezmi <strong>inzerát, kde je cena a údaje</strong>
+          Nic z toho nemáš? Vezmi <strong>inzerát, kde je cena a údaje.</strong>
         </li>
       </ul>
       <h3> Co pro odhadce?</h3>
@@ -59,7 +59,7 @@ export const TextBuyLand = () => {
           <button className="button__back ">Domů</button>
         </Link>
         <Link to="/prijem">
-          <button>Pokračovat Příjem</button>
+          <button>Pokračovat</button>
         </Link>
       </div>
     </>

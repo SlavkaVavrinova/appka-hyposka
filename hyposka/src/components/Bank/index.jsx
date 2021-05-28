@@ -7,7 +7,7 @@ export const Bank = () => {
     <>
       <main>
         <h1>Banka nebo finanční poradce</h1>
-        <p> Blížíme se do finále</p>
+        <p> Blížíme se do finále.</p>
         <p>
           Teď už víš, co vzít s sebou. A kam teď vlastně jít? Můžeš jít do banky
           nebo za finančním poradcem.
@@ -16,26 +16,26 @@ export const Bank = () => {
         <p>
           Ideálně někdo na koho máš doporučení, že od něj měl hypotéku a je
           spokojený.
-        </p>{' '}
+        </p>
         <p>
           Dobrý poradce na hypotéku to pravděpodobně dělá dlouho, protože
           hypotéka je nejsložitější produkt, co banky nabízí. Je
           nepravděpodobné, že někdo po 3 měsících rozumí hypotékám ze všech
           bank. Dá se ale i narazit na čerstvého poradce, který zařizuje sazbu a
           dál se nechá vést a poradit si bankou, i v tomto případě může vše
-          dopadnout dobře.{' '}
+          dopadnout dobře.
         </p>
         <p>
           Zároveň ale pozor na poradce, který pracuje pod společností, která je
           dceřinou společností nějaké banky. Tito poradci mohou být motivováni
           sjednávat hypotéky právě u ní. Vlastně ale ani to nemusí být špatně,
-          když jim ta banka nabídne nějaké pecka podmínky.{' '}
+          když jim ta banka nabídne nějaké pecka podmínky.
         </p>
         <p>
           S tím je spojena i provize. Poradce má možnost sjednat hypotéku
           kdekoli, jak tvrdí. Banky mají nastaven provizní systém různě a
           poradce od každé banky dostane jinou provizi. Může se tedy stát, že
-          jednu banku před druhou preferovat bude.{' '}
+          jednu banku před druhou preferovat bude.
         </p>
         <h3>Výhody a nevýhody finančního poradce</h3>
         <p>Zařídí část věcí za tebe a mohl by pomoci ušetřit nějaký čas</p>
@@ -73,15 +73,14 @@ export const Bank = () => {
           jiného účtu, ale kdyby na tom účtu chybělo 10 Kč, tak ten příkaz
           neodejde a tím neodejde celá splátka. Když jde mzda na účet přímo tam,
           odkud odchází hypotéka, tak se zaplatí celá hypotéka bez 10Kč. Penále
-          z 10Kč budou méně než z celé splátky.{' '}
+          z 10Kč budou méně než z celé splátky.
         </p>
         <p>
           Co když není podmínka jen účet, ale nějaká investice někam nebo
           pravidelné platby úvěrovou kartou atd. To někomu vadit nemusí, ale
           někomu to vadit bude, když to bude muset dělat třeba 5 let.
-        </p>{' '}
+        </p>
         <p>
-          {' '}
           Zvláštní pozornost patří pojištění. Když má smysl, tak pojištění
           hypotéky stejně bude nastaveno, takže žádný problém ne? Když to
           pojištění v jedné bance vyjde na 1000 Kč a to stejné v druhé bance na
@@ -131,11 +130,12 @@ export const Bank = () => {
           čistě.
         </p>
         <div className="buttons-row">
-          <Link to="/">
-            <button className="button__back">Domů</button>
-          </Link>
+          <h3>Chci vytisknout závěrečný souhrn dokumentů:</h3>
           <Link to="/tisk">
-            <button>Tisk</button>
+            <button className="button__back">Tisk</button>
+          </Link>
+          <Link to="/">
+            <button>Ukončit</button>
           </Link>
         </div>
       </main>

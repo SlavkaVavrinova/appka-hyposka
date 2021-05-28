@@ -1,20 +1,100 @@
 /*vyměnit pozadí!!!*/
 .banner {
-  background-image: url(img/banner.jpg);
-  background-repeat: no-repeat;
+  background-image: url(img/bannerS.jpg);
   background-size: contain;
-  height: 381px;
-  max-width: 1204px;
-  padding: 1rem 30px;
+  background-repeat: no-repeat;
+  padding: 0 30px;
   margin: 0;
 }
 
-.banner p {
-  max-width: 45vw;
+.banner__h h1 {
+  padding-bottom: 0;
+  max-width: 70%;
+  font-size: 350%;
 }
 
-.banner h1 {
-  padding-bottom: 0;
+.banner__h p {
+  font-size: 200%;
+  padding-left: 1rem;
+}
+.banner p {
+  font-size: 100%;
+  max-width: 60%;
+}
 
-  max-width: 60vw;
+.banner__h {
+  display: flex;
+  align-items: baseline;
+  font-family: 'Great Vibes', cursive;
+  padding: 0;
+  margin: 0;
+}
+
+.banner__p {
+  margin-top: 0;
+}
+
+.banner__button p {
+  margin-right: 1rem;
+  margin-top: 0;
+}
+
+.banner__button button {
+  display: none;
+}
+
+@media (min-width: 540px) {
+  header {
+    max-width: 1200px;
+  }
+  .banner {
+    background-image: url(img/banner.jpg);
+    background-size: contain;
+    padding: 0 auto;
+  }
+  .banner__h h1 {
+    max-width: 70%;
+    font-size: 350%;
+  }
+  .banner p {
+    font-size: 125%;
+    max-width: 60%;
+  }
+  .banner__button {
+    display: flex;
+    width: 70%;
+    font-size: 100%;
+    align-items: center;
+  }
+  .banner__button button {
+    display: block;
+  }
+}
+
+@media (min-width: 970px) {
+  /*header {
+    max-width: 1200px;
+  }
+  .banner {
+    background-image: url(img/banner.jpg);
+    background-size: contain;
+    padding: 0 auto;
+  }
+  .banner__h h1 {
+    max-width: 70%;
+    font-size: 350%;
+  }
+  .banner p {
+    font-size: 125%;
+    max-width: 60%;
+  }
+  .banner__button {
+    display: flex;
+    width: 70%;
+    font-size: 100%;
+    align-items: center;
+  }
+  .banner__button button {
+    display: block;
+  }*/
 }
