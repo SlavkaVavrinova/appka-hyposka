@@ -12,10 +12,16 @@ export const Card = (props) => {
   return (
     <div className="card">
       <div className="container">
-        <img className="dot" src={dot} alt="Tečka" />
-        <picture>
-          <img className="container__photo" src={props.photo} alt={props.alt} />
-        </picture>
+        <div className="container__left-side">
+          <img className="dot" src={dot} alt="Tečka" />
+          <picture>
+            <img
+              className="container__photo"
+              src={props.photo}
+              alt={props.alt}
+            />
+          </picture>
+        </div>
         <div className="container__right-side">
           <h2>{props.title}</h2>
           <p>{props.text}</p>

@@ -67,17 +67,20 @@ export const TextBuyWithReconstruction = () => {
         stejného místa. Firmy v oboru se dost často znají. A i tak pak při
         stavbě je dobré hlídat, aby se spolu nezačali domlouvat.
       </p>
-      <label className="" htmlFor="">
-        Přidat do tisku:
-      </label>
-      <input className="print" type="checkbox" />
-      <Link to="/">
-        <button className="button__back ">Domů</button>
-      </Link>
-      <button className="">Skrýt</button>
-      <Link to="/prijem">
-        <button>Pokračovat Příjem</button>
-      </Link>
+      <div className="buttons-row">
+        <div className="buttons-row__print">
+          <label className="" htmlFor="">
+            Přidat do tisku:
+          </label>
+          <input className="print" type="checkbox" />
+        </div>
+        <Link to="/">
+          <button className="button__back ">Domů</button>
+        </Link>
+        <Link to="/prijem">
+          <button>Pokračovat Příjem</button>
+        </Link>
+      </div>
     </>
   );
 };

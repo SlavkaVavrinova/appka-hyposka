@@ -39,16 +39,20 @@ export const TextReconstruction = () => {
         <li>Končící investice za nějaý čas</li>
         <li>Prodej současného bydlení atd.</li>
       </ul>
-      <label className="" htmlFor="">
-        Přidat do tisku:
-      </label>
-      <input className="print" type="checkbox" />
-      <Link to="/">
-        <button className="button__back ">Domů</button>
-      </Link>
-      <Link to="/prijem">
-        <button>Pokračovat Příjem</button>
-      </Link>
+      <div className="buttons-row">
+        <div className="buttons-row__print">
+          <label className="" htmlFor="">
+            Přidat do tisku:
+          </label>
+          <input className="print" type="checkbox" />
+        </div>
+        <Link to="/">
+          <button className="button__back ">Domů</button>
+        </Link>
+        <Link to="/prijem">
+          <button>Pokračovat Příjem</button>
+        </Link>
+      </div>
     </>
   );
 };

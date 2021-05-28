@@ -48,16 +48,20 @@ export const TextBuyLand = () => {
         Není možné stavět dům na pozemku, který je vedený jako ostatní plocha -
         parkoviště.
       </p>
-      <label className="" htmlFor="">
-        Přidat do tisku:
-      </label>
-      <input className="print" type="checkbox" />
-      <Link to="/">
-        <button className="button__back ">Domů</button>
-      </Link>
-      <Link to="/prijem">
-        <button>Pokračovat Příjem</button>
-      </Link>
+      <div className="buttons-row">
+        <div className="buttons-row__print">
+          <label className="" htmlFor="">
+            Přidat do tisku:
+          </label>
+          <input className="print" type="checkbox" />
+        </div>
+        <Link to="/">
+          <button className="button__back ">Domů</button>
+        </Link>
+        <Link to="/prijem">
+          <button>Pokračovat Příjem</button>
+        </Link>
+      </div>
     </>
   );
 };

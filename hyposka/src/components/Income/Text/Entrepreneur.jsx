@@ -14,16 +14,20 @@ export const Entrepreneur = () => {
         nějakých limitů, které je schopná poskytnout bez doložení přiznání na
         základě pohybů na účtu.
       </p>
-      <label className="" htmlFor="">
-        Přidat do tisku:
-      </label>
-      <input className="print" type="checkbox" />
-      <Link to="/">
-        <button className="button__back ">Domů</button>
-      </Link>
-      <Link to="/vydaje">
-        <button>Pokračovat Výdaje</button>
-      </Link>
+      <div className="buttons-row">
+        <div className="buttons-row__print">
+          <label className="" htmlFor="">
+            Přidat do tisku:
+          </label>
+          <input className="print" type="checkbox" />
+        </div>
+        <Link to="/">
+          <button className="button__back ">Domů</button>
+        </Link>
+        <Link to="/vydaje">
+          <button>Pokračovat Výdaje</button>
+        </Link>
+      </div>
     </>
   );
 };

@@ -130,12 +130,14 @@ export const Bank = () => {
           být kvůli tomu, že to je hodná banka, ale spíš ta, která nemusí hrát
           čistě.
         </p>
-        <Link to="/">
-          <button>Domů</button>
-        </Link>
-        <Link to="/tisk">
-          <button>Tisk</button>
-        </Link>
+        <div className="buttons-row">
+          <Link to="/">
+            <button className="button__back">Domů</button>
+          </Link>
+          <Link to="/tisk">
+            <button>Tisk</button>
+          </Link>
+        </div>
       </main>
     </>
   );

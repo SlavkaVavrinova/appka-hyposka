@@ -166,12 +166,14 @@ export const Costs = () => {
             </a>
           </li>
         </ul>
-        <Link to="/prijem">
-          <button className="button__back ">Zpět příjem</button>
-        </Link>
-        <Link to="/banka">
-          <button>Pokračovat Banka</button>
-        </Link>
+        <div className="buttons-row">
+          <Link to="/prijem">
+            <button className="button__back">Zpět příjem</button>
+          </Link>
+          <Link to="/banka">
+            <button>Pokračovat Banka</button>
+          </Link>
+        </div>
       </main>
     </>
   );

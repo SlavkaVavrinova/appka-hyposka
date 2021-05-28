@@ -33,16 +33,21 @@ export const TextRefinancing = () => {
         hypotéky, může chtít vidět kupní smlouvu, projektovou dokumentaci a
         další. To se dozvíš na první schůzce, není potřeba to řešit dopředu.
       </p>
-      <label className="" htmlFor="">
-        Přidat do tisku:
-      </label>
-      <input className="print" type="checkbox" />
-      <Link to="/">
-        <button className="button__back ">Domů</button>
-      </Link>
-      <Link to="/prijem">
-        <button>Pokračovat Příjem</button>
-      </Link>
+      <div className="buttons-row">
+        <div className="buttons-row__print">
+          <label className="" htmlFor="">
+            Přidat do tisku:
+          </label>
+          <input className="print" type="checkbox" />
+        </div>
+
+        <Link to="/">
+          <button className="button__back ">Domů</button>
+        </Link>
+        <Link to="/prijem">
+          <button>Pokračovat Příjem</button>
+        </Link>
+      </div>
     </>
   );
 };

@@ -40,16 +40,20 @@ export const Employee = () => {
         rodiny. Vezmi s sebou na schůzku i daňové přiznání a výkazy té
         společnosti, pokud je to možné. Ušetříš si tím jednu cestu.
       </p>
-      <label className="" htmlFor="">
-        Přidat do tisku:
-      </label>
-      <input className="print" type="checkbox" />
-      <Link to="/">
-        <button className="button__back ">Domů</button>
-      </Link>
-      <Link to="/vydaje">
-        <button>Pokračovat Výdaje</button>
-      </Link>
+      <div className="buttons-row">
+        <div className="buttons-row__print">
+          <label className="" htmlFor="">
+            Přidat do tisku:
+          </label>
+          <input className="print" type="checkbox" />
+        </div>
+        <Link to="/">
+          <button className="button__back ">Domů</button>
+        </Link>
+        <Link to="/vydaje">
+          <button>Pokračovat Výdaje</button>
+        </Link>
+      </div>
     </>
   );
 };

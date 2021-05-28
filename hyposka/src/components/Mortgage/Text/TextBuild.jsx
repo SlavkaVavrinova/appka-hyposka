@@ -98,16 +98,20 @@ export const TextBuild = () => {
         Záleží na době než se uvolní celá hotovost. První splátka odejde
         většinou měsíc po uvolnění poslední <em>"koruny"</em> z hypotéky.
       </p>
-      <label className="" htmlFor="">
-        Přidat do tisku:
-      </label>
-      <input className="print" type="checkbox" />
-      <Link to="/">
-        <button className="button__back ">Domů</button>
-      </Link>
-      <Link to="/prijem">
-        <button>Pokračovat Příjem</button>
-      </Link>
+      <div className="buttons-row">
+        <div className="buttons-row__print">
+          <label className="" htmlFor="">
+            Přidat do tisku:
+          </label>
+          <input className="print" type="checkbox" />
+        </div>
+        <Link to="/">
+          <button className="button__back ">Domů</button>
+        </Link>
+        <Link to="/prijem">
+          <button>Pokračovat Příjem</button>
+        </Link>
+      </div>
     </>
   );
 };

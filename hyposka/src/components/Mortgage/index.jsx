@@ -68,7 +68,7 @@ export const Mortgage = () => {
         <Card
           photo={pictureBuyPension}
           alt="Penzion Gerta"
-          title="Koupit hotel, fabriku,y benzínku ..."
+          title="Koupit hotel, fabriku, benzínku ..."
           text="Chci pořídit nemovitost pro svoje podnikání a vydělat peníze."
         >
           <TextBuyPension />
