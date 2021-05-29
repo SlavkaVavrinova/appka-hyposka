@@ -73,6 +73,9 @@ button {
   background-color: #632e37;
   color: #ffffff;
 }
+a {
+  text-decoration: none;
+}
 .button__small {
   width: 10vw;
 }

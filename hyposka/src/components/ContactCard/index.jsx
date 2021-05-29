@@ -9,21 +9,17 @@ export const ContactCard = (props) => {
   };
 
   return (
-    <div className="card">
-      <div className="container">
-        <div className="container__left-side">
+    <div className="card__contact">
+      <div className="container__contact">
+        <div className="contact__left-side">
           <picture>
-            <img
-              className="container__photo"
-              src={props.photo}
-              alt={props.alt}
-            />
+            <img className="contact__photo" src={props.photo} alt={props.alt} />
           </picture>
         </div>
-        <div className="container__right-side">
+        <div className="contact__right-side">
           <h2>{props.title}</h2>
           <p>{props.render()}</p>
-          <button className="container__button" onClick={handleClick}>
+          <button className="contact__button" onClick={handleClick}>
             {display === true ? 'Zavřít' : 'Více'}
           </button>
         </div>

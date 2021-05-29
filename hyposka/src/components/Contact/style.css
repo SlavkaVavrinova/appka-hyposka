@@ -1,16 +1,16 @@
 .contact {
   display: flex;
-  justify-content: flex-start;
+  align-items: center;
 }
 
 .email {
   height: 3rem;
-  margin: 5px;
+  margin: 1rem;
 }
 
 .github {
   height: 3rem;
-  margin: 5px;
+  margin: 1rem;
 }
 
 .slavka__family,
