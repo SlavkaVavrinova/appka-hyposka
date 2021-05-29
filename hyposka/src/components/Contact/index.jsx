@@ -50,7 +50,7 @@ export const Contact = () => {
               </div>
               <div className="contact">
                 <img className="github" src={github} alt="Logo GitHub" />
-                <a className="Verca" href="https://github.com/Ver10">
+                <a className="Verca" href="https://github.com/VerS10">
                   Verča Sípalová
                 </a>
               </div>

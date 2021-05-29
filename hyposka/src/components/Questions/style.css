@@ -1,0 +1,20 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.question {
+  flex-basis: auto;
+  align-self: auto;
+}
+
+.answer {
+  flex-basis: auto;
+  align-content: auto;
+  order: 2;
+}
+.answer__img {
+  width: 10vw;
+}
