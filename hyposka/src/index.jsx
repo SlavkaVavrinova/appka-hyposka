@@ -26,19 +26,15 @@ const App = () => (
   <Router>
     <ScrollToTop />
     <Navigation />
-
     <Switch>
       <Route path="/" exact>
         <Header />
-
         <Home />
       </Route>
-
       <Route path="/hypoteka" exact>
         <SecondNav />
         <Mortgage />
       </Route>
-
       <Route path="/prijem" exact>
         <SecondNav />
         <Income />
@@ -68,7 +64,6 @@ const App = () => (
         <Contact />
       </Route>
     </Switch>
-
     <Footer />
   </Router>
 );

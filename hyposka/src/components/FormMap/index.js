@@ -66,6 +66,45 @@ export const FormMap = () => {
     setResponsePhone(validator.isMobilePhone(phone));
   }, [phone]);
 
+  useEffect(() => {
+    let center = SMap.Coords.fromWGS84(14.1, 50.1);
+    let m = new SMap(JAK.gel('m'), center);
+    m.addDefaultLayer(SMap.DEF_BASE).enable();
+    m.addDefaultControls();
+
+    // naseptavac
+    let inputEl = document.querySelector('#naseptavac');
+    let suggest = new SMap.Suggest(inputEl, {
+      provider: new SMap.SuggestProvider({
+        updateParams: (params) => {
+          /*
+            tato fce se vola pred kazdym zavolanim naseptavace,
+            params je objekt, staci prepsat/pridat klic a ten se prida
+            do url
+          */
+          let c = m.getCenter().toWGS84();
+          params.lon = c[0].toFixed(5);
+          params.lat = c[1].toFixed(5);
+          params.zoom = m.getZoom();
+          // omezeni pro celou CR
+          params.bounds = '48.5370786,12.0921668|51.0746358,18.8927040';
+
+          // nepovolime kategorie, ale takto bychom mohli
+          //params.enableCategories = 1;
+
+          // priorita jazyku, oddelene carkou
+          params.lang = 'cs,en';
+        },
+      }),
+    });
+    suggest.addListener('suggest', (suggestData) => {
+      // vyber polozky z naseptavace
+      setTimeout(function () {
+        alert(JSON.stringify(suggestData, null, 4));
+      }, 0);
+    });
+  }, []);
+
   return (
     <>
       <form className="form-map" onSubmit={handleSubmit}>
@@ -110,9 +149,13 @@ export const FormMap = () => {
 
         <label className="form-map__address">Zadej adresu</label>
         <input
+          id="naseptavac"
           value={address}
           onChange={(event) => setAddress(event.target.value)}
         />
+        <div id="parent">
+          <div id="m"></div>
+        </div>
 
         <label>
           Zadej komentář se zkušeností <span className="required">*</span>
