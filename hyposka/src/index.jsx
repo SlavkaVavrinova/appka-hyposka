@@ -20,9 +20,11 @@ import { Contact } from './components/Contact/index';
 import { Navigation } from './components/Navigation/index';
 
 import { SecondNav } from './components/SecondNav';
+import ScrollToTop from './components/ScrollToTop';
 
 const App = () => (
   <Router>
+    <ScrollToTop />
     <Navigation />
 
     <Switch>
