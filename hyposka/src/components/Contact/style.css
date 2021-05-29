@@ -4,15 +4,15 @@
 }
 
 .contact__img {
-  height: 1rem;
+  height: 0.5rem;
 }
 
 .email {
-  width: 5vw;
+  width: 4vw;
   padding: 5px;
 }
 .github {
-  width: 5vw;
+  width: 4vw;
   padding: 5px;
 }
 
