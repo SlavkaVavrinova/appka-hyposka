@@ -10,12 +10,15 @@
   box-shadow: 2px 2px 5px #0c3932;
 }
 
+.form-map button {
+  margin-top: 1rem;
+  align-self: flex-end;
+}
+
 label {
   padding: 0.5rem 0;
 }
 
-.form-map__comment {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
+.required {
+  color: red;
 }

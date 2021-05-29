@@ -3,7 +3,6 @@ import './style.css';
 import React, { useEffect, useState } from 'react';
 import { db } from './../../db';
 import firebase from 'firebase/app';
-import isEmail from 'validator/lib/isEmail';
 import validator from 'validator';
 
 export const FormContact = () => {
@@ -34,7 +33,6 @@ export const FormContact = () => {
     setName('');
     setEmail('');
     setMessage('');
-    setResponse('display__yes');
   };
 
   const [responseEmail, setResponseEmail] = useState(true);
@@ -48,17 +46,17 @@ export const FormContact = () => {
   return (
     <>
       <form className="form-contact" onSubmit={handleSubmit}>
-        <label className="form-contact__name">Jméno: {''}</label>
+        <label className="form-contact__name">Jméno: </label>
         <input value={name} onChange={(event) => setName(event.target.value)} />
-        <div className="email-valid">
-          <label className="form-contact__email">Email: {''}</label>
+        <div className="valid">
+          <label className="form-contact__email">Email: </label>
           <span> {validEmail}</span>
         </div>
         <input
           value={email}
           onChange={(event) => setEmail(event.target.value)}
         />
-        <label className="form-map__message">Vzkaz či doporučení: {''}</label>
+        <label className="form-map__message">Vzkaz či doporučení: </label>
         <textarea
           value={message}
           onChange={(event) => setMessage(event.target.value)}

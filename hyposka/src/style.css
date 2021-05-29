@@ -113,3 +113,18 @@ button:hover {
 .object-no-display {
   display: none;
 }
+
+/* Hvězdičky ve formulářích*/
+
+.valid {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  color: #0c3932;
+}
+
+.valid span {
+  align-self: center;
+  font-size: 90%;
+  font-style: italic;
+}
