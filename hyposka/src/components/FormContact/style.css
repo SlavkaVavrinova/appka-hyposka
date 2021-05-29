@@ -10,6 +10,23 @@
   box-shadow: 2px 2px 5px #0c3932;
 }
 
+.form-contact button {
+  margin-top: 1rem;
+  align-self: flex-end;
+}
+
 label {
   padding: 0.5rem 0;
+}
+.email-valid {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.email-valid span {
+  align-self: center;
+  color: #0c3932;
+  font-size: 90%;
+  font-style: italic;
 }
