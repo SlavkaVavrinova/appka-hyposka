@@ -1,9 +1,12 @@
 import React from 'react';
-
-import email from './img/email.svg';
-import github from './img/git.svg';
-import './style.css';
+import { Slavka } from './text/slavka.jsx';
+import { Veru } from './text/veru.jsx';
+import { ContactCard } from '../ContactCard';
 import { FormContact } from './../FormContact/index';
+
+import { slavka } from '../img/slavka.jpg';
+import { verca } from '../img/veru.png';
+import './style.css';
 
 export const Contact = () => {
   return (
@@ -11,30 +14,26 @@ export const Contact = () => {
       <main>
         <h1>Kontakty</h1>
         <h2>Slávka Vavřinová</h2>
-        <div className="contact">
-          <img className="email" src={email} alt="E-mail" />
-          <p>slavka.vav@gmail.com</p>
-        </div>
-        <div className="contact">
-          <img className="github" src={github} alt="Logo GitHub" />
-          <p>SlavkaVavrinová</p>
-          <button className="btn-about" /*onClick={handleClick}*/>
-            Více o Slávce
-          </button>
-        </div>
-        <h2>Veronika Sípalová</h2>
-        <div className="contact">
-          <img className="email" src={email} alt="E-mail" />
-          <p>ver.kosik@gmail.com</p>
-        </div>
-        <div className="contact">
-          <img className="github" src={github} alt="Logo GitHub" />
-          <p>Veronika Sípalová</p>
-          <button className="btn-about" /*onClick={handleClick}*/>
-            Více o Verče
-          </button>
-        </div>
 
+        <ContactCard
+          photo={slavka}
+          alt="Slávka"
+          title="Slávka Vavřinová"
+          text="Jsem mamka na mateřské dovolené se syny Marečkem 2 roky a Martínkem 4 roky. Před mateřskou jsem pracovala přibližně 10 let v bance. Na všech pozicích mě vždy provázely hypotéky. Z různých
+          témat k projektu Verča vybrala právě mnou nadhozenou Appku HYPOŠKU."
+        >
+          <Slavka />
+        </ContactCard>
+
+        <h2>Verča Sípalová</h2>
+        <ContactCard
+          photo={verca}
+          alt="Verča"
+          title="Verča Sípalová"
+          text="Jmenuji se Verča, jsem z Českých Budějovic. Doma mám dvě nezbedné děti Adélku a Honzíka. V předchozích letech jsem vystřídala více zaměstnání, spíše administrativních. Ráda bych do budoucna změnu, a mít možnost rozhodnout si o své pracovní době kdy se mohu věnovat práci a kdy dětem."
+        >
+          <Veru />
+        </ContactCard>
         <p>Máš pro nás radu? Napiš, budeme rády!</p>
         <FormContact />
       </main>
