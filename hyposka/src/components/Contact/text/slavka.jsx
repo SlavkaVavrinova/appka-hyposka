@@ -1,7 +1,7 @@
 import React from 'react';
 import email from '../img/email.svg';
 import github from '../img/git.svg';
-import { slavkaFamily } from '../img/slavkafamily.jpg';
+import slavkaFamily from '../img/slavkafamily.jpg';
 
 export const Slavka = () => {
   return (

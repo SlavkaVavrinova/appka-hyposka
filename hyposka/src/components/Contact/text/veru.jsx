@@ -1,7 +1,7 @@
 import React from 'react';
 import email from '../img/email.svg';
 import github from '../img/git.svg';
-import { veruFamily } from './../img/verufamily.jpg';
+import veruFamily from './../img/verufamily.jpg';
 
 export const Veru = () => {
   return (

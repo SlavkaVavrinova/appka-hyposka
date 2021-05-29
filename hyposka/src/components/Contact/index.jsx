@@ -4,8 +4,8 @@ import { Veru } from './text/veru.jsx';
 import { ContactCard } from '../ContactCard';
 import { FormContact } from './../FormContact/index';
 
-import { slavka } from '../img/slavka.jpg';
-import { verca } from '../img/veru.png';
+import slavka from './img/slavka.jpg';
+import verca from './img/veru.png';
 import './style.css';
 
 export const Contact = () => {
