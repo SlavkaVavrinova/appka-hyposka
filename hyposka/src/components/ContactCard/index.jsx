@@ -22,7 +22,7 @@ export const ContactCard = (props) => {
         </div>
         <div className="container__right-side">
           <h2>{props.title}</h2>
-          <p>{props.text}</p>
+          <p>{props.render()}</p>
           <button className="container__button" onClick={handleClick}>
             {display === true ? 'Zavřít' : 'Více'}
           </button>

@@ -15,7 +15,6 @@ export const Contact = () => {
     <>
       <main>
         <h1>Kontakty</h1>
-        <h2>Slávka Vavřinová</h2>
 
         <ContactCard
           photo={slavka}
@@ -39,7 +38,6 @@ export const Contact = () => {
           <Slavka />
         </ContactCard>
 
-        <h2>Verča Sípalová</h2>
         <ContactCard
           photo={verca}
           alt="Verča"
