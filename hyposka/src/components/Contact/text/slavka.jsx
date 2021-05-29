@@ -1,11 +1,16 @@
 import React from 'react';
-import email from '../img/email.svg';
-import github from '../img/git.svg';
+
 import slavkaFamily from '../img/slavkafamily.jpg';
 
 export const Slavka = () => {
   return (
     <>
+      <p>
+        Jsem mamka na mateřské dovolené se syny Marečkem 2 roky a Martínkem 4
+        roky. Před mateřskou jsem pracovala přibližně 10 let v bance. Na všech
+        pozicích mě vždy provázely hypotéky. Z různých témat k projektu Verča
+        vybrala právě mnou nadhozenou Appku HYPOŠKU."
+      </p>
       <p>
         Po inženýrském studiu Ekonomické fakulty Jihočeské Univerzity jsem
         pracovala chvilku jako recepční a hned po státnicích nastoupila za první
@@ -36,17 +41,6 @@ export const Slavka = () => {
         mi ho někdo nezavírá. Naštěstí akademii nikdo nezavřel, tak aspoň něco
         teď můžeme dělat.
       </p>
-
-      <div className="contact">
-        <img className="email" src={email} alt="E-mail" />
-        <p>slavka.vav@gmail.com</p>
-      </div>
-      <div className="contact">
-        <img className="github" src={github} alt="Logo GitHub" />
-        <a className="Slavka" href="https://github.com/SlavkaVavrinova">
-          Slávka Vavřinová
-        </a>
-      </div>
     </>
   );
 };

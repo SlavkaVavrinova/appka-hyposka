@@ -6,6 +6,8 @@ import { FormContact } from './../FormContact/index';
 
 import slavka from './img/slavka.jpg';
 import verca from './img/veru.png';
+import email from './img/email.svg';
+import github from './img/git.svg';
 import './style.css';
 
 export const Contact = () => {
@@ -19,8 +21,20 @@ export const Contact = () => {
           photo={slavka}
           alt="Slávka"
           title="Slávka Vavřinová"
-          text="Jsem mamka na mateřské dovolené se syny Marečkem 2 roky a Martínkem 4 roky. Před mateřskou jsem pracovala přibližně 10 let v bance. Na všech pozicích mě vždy provázely hypotéky. Z různých
-          témat k projektu Verča vybrala právě mnou nadhozenou Appku HYPOŠKU."
+          render={(data) => (
+            <>
+              <div className="contact">
+                <img className="email" src={email} alt="E-mail" />
+                <p>slavka.vav@gmail.com</p>
+              </div>
+              <div className="contact">
+                <img className="github" src={github} alt="Logo GitHub" />
+                <a className="Slavka" href="https://github.com/SlavkaVavrinova">
+                  Slávka Vavřinová
+                </a>
+              </div>
+            </>
+          )}
         >
           <Slavka />
         </ContactCard>
@@ -30,7 +44,20 @@ export const Contact = () => {
           photo={verca}
           alt="Verča"
           title="Verča Sípalová"
-          text="Jmenuji se Verča, jsem z Českých Budějovic. Doma mám dvě nezbedné děti Adélku a Honzíka. V předchozích letech jsem vystřídala více zaměstnání, spíše administrativních. Ráda bych do budoucna změnu, a mít možnost rozhodnout si o své pracovní době kdy se mohu věnovat práci a kdy dětem."
+          render={(data) => (
+            <>
+              <div className="contact">
+                <img className="email" src={email} alt="E-mail" />
+                <p>ver.kosik@gmail.com</p>
+              </div>
+              <div className="contact">
+                <img className="github" src={github} alt="Logo GitHub" />
+                <a className="Verca" href="https://github.com/Ver10">
+                  Verča Sípalová
+                </a>
+              </div>
+            </>
+          )}
         >
           <Veru />
         </ContactCard>

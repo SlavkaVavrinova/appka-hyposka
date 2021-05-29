@@ -1,11 +1,16 @@
 import React from 'react';
-import email from '../img/email.svg';
-import github from '../img/git.svg';
-import veruFamily from './../img/verufamily.jpg';
+import veruFamily from '../img/verufamily.jpg';
 
 export const Veru = () => {
   return (
     <>
+      <p>
+        Jmenuji se Verča, jsem z Českých Budějovic. Doma mám dvě nezbedné děti
+        Adélku, 5 let a Honzíka, 8 let. V předchozích letech jsem vystřídala
+        několik zaměstnání, spíše administrativních. Ráda bych do budoucna
+        změnu, a mít možnost určit si přesně čas, kdy se mohu věnovat práci a
+        kdy dětem.
+      </p>
       <p>
         Do digitální akademie jsem se přihlásila ze zvědavosti, a s vidinou
         rozšíření vědomostí a obzorů a mít příležitost do budoucnaucházet se o
@@ -37,16 +42,6 @@ export const Veru = () => {
         offline a doma vám k tomu běhají děti. Věřím však, že náš projekt bude
         skvělý a využijeme k tomu veškeré získané znalosti.
       </p>
-      <div className="contact">
-        <img className="email" src={email} alt="E-mail" />
-        <p>ver.kosik@gmail.com</p>
-      </div>
-      <div className="contact">
-        <img className="github" src={github} alt="Logo GitHub" />
-        <a className="Verca" href="https://github.com/VerS10">
-          Verča Sípalová
-        </a>
-      </div>
     </>
   );
 };
