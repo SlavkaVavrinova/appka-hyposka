@@ -118,6 +118,7 @@ export const FormMap = () => {
   return (
     <>
       <form className="form-map" onSubmit={handleSubmit}>
+        <p className="required right">* Povinné údaje</p>
         <label className="form-map__select">
           Osoba je:
           <select

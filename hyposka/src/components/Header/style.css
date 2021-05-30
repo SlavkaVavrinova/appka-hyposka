@@ -1,25 +1,21 @@
-/*vyměnit pozadí!!!*/
 .banner {
-  background-image: url(img/bannerS.jpg);
-  background-size: contain;
+  background-image: url(./img/bannerMobil.svg);
+  background-size: cover;
   background-repeat: no-repeat;
-
-  padding: 0 30px;
-  margin: 0;
+  padding: 0 10px 10px 10px;
 }
 
 .banner__h h1 {
   padding-bottom: 0;
   max-width: 70%;
-  font-size: 350%;
+  font-size: 200%;
 }
 
 .banner__h p {
-  font-size: 200%;
   padding-left: 1rem;
 }
 .banner p {
-  font-size: 100%;
+  font-size: 75%;
   max-width: 60%;
 }
 
@@ -32,12 +28,13 @@
 }
 
 .banner__p {
-  margin-top: 0;
+  display: none;
 }
 
 .banner__button p {
   margin-right: 1rem;
   margin-top: 0;
+  width: 60%;
 }
 
 .banner__button button {
@@ -48,11 +45,7 @@
   header {
     max-width: 1200px;
   }
-  .banner {
-    background-image: url(img/banner.jpg);
-    background-size: contain;
-    padding: 0 auto;
-  }
+
   .banner__h h1 {
     max-width: 70%;
     font-size: 350%;
@@ -73,6 +66,20 @@
 }
 
 @media (min-width: 970px) {
+  .banner__h h1 {
+    font-size: 350%;
+  }
+  .banner p {
+    font-size: 100%;
+    max-width: 60%;
+  }
+  .banner p {
+    font-size: 100%;
+    max-width: 60%;
+  }
+  .banner__p {
+    display: inline-block;
+  }
   /*header {
     max-width: 1200px;
   }

@@ -36,9 +36,7 @@ export const HypoCalculator = () => {
             }}
           >
             <option value={3860}>O hypotéku žádám sám</option>
-            <option value={3550}>
-              O hypotéku žádám s někým z mé domácnosti
-            </option>
+            <option value={3550}>Žádám s někým z domácnosti</option>
           </select>
         </label>
         <label>
@@ -107,6 +105,12 @@ export const HypoCalculator = () => {
           Součet průměrných <strong>příjmů</strong> žadatelů{' '}
           <input type="number" min={0} />
         </label>
+      </div>
+      <div className="form-costs__container-minimum">
+        <p>
+          <strong>Výše splátky nové hypotéky může být</strong>
+        </p>
+        <p className="form-costs__minimum">{` 0 Kč`}</p>
       </div>
     </>
   );

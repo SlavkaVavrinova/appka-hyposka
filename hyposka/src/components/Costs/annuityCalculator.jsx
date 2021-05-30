@@ -115,7 +115,10 @@ export const AnnuityCalculator = () => {
           />
         </label>
 
-        <span>výše splátky: {Math.trunc(payment)}</span>
+        <div className="form-costs__container-minimum">
+          <strong>Výše splátky nové hypotéky:</strong>
+          <p className="form-costs__minimum"> {Math.trunc(payment)}</p>
+        </div>
 
         <button className="annuity__plan" onClick={() => setPlan(!plan)}>
           Zobrazit splátky

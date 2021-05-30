@@ -22,3 +22,9 @@ label {
 .required {
   color: red;
 }
+
+.right {
+  text-align: right;
+  padding: 0;
+  margin: 0;
+}

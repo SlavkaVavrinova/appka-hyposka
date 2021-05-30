@@ -13,26 +13,31 @@ export const FormContact = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    db.collection('kontakt')
-      .add({
-        name: name,
-        email: email,
-        message: message,
-        datumVytvoreni: firebase.firestore.FieldValue.serverTimestamp(),
-      })
 
-      .then(() => {
-        setResponse(
-          `Formulář byl úspěšně odeslán, odpověď dorazí na email: ${email}`,
-        );
-      })
-      .catch(() => {
-        setResponse(`Jejda, něco se nepovedlo. Zadej znovu.`);
-      });
+    if (responseEmail && name && message) {
+      db.collection('kontakt')
+        .add({
+          name: name,
+          email: email,
+          message: message,
+          datumVytvoreni: firebase.firestore.FieldValue.serverTimestamp(),
+        })
 
-    setName('');
-    setEmail('');
-    setMessage('');
+        .then(() => {
+          setResponse(
+            `Formulář byl úspěšně odeslán, odpověď dorazí na email: ${email}`,
+          );
+        })
+        .catch(() => {
+          setResponse(`Jejda, něco se nepovedlo. Zadej znovu.`);
+        });
+
+      setName('');
+      setEmail('');
+      setMessage('');
+    } else {
+      setResponse('Doplňte chybějící požadované údaje');
+    }
   };
 
   const [responseEmail, setResponseEmail] = useState(true);
@@ -46,17 +51,24 @@ export const FormContact = () => {
   return (
     <>
       <form className="form-contact" onSubmit={handleSubmit}>
-        <label className="form-contact__name">Jméno: </label>
+        <p className="required right">* Povinné údaje</p>
+        <label className="form-contact__name">
+          Jméno <span className="required">*</span>
+        </label>
         <input value={name} onChange={(event) => setName(event.target.value)} />
         <div className="valid">
-          <label className="form-contact__email">Email: </label>
+          <label className="form-contact__email">
+            Email <span className="required">*</span>
+          </label>
           <span> {validEmail}</span>
         </div>
         <input
           value={email}
           onChange={(event) => setEmail(event.target.value)}
         />
-        <label className="form-map__message">Vzkaz či doporučení: </label>
+        <label className="form-map__message">
+          Vzkaz či rada <span className="required">*</span>{' '}
+        </label>
         <textarea
           value={message}
           onChange={(event) => setMessage(event.target.value)}

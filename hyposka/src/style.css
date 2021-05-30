@@ -15,6 +15,7 @@ nejsvětlejší #CAD8D6
 
 červená #4E1A23
        světlá častější #632E37
+       854E58
 
 kurziva nadpis??? Great Vibes
        */
@@ -25,15 +26,15 @@ html {
 body {
   background-color: #ffffff;
   font-family: 'Montserrat', 'Arial', sans-serif;
-  line-height: 1.5;
+  line-height: 1.2;
   text-align: justify;
   margin: 0;
+  font-size: 75%;
 }
 
 main {
-  margin: 30px;
+  margin: 10px;
 }
-
 h1 {
   font-size: 150%;
   margin: 0;
@@ -44,7 +45,7 @@ h1,
 h2,
 h3 {
   color: #0c3932;
-  text-align: left;
+  text-align: center;
   /*font-family: 'Roboto', 'Montserrat', sans-serif;*/
 }
 
@@ -64,34 +65,26 @@ h3 {
 }
 
 button {
-  width: 15vw;
+  width: 60vw;
   padding: 1rem;
+  margin-bottom: 1rem;
   font-size: 100%;
   text-transform: uppercase;
-  border: 5px solid #0c3932;
+  border: 2px solid #0c3932;
   border-radius: 5px;
   background-color: #632e37;
   color: #ffffff;
+  margin-right: 20%;
+  margin-left: 20%;
 }
 a {
   text-decoration: none;
 }
-.button__small {
-  width: 10vw;
-}
-
-.button__small:hover {
-  width: 10vw;
-}
 
 button:hover {
-  width: 15vw;
-  padding: 1rem;
-  font-size: large;
-  text-transform: uppercase;
-  border: 5px solid #0c3932;
-  border-radius: 5px;
-  background-color: #632e37;
+  width: 60vw;
+  border: 2px solid #0c3932;
+  background-color: #854e58;
   box-shadow: 2px 2px 5px #0c3932;
 }
 
@@ -130,4 +123,38 @@ button:hover {
   align-self: center;
   font-size: 90%;
   font-style: italic;
+}
+@media (min-width: 540px) {
+  body {
+    background-color: #ffffff;
+
+    line-height: 1.5;
+  }
+  main {
+    margin: 30px;
+  }
+  button {
+    width: 20vw;
+    padding: 1rem;
+    font-size: 100%;
+    text-transform: uppercase;
+    border: 5px solid #0c3932;
+    border-radius: 5px;
+    background-color: #632e37;
+    color: #ffffff;
+  }
+  .button__small {
+    width: 30vw;
+  }
+
+  .button__small:hover {
+    width: 30vw;
+  }
+  .button__small {
+    width: 60%;
+  }
+
+  .button__small:hover {
+    width: 10vw;
+  }
 }
