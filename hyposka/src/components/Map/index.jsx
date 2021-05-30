@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FormMap } from './../FormMap/index';
 import { MapBox } from './../MapBox/index';
 
 import './style.css';
 
 export const Map = () => {
+  const [viewPerson, setViewPerson] = useState({});
+
   return (
     <>
       <main>
@@ -32,7 +34,23 @@ export const Map = () => {
         </p>
         <h2></h2>
 
-        <MapBox />
+        <MapBox
+          viewPerson={(person) => {
+            setViewPerson(person);
+          }}
+        />
+
+        {viewPerson && (
+          <>
+            <h2>{viewPerson.name}</h2>
+            <p>{viewPerson.select}</p>
+            <p>{viewPerson.phone}</p>
+            <p>{viewPerson.email}</p>
+            <p>{viewPerson.address}</p>
+            <p>{viewPerson.town}</p>
+            <p>{viewPerson.comment}</p>
+          </>
+        )}
 
         <h3>Zadej poradce</h3>
         <p>Jsi spokojen se zpracovatelem hypotéky. Zadej svou zkušenost</p>

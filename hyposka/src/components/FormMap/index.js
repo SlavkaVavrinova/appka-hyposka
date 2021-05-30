@@ -15,6 +15,7 @@ export const FormMap = () => {
 
   const [response, setResponse] = useState('');
   const [coordinates, setCoordinates] = useState([]);
+  const [town, setTown] = useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -26,6 +27,7 @@ export const FormMap = () => {
           select: select,
           email: email,
           address: address,
+          town: town,
           comment: comment,
           phone: phone,
           datumVytvoreni: firebase.firestore.FieldValue.serverTimestamp(),
@@ -108,6 +110,7 @@ export const FormMap = () => {
           latitude: suggestData.data.latitude,
           longitude: suggestData.data.longitude,
         });
+        setTown(suggestData.data.secondRow);
       }, 0);
     });
   }, []);

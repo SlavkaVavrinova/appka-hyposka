@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import ReactMapGL, { Marker, Popup } from 'react-map-gl';
 import bankPoint from './img/bankPoint.svg';
 import consultantPoint from './img/consultantPoint.svg';
 
-export const MapBox = () => {
+import { db } from './../../db';
+import firebase from 'firebase/app';
+
+export const MapBox = (props) => {
   const [viewport, setViewport] = useState({
     latitude: 48.9747357,
     longitude: 14.474285,
@@ -17,6 +20,25 @@ export const MapBox = () => {
     longitude: 14.473364057153596,
   };
 
+  const [persons, setPersons] = useState([]);
+  +useEffect(() => {
+    const nahrajOsobu = db.collection('poradci').onSnapshot((snaptshot) => {
+      // Tady jsme dostali data
+      const dokumenty = snaptshot.docs;
+      const dataPerson = dokumenty.map((dokument) => {
+        const data = dokument.data();
+        data.id = dokument.id;
+        data.ikonka = data.typ === 'Bankéř/ka' ? bankPoint : consultantPoint;
+
+        console.log(data);
+        return data;
+      });
+      setPersons(dataPerson);
+    });
+    return nahrajOsobu;
+  }, []);
+
+  /*
   const persons = [
     {
       id: 1,
@@ -50,7 +72,7 @@ export const MapBox = () => {
       typ: 'Finanční poradce/poradkyně',
       ikonka: consultantPoint,
     },
-  ];
+  ];*/
   const [otevrenyPopup, setOtevrenyPopup] = useState(null);
 
   const [filtr, setFiltr] = useState('Vše');
@@ -108,7 +130,13 @@ export const MapBox = () => {
                   }}
                   className="mapa__marker"
                 >
-                  <img src={person.ikonka} width={50} height={50} alt="" />
+                  <img
+                    onClick={props.viewPerson.bind(null, person)}
+                    src={person.ikonka}
+                    width={50}
+                    height={50}
+                    alt=""
+                  />
                 </div>
               </Marker>
               {otevrenyPopup === person.id ? (
@@ -120,8 +148,8 @@ export const MapBox = () => {
                     setOtevrenyPopup(null);
                   }}
                 >
-                  <h2>{person.nazev}</h2>
-                  <p>{person.typ}</p>
+                  <h2>{person.name}</h2>
+                  <p>{person.select}</p>
                 </Popup>
               ) : null}
             </React.Fragment>
