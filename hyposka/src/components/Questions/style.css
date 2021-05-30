@@ -1,20 +1,29 @@
-.card {
+* {
+  box-sizing: border-box;
+}
+
+.id {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-.question {
-  flex-basis: auto;
-  align-self: auto;
+span.question {
+  font-weight: bold;
+  justify-content: space-between;
+
+  padding: 5px;
+  margin: 10px;
 }
 
-.answer {
-  flex-basis: auto;
-  align-content: auto;
-  order: 2;
+span.answer {
+  flex-direction: row;
+
+  margin: 10px;
 }
-.answer__img {
+img.answer__img {
   width: 10vw;
+  align-items: flex-end;
+  overflow: auto;
 }

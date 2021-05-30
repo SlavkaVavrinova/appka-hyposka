@@ -5,17 +5,23 @@ export const Questions = (props) => {
   return (
     <>
       <div className="id">
-        <div className={props.key}></div>
-        <div className="question">
-          <div className={props.title}></div>
-          <div className="answer">
-            <div className={props.textA}></div>
-            <div className={props.textB}></div>
+        <span className={props.key}></span>
+        <span className="question">{props.title}</span>
+        <span className="answer">{props.textA}</span>
 
-            <img className="answer__img" src={props.photo} />
-          </div>
-        </div>
+        <span className="answer">{props.textB}</span>
       </div>
+
+      <img className="answer__img" src={props.photo} />
     </>
   );
 };
+
+/*const answered = (props) => {
+  let itemClass = null;
+  if (props.selected) {
+    itemClass = 'item item--selected';
+  } else {
+    itemClass = 'item';
+  }
+*/
