@@ -1,47 +1,54 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './style.css';
 import { Link } from 'react-router-dom';
 
 import logo from './img/logo.svg';
 
 export const Navigation = () => {
+  const [isMenuOpened, setisMenuOpened] = useState(false);
+
+  const showMenu = () => {
+    setisMenuOpened(!isMenuOpened);
+  };
+
   return (
     <>
-      <nav>
-        <Link to="/">
-          <img className="logo" src={logo} alt="logo" />{' '}
-        </Link>
+      <nav className="main-nav">
+        <div className="main-nav__logo">
+          <Link to="/">
+            <img className="logo" src={logo} alt="logo" />
+          </Link>
+        </div>
+        <div className="navigation__mobile">
+          <button
+            id="nav-btn"
+            onClick={showMenu}
+            className={isMenuOpened ? 'hamburger hamburger-open' : 'hamburger'}
+          ></button>
+          {isMenuOpened ? (
+            <>
+              <Link to="/">Domu</Link>
+              <Link to="/kviz">Kvíz</Link>
 
-        <ul className="main-nav">
-          <li>
-            <Link className="main-nav__link" to="/kviz">
-              Kvíz
-            </Link>
-          </li>
-          <li>
-            <Link className="main-nav__link" to="/mapa">
-              Mapa
-            </Link>
-          </li>
-          <li>
-            <Link className="main-nav__link" to="/bonus">
-              Bonusy
-            </Link>
-          </li>
-          <li>
-            <Link className="main-nav__link" to="/kontakt">
-              Kontakty
-            </Link>
-          </li>
-        </ul>
+              <Link to="/mapa">Mapa</Link>
+
+              <Link to="/bonus">Bonusy</Link>
+
+              <Link to="/kontakt">Kontakt</Link>
+            </>
+          ) : null}
+        </div>
+
+        <div className="navigation__large">
+          <Link to="/kviz">Kvíz</Link>
+
+          <Link to="/mapa">Mapa</Link>
+
+          <Link to="/bonus">Bonusy</Link>
+
+          <Link to="/kontakt">Kontakt</Link>
+        </div>
       </nav>
     </>
   );
 };
-
-/*V menu i appka, jen přidat nahoru
- <li>
-          <Link className="main-nav__link" to="/hypoteka">
-              Appka HYPOŠKA
-            </Link>
-          </li>*/

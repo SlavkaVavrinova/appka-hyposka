@@ -1,33 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './style.css';
 
-import pictureBuyHouse from './img/buy-house.jpg';
-
-import pictureBuyLand from './img/buy-land.jpg';
-import pictureBuyFlat from './img/buy-flat.jpg';
-import pictureBuyCottage from './img/buy-cottage.jpg';
-import pictureBuyPension from './img/buy-pension.jpg';
-import pictureReconstruction from './img/reconstruction.jpg';
-
-import build from './img/build.jpg';
-import refinancing from './img/refinancing.jpg';
-import ruin from './img/ruin.jpg';
-
-import { Card } from '../Card/index';
-import { TextBuyHouse } from './Text/TextBuyHouse';
-import { TextBuyLand } from './Text/TextBuyLand';
-import { TextBuyFlat } from './Text/TextBuyFlat';
-import { TextBuyCottage } from './Text/TextBuyCottage';
-import { TextBuyPension } from './Text/TextBuyPension';
-import { TextRefinancing } from './Text/TextRefinancing';
-import { TextBuild } from './Text/TextBuild';
-import { TextReconstruction } from './Text/TextReconstruction';
-import { TextBuyWithReconstruction } from './Text/TextBuyWithReconstruction';
-
-export const Mortgage = (props) => {
+export const Print = () => {
   return (
     <>
+      <p>Ňáký text</p>
+      {/* 
       <main>
         <h1>Účely</h1>
         <p>Jaký je tvůj plán? Jak hypotéka pomůže? Vyber si:</p>
@@ -106,8 +83,9 @@ export const Mortgage = (props) => {
           text="Naskytla se skvělá koupě starší nemovitosti, jen nutně potřebuje rekonstrukci"
         >
           <TextBuyWithReconstruction />
-        </Card>
+
       </main>
+      </Card>*/}
     </>
   );
 };
