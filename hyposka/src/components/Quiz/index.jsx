@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import cx from 'classnames/bind';
 import { Questions } from '../Questions/questions.jsx';
 import './style.css';
@@ -10,6 +10,11 @@ import House from './img/house.svg';
 
 export const Quiz = () => {
   const [activeQuestion, setActiveQuestion] = useState(1);
+  const increment = () => {
+    if (activeQuestion <= 5) {
+      setActiveQuestion(activeQuestion + 1);
+    }
+  };
   return (
     <>
       <main>
@@ -25,7 +30,7 @@ export const Quiz = () => {
           textA="Hypoteční úvěr na bydlení."
           textB="Úvodní fáze při hypnóze."
           photo={Ruin}
-          goAhead={() => setActiveQuestion(activeQuestion + 1)}
+          goAhead={increment}
         ></Questions>
         <Questions
           className={cx({ 'is-active': activeQuestion === 2 })}
@@ -34,7 +39,7 @@ export const Quiz = () => {
           title="Co je to fixace?"
           textA="Doba, pro kterou bude platit sjednaný úrok."
           textB="Když muž potká ženu, tak mezi nimi vznikne fixace."
-          goAhead={() => setActiveQuestion(activeQuestion + 1)}
+          goAhead={increment}
         ></Questions>
         <Questions
           className={cx({ 'is-active': activeQuestion === 3 })}
@@ -43,7 +48,7 @@ export const Quiz = () => {
           title="Jaká fixace úroku je nejlepší?"
           textA="Variabilní."
           textB="Čím delší, tím lepší."
-          goAhead={() => setActiveQuestion(activeQuestion + 1)}
+          goAhead={increment}
         ></Questions>
         <Questions
           className={cx({ 'is-active': activeQuestion === 4 })}
@@ -52,7 +57,7 @@ export const Quiz = () => {
           title="Kde najdeš nejlevnější hypotéku?"
           textA="Každá banka má v různý moment jinou sazbu. Je tedy buď na tobě si banky obejít nebo si sehnat nějakého finančního poradce"
           textB="Zeptám se souseda či kamaráda."
-          goAhead={() => setActiveQuestion(activeQuestion + 1)}
+          goAhead={increment}
         ></Questions>
         <Questions
           className={cx({ 'is-active': activeQuestion === 5 })}
@@ -61,7 +66,16 @@ export const Quiz = () => {
           title="Co je zástavní smlouva?"
           textA="Smlouva, která se vystaví po podpisu smlouvy o hypotéce."
           textB="Když zastavím na zákazu zastavení, tak mi ji vystaví policie ČR, aby mi pomohla a ochránila mě."
-          goAhead={() => setActiveQuestion(activeQuestion + 1)}
+          goAhead={increment}
+        ></Questions>
+
+        <Questions
+          className={cx({ 'is-active': activeQuestion === 5 })}
+          key="Question6"
+          title="Gratulujeme! Obstál jsi. Jsi na dobré cestě k vysněnému bydlení"
+          textA=""
+          textB=""
+          goAhead={increment}
         ></Questions>
       </main>
     </>

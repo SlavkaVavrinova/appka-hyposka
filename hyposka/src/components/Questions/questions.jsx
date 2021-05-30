@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import cx from 'classnames/bind';
 import './style.css';
 
@@ -15,14 +15,15 @@ export const Questions = (props) => {
       <div className={cx('id', props.className)}>
         <span className={props.key}></span>
         <span className="question">{props.title}</span>
+
         <span className="answer" onClick={handleRightAnswer}>
           {props.textA}
         </span>
         <span className="answer" onClick={handleWrongAnswer}>
           {props.textB}
         </span>
+        <img className="answer__img" src={props.photo} />
       </div>
-      <img className="answer__img" src={props.photo} />
     </>
   );
 };
