@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
 
 export const HypoCalculator = () => {
-  const [samostatnaOsoba, setSamostatnaOsoba] = useState(0);
-  const [prvniOsoba, setPrvniOsoba] = useState(0);
+  const [osoba, setOsoba] = useState(3860);
+
   const [pocetOsob, setPocetOsob] = useState(0);
   const [pocet6Deti, setPocet6Deti] = useState(0);
   const [pocet15Deti, setPocet15Deti] = useState(0);
   const [pocet26Deti, setPocet26Deti] = useState(0);
 
+  console.log(pocetOsob);
+
   const livingMinimum =
-    samostatnaOsoba +
-    prvniOsoba +
+    osoba +
     pocetOsob * 3200 +
     pocet6Deti * 1970 +
     setPocet15Deti * 2420 +
@@ -25,30 +26,24 @@ export const HypoCalculator = () => {
       </p>
 
       <h3>Životní minimum rodiny</h3>
+
       <div className="form-costs">
-        <label>
-          O hypotéku žádám sám:
-          <input
-            type="radio"
+        <label className="form-cost__select">
+          Vyber kolik osob bude žádat o hypotéku
+          <select
             name="person"
-            value={3860}
+            value={osoba}
             onChange={(event) => {
-              setSamostatnaOsoba(Number(event.target.value));
+              setOsoba(Number(event.target.value));
             }}
-            checked="checked"
-          />
+          >
+            <option value={3860}>O hypotéku žádám sám</option>
+            <option value={3550}>
+              O hypotéku žádám s někým z mé domácnosti:
+            </option>
+          </select>
         </label>
-        <label>
-          O hypotéku žádám s někým z mé domácnosti:
-          <input
-            type="radio"
-            name="person"
-            value={3550}
-            onChange={(event) => {
-              setPrvniOsoba(Number(event.target.value));
-            }}
-          />
-        </label>
+
         <label>
           Kolik dalších osob ze společné domácnosti bude o hypotéku žádat:
           <input
@@ -61,7 +56,6 @@ export const HypoCalculator = () => {
             }}
           />
         </label>
-
         <label>
           Kolik je v domácnosti dětí do 6 let:
           <input
@@ -74,7 +68,6 @@ export const HypoCalculator = () => {
             }}
           />
         </label>
-
         <label>
           Kolik je v domácnosti dětí od 6 do 15 let:
           <input
@@ -87,7 +80,6 @@ export const HypoCalculator = () => {
             }}
           />
         </label>
-
         <label>
           Kolik je v domácnosti dětí 15 - 26 let (nezaopatřených):
           <input
