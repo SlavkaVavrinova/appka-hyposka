@@ -14,6 +14,7 @@ export const FormMap = () => {
   const [comment, setComment] = useState('');
 
   const [response, setResponse] = useState('');
+  const [coordinates, setCoordinates] = useState([]);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -28,6 +29,8 @@ export const FormMap = () => {
           comment: comment,
           phone: phone,
           datumVytvoreni: firebase.firestore.FieldValue.serverTimestamp(),
+          latitude: coordinates.latitude,
+          longitude: coordinates.longitude,
         })
 
         .then(() => {
@@ -100,7 +103,11 @@ export const FormMap = () => {
     suggest.addListener('suggest', (suggestData) => {
       // vyber polozky z naseptavace
       setTimeout(function () {
-        alert(JSON.stringify(suggestData, null, 4));
+        /*alert(JSON.stringify(suggestData, null, 4));*/
+        setCoordinates({
+          latitude: suggestData.data.latitude,
+          longitude: suggestData.data.longitude,
+        });
       }, 0);
     });
   }, []);

@@ -14,8 +14,8 @@ export const HypoCalculator = () => {
     osoba +
     pocetOsob * 3200 +
     pocet6Deti * 1970 +
-    setPocet15Deti * 2420 +
-    setPocet26Deti * 2770;
+    pocet15Deti * 2420 +
+    pocet26Deti * 2770;
 
   return (
     <>
@@ -24,9 +24,7 @@ export const HypoCalculator = () => {
         Žádáš s manželkou/manželem, partnerkou/partnerem - příjmy sečti, výdaje
         také
       </p>
-
       <h3>Životní minimum rodiny</h3>
-
       <div className="form-costs">
         <label className="form-cost__select">
           Vyber kolik osob bude žádat o hypotéku
@@ -39,13 +37,12 @@ export const HypoCalculator = () => {
           >
             <option value={3860}>O hypotéku žádám sám</option>
             <option value={3550}>
-              O hypotéku žádám s někým z mé domácnosti:
+              O hypotéku žádám s někým z mé domácnosti
             </option>
           </select>
         </label>
-
         <label>
-          Kolik dalších osob ze společné domácnosti bude o hypotéku žádat:
+          Kolik dalších osob ze společné domácnosti bude o hypotéku žádat
           <input
             type="number"
             name="pocetOsob"
@@ -57,7 +54,7 @@ export const HypoCalculator = () => {
           />
         </label>
         <label>
-          Kolik je v domácnosti dětí do 6 let:
+          Kolik je v domácnosti dětí do 6 let
           <input
             type="number"
             name="pocet6Deti"
@@ -69,7 +66,7 @@ export const HypoCalculator = () => {
           />
         </label>
         <label>
-          Kolik je v domácnosti dětí od 6 do 15 let:
+          Kolik je v domácnosti dětí od 6 do 15 let
           <input
             type="number"
             name="pocet15Deti"
@@ -81,7 +78,7 @@ export const HypoCalculator = () => {
           />
         </label>
         <label>
-          Kolik je v domácnosti dětí 15 - 26 let (nezaopatřených):
+          Kolik je v domácnosti dětí 15 - 26 let (nezaopatřených)
           <input
             type="number"
             name="pocet26Deti"
@@ -93,20 +90,24 @@ export const HypoCalculator = () => {
           />
         </label>
       </div>
-      <p>
-        <strong>Vaše životní minimum je:</strong>
-      </p>
-      <p className="livingMinimum"> {livingMinimum}</p>
+      <div className="form-costs__container-minimum">
+        <p>
+          <strong>Celkové životní minimum je</strong>
+        </p>
+        <p className="form-costs__minimum">{`${livingMinimum} Kč`}</p>
+      </div>
 
-      <label>
-        Součet pravidelných <strong>výdajů</strong> žadatelů:
-        <input type="number" min={0} />
-      </label>
+      <div className="form-costs">
+        <label>
+          Součet pravidelných <strong>výdajů</strong> žadatelů{' '}
+          <input type="number" min={0} />
+        </label>
 
-      <label>
-        Součet průměrných <strong>příjmů</strong> žadatelů
-        <input type="number" min={0} />
-      </label>
+        <label>
+          Součet průměrných <strong>příjmů</strong> žadatelů{' '}
+          <input type="number" min={0} />
+        </label>
+      </div>
     </>
   );
 };

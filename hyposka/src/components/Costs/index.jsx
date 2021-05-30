@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { HypoCalculator } from './hypoCalculator';
+import { AnnuityCalculator } from './annuityCalculator';
 
 import './style.css';
 
@@ -32,7 +33,7 @@ export const Costs = () => {
           předem zamítl. Chceš si vše zjistit předem, aby výpis z bankovního
           registru nebyl překvapení? Nech si zaslat výpisy předem. V bance ho
           ukážeš a ona ti může rovnou sdělit, jestli je šance o hypotéku žádat.{' '}
-        </p>{' '}
+        </p>
         <p>Zde najdeš více: </p>
         <ul>
           <li>
@@ -73,6 +74,7 @@ export const Costs = () => {
             <button>Pokračovat</button>
           </Link>
         </div>
+        <AnnuityCalculator />
       </main>
     </>
   );

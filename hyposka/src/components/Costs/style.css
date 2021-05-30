@@ -3,6 +3,27 @@
   flex-direction: column;
 }
 
-.livingMinimum {
+.form-costs__minimum {
   color: #632e37;
+  font-size: 200%;
+  padding-left: 1rem;
+}
+
+.annuity__input {
+  display: flex;
+  flex-direction: column;
+}
+
+.annuity__plan {
+  align-self: flex-end;
+}
+.annuity__input input,
+.form-costs input,
+.form-costs select {
+  margin-left: 1rem;
+}
+
+.form-costs__container-minimum {
+  display: flex;
+  align-items: center;
 }
