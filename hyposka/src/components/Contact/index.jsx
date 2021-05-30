@@ -5,7 +5,7 @@ import { ContactCard } from '../ContactCard';
 import { FormContact } from './../FormContact/index';
 
 import slavka from './img/slavka.jpg';
-import verca from './img/veru.png';
+import verca from './img/veru.jpg';
 import email from './img/email.svg';
 import github from './img/git.svg';
 import './style.css';

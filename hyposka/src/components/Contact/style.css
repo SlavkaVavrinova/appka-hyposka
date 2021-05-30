@@ -1,6 +1,7 @@
 .contact {
   display: flex;
   align-items: center;
+  height: 3rem;
 }
 
 .email {

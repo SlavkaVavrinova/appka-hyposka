@@ -13,7 +13,6 @@ export const Card = (props) => {
     <div className="card">
       <div className="container">
         <div className="container__left-side">
-          <img className="dot" src={dot} alt="Tečka" />
           <img className="container__photo" src={props.photo} alt={props.alt} />
         </div>
         <div className="container__right-side">
