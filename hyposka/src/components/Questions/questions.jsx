@@ -16,12 +16,3 @@ export const Questions = (props) => {
     </>
   );
 };
-
-/*const answered = (props) => {
-  let itemClass = null;
-  if (props.selected) {
-    itemClass = 'item item--selected';
-  } else {
-    itemClass = 'item';
-  }
-*/
