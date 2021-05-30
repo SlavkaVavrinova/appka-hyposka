@@ -2,8 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './style.css';
 
-import dot from './img/dot.svg';
-
 import mortgage from './img/object.svg';
 import income from './img/income.svg';
 import costs from './img/costs.svg';
@@ -50,7 +48,6 @@ export const Home = () => {
         </Link>
         <div className="home-container">
           <div className="home-container__card">
-            <img className="dot__home" src={dot} alt="Tečka" />
             <h2>Kvíz</h2>
             <div className="home-container__card-in">
               <img src={quiz} alt="Kvíz" />
@@ -62,7 +59,6 @@ export const Home = () => {
           </div>
 
           <div className="home-container__card">
-            <img className="dot__home" src={dot} alt="Tečka" />
             <h2>Kde to umí</h2>
             <div className="home-container__card-in">
               <img src={cr} alt="Mapa České Republiky" />
@@ -74,7 +70,6 @@ export const Home = () => {
           </div>
 
           <div className="home-container__card">
-            <img className="dot__home" src={dot} alt="Tečka" />
             <h2>Bonusy</h2>
             <div className="home-container__card-in">
               <img src={bonus} alt="Dárek" />
