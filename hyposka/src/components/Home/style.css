@@ -1,6 +1,14 @@
 .conteiner__img {
   display: flex;
-  margin: 30px;
+  flex-direction: column;
+  margin: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteiner__img div {
+  text-align: center;
+  align-items: center;
 }
 
 .conteiner__img img {
@@ -23,6 +31,22 @@
 }
 
 @media screen and (min-width: 768px) {
+  .conteiner__img {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .conteiner__img div {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+    align-items: center;
+  }
+  .conteiner__img img {
+    width: 100%;
+  }
+
   .home-container {
     display: flex;
     margin: 30px;

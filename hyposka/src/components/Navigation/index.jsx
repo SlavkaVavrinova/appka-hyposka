@@ -21,7 +21,6 @@ export const Navigation = () => {
         </div>
         <div className="navigation__mobile">
           <button
-            id="nav-btn"
             onClick={showMenu}
             className={isMenuOpened ? 'hamburger hamburger-open' : 'hamburger'}
           ></button>

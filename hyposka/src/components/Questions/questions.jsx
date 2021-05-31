@@ -7,22 +7,28 @@ export const Questions = (props) => {
     props.goAhead();
   };
   const handleWrongAnswer = (event) => {
-    alert('Zkus to znovu');
+    alert(
+      'Špatná odpověď. Že jen zkoušíš, co se stane, když odpovíš špatně? Odpovídej znovu',
+    );
   };
 
   return (
     <>
       <div className={cx('id', props.className)}>
+        <span className="result">{props.result}</span>
+        <img className="answer__img" src={props.photo} />
+      </div>
+      <div className={cx('id', props.className)}>
         <span className={props.key}></span>
         <span className="question">{props.title}</span>
-
+      </div>
+      <div className={cx('id', props.className)}>
         <span className="answer" onClick={handleRightAnswer}>
           {props.textA}
         </span>
         <span className="answer" onClick={handleWrongAnswer}>
           {props.textB}
         </span>
-        <img className="answer__img" src={props.photo} />
       </div>
     </>
   );

@@ -12,9 +12,13 @@
   height: 4rem;
   background-color: #0c3932;
   justify-content: space-between;
+  align-items: center;
 }
 
 .main-nav__logo {
+  flex: 0 0 20%;
+}
+.navigation__mobile {
   flex: 0 0 20%;
 }
 .navigation__large {
@@ -23,8 +27,7 @@
 
 .hamburger {
   display: block;
-  height: 70%;
-  margin: 10px 10px 0 0;
+  height: 3rem;
   border: none;
   background-image: url('./img/menu.svg');
   background-size: contain;
@@ -34,6 +37,7 @@
 }
 .hamburger:hover {
   background-color: #0c3932;
+  height: 3.2rem;
 }
 .navigation__mobile a {
   display: flex;

@@ -34,20 +34,35 @@ export const Home = () => {
           Nečekej radu, kam si dojít pro nejnižší úrok.
           <strong> Já ti poskytnu informace</strong> na co se připravit, jak to
           proběhne, co vzít s sebou na první návštěvu banky a na co dát pozor.
-          <strong> Jsi připraven?</strong>
         </p>
-
+        <h3>Co tě v appce čeká?</h3>
         <div className="conteiner__img">
-          <img src={mortgage} alt="účel" />
-          <img src={income} alt="příjem" />
-          <img src={costs} alt="náklady" />
-          <img src={bank} alt="banka" />
+          <div>
+            <img src={mortgage} alt="účel" />
+            <h2>Zvolíš účel </h2>
+            <p>Získáš informace, co bude dokládáno právě k nemovitosti</p>
+          </div>
+          <div>
+            <img src={income} alt="příjem" />
+            <h2>Doložíš příjmy</h2>
+            <p>Získáš informace, jak bance doložíš příjmy které máš. </p>
+          </div>
+          <div>
+            <img src={costs} alt="náklady" />
+            <h2>Posoudíš výdaje</h2>
+            <p>Získáš informace k výdajům a koukneš na kalkulačky.</p>
+          </div>
+          <div>
+            <img src={bank} alt="banka" />
+            <h2>Banka/poradce</h2>
+            <p>Zjistíš, jak vybrat vhodného partnera pro hypotéku.</p>
+          </div>
         </div>
         <Link to="/hypoteka">
-          <button>vstoupit</button>
+          <button className="home-enter">vstoupit</button>
         </Link>
         <div className="home-container">
-          <div className="home-container__card">
+          <div className="home-container__card ">
             <h2>Kvíz</h2>
             <div className="home-container__card-in">
               <img src={quiz} alt="Kvíz" />
@@ -58,7 +73,7 @@ export const Home = () => {
             </Link>
           </div>
 
-          <div className="home-container__card">
+          <div className="home-container__card ">
             <h2>Kde to umí</h2>
             <div className="home-container__card-in">
               <img src={cr} alt="Mapa České Republiky" />
