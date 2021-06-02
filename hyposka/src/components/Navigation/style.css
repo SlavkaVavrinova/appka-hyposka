@@ -28,6 +28,9 @@
 .hamburger {
   display: block;
   height: 3rem;
+  width: 3rem;
+  margin: 0;
+  padding: 10px;
   border: none;
   background-image: url('./img/menu.svg');
   background-size: contain;

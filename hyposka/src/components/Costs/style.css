@@ -18,7 +18,7 @@
 }
 
 .annuity__plan {
-  align-self: flex-end;
+  align-items: center;
 }
 .annuity__input input,
 .form-costs input,
@@ -29,4 +29,10 @@
 .form-costs__container-minimum {
   display: flex;
   align-items: center;
+}
+
+@media (min-width: 540px) {
+  .annuity__plan {
+    align-self: flex-end;
+  }
 }

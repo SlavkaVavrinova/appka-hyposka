@@ -2,7 +2,7 @@
   background-image: url(./img/bannerMobil.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 0 10px 10px 10px;
+  padding: 0 15px;
 }
 
 .banner__h h1 {
@@ -38,9 +38,13 @@
 }
 
 .banner__button button {
-  width: 30%;
-  padding: 0.3rem 0;
-  margin-left: 40%;
+  width: 30vw;
+
+  margin-right: 40vw;
+  margin-left: 30vw;
+}
+.home-h {
+  color: #4e1a23;
 }
 
 @media (min-width: 540px) {

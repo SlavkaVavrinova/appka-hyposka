@@ -1,14 +1,10 @@
-.print {
-  height: 3rem;
-  width: 3rem;
+.text-center {
+  text-align: center;
 }
 
-.buttons-row {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.buttons-row__print {
-  display: flex;
-  align-items: center;
+@media (min-width: 540px) {
+  .buttons-row {
+    display: flex;
+    justify-content: flex-end;
+  }
 }

@@ -22,12 +22,14 @@ export const TextBuyPension = () => {
           </label>
           <input className="print" type="checkbox" />
         </div>
-        <Link to="/">
-          <button className="button__back ">Domů</button>
-        </Link>
-        <Link to="/prijem">
-          <button>Pokračovat</button>
-        </Link>
+        <div className="buttons-row__buttons">
+          <Link to="/">
+            <button className="button__back ">Domů</button>
+          </Link>
+          <Link to="/prijem">
+            <button className="button__forward">Pokračovat</button>
+          </Link>
+        </div>
       </div>
     </>
   );

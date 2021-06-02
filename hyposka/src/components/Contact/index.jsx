@@ -59,7 +59,7 @@ export const Contact = () => {
         >
           <Veru />
         </ContactCard>
-        <p>Máš pro nás radu? Napiš, budeme rády!</p>
+        <p className="text-center">Máš pro nás radu? Napiš, budeme rády!</p>
         <FormContact />
       </main>
     </>

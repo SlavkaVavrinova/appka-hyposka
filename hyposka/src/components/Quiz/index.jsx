@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router';
+
 import cx from 'classnames/bind';
 import { Questions } from '../Questions/questions.jsx';
 import './style.css';
@@ -15,6 +18,7 @@ export const Quiz = () => {
       setActiveQuestion(activeQuestion + 1);
     }
   };
+  const history = useHistory();
   return (
     <>
       <main>
@@ -73,7 +77,7 @@ export const Quiz = () => {
           ></Questions>
 
           <Questions
-            className={cx({ 'is-active': activeQuestion === 5 })}
+            className={cx({ 'is-active': activeQuestion === 6 })}
             key="Question6"
             title="Gratulujeme! Obstál jsi. Jsi na dobré cestě k vysněnému bydlení"
             photo={Castle}
@@ -81,6 +85,14 @@ export const Quiz = () => {
             textB=""
             goAhead={increment}
           ></Questions>
+        </div>
+        <div className="buttons-row__buttons">
+          <Link to="/kviz">
+            <button className="button__back">Hrát znovu</button>
+          </Link>
+          <Link to="/">
+            <button className="button__forward">Konec</button>
+          </Link>
         </div>
       </main>
     </>

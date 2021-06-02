@@ -35,26 +35,26 @@ export const Home = () => {
           <strong> Já ti poskytnu informace</strong> na co se připravit, jak to
           proběhne, co vzít s sebou na první návštěvu banky a na co dát pozor.
         </p>
-        <h3>Co tě v appce čeká?</h3>
+        <h2 className="home-h">Co tě v appce čeká?</h2>
         <div className="conteiner__img">
           <div>
             <img src={mortgage} alt="účel" />
-            <h2>Zvolíš účel </h2>
-            <p>Získáš informace, co bude dokládáno právě k nemovitosti</p>
+            <h3>1. Zvolíš účel </h3>
+            <p>Získáš informace, co bude dokládáno k nemovitosti</p>
           </div>
           <div>
             <img src={income} alt="příjem" />
-            <h2>Doložíš příjmy</h2>
-            <p>Získáš informace, jak bance doložíš příjmy které máš. </p>
+            <h3>2. Doložíš příjmy</h3>
+            <p>Získáš informace, jak bance doložíš příjmy </p>
           </div>
           <div>
             <img src={costs} alt="náklady" />
-            <h2>Posoudíš výdaje</h2>
+            <h3>3. Posoudíš výdaje</h3>
             <p>Získáš informace k výdajům a koukneš na kalkulačky.</p>
           </div>
           <div>
             <img src={bank} alt="banka" />
-            <h2>Banka/poradce</h2>
+            <h3>4. Banka/poradce</h3>
             <p>Zjistíš, jak vybrat vhodného partnera pro hypotéku.</p>
           </div>
         </div>

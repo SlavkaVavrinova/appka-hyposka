@@ -178,7 +178,7 @@ export const FormMap = () => {
           rows={5}
         />
 
-        <button>Odeslat</button>
+        <button className=" button__contact-and-map">Odeslat</button>
         <p>{response}</p>
       </form>
     </>

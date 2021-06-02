@@ -47,12 +47,14 @@ export const Employee = () => {
           </label>
           <input className="print" type="checkbox" />
         </div>
-        <Link to="/hypoteka">
-          <button className="button__back ">Zpět</button>
-        </Link>
-        <Link to="/vydaje">
-          <button>Pokračovat</button>
-        </Link>
+        <div className="buttons-row__buttons">
+          <Link to="/hypoteka">
+            <button className="button__back ">Zpět</button>
+          </Link>
+          <Link to="/vydaje">
+            <button className="button__forward">Pokračovat</button>
+          </Link>
+        </div>
       </div>
     </>
   );

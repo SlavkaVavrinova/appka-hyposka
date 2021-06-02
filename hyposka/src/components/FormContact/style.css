@@ -10,11 +10,13 @@
   box-shadow: 2px 2px 5px #0c3932;
 }
 
-.form-contact button {
-  margin-top: 1rem;
-  align-self: flex-end;
-}
-
 label {
   padding: 0.5rem 0;
+}
+
+@media (min-width: 540px) {
+  .form-contact button {
+    margin-top: 1rem;
+    align-self: flex-end;
+  }
 }

@@ -67,12 +67,14 @@ export const Costs = () => {
         </p>
         <HypoCalculator />
         <div className="buttons-row">
-          <Link to="/prijem">
-            <button className="button__back">Zpět</button>
-          </Link>
-          <Link to="/banka">
-            <button>Pokračovat</button>
-          </Link>
+          <div className="buttons-row__buttons">
+            <Link to="/prijem">
+              <button className="button__back">Zpět</button>
+            </Link>
+            <Link to="/banka">
+              <button className="button__forward">Pokračovat</button>
+            </Link>
+          </div>
         </div>
         <AnnuityCalculator />
       </main>

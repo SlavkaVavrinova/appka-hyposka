@@ -29,8 +29,10 @@ export const Mortgage = (props) => {
   return (
     <>
       <main>
-        <h1>Účely</h1>
-        <p>Jaký je tvůj plán? Jak hypotéka pomůže? Vyber si:</p>
+        <h1 className="text-center">Účely</h1>
+        <p className="text-center">
+          Jaký je tvůj plán? Jak hypotéka pomůže? Vyber si:
+        </p>
 
         <Card
           photo={pictureBuyHouse}
@@ -81,7 +83,7 @@ export const Mortgage = (props) => {
         >
           <TextRefinancing />
         </Card>
-        <p className="text-between">Nebo něco odvážnějšího?</p>
+        <p className="text-center">Nebo něco odvážnějšího?</p>
         <Card
           photo={build}
           alt="Výstavba"
@@ -98,7 +100,7 @@ export const Mortgage = (props) => {
         >
           <TextReconstruction />
         </Card>
-        <p className="text-between">Jsi fajnšmekr?</p>
+        <p className="text-center">Jsi fajnšmekr?</p>
         <Card
           photo={ruin}
           alt="Koupě s rekonstrukcí"

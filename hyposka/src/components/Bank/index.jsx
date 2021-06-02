@@ -131,12 +131,14 @@ export const Bank = () => {
         </p>
         <div className="buttons-row">
           <h3>Chci vytisknout závěrečný souhrn dokumentů:</h3>
-          <Link to="/tisk">
-            <button className="button__back">Tisk</button>
-          </Link>
-          <Link to="/">
-            <button>Ukončit</button>
-          </Link>
+          <div className="buttons-row__buttons">
+            <Link to="/tisk">
+              <button className="button__back">Tisk</button>
+            </Link>
+            <Link to="/">
+              <button className="button__forward">Ukončit</button>
+            </Link>
+          </div>
         </div>
       </main>
     </>
