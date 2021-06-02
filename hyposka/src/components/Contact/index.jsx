@@ -22,15 +22,20 @@ export const Contact = () => {
           title="Slávka Vavřinová"
           render={(data) => (
             <>
-              <div className="contact">
-                <img className="email" src={email} alt="E-mail" />
-                <p>slavka.vav@gmail.com</p>
-              </div>
-              <div className="contact">
-                <img className="github" src={github} alt="Logo GitHub" />
-                <a className="Slavka" href="https://github.com/SlavkaVavrinova">
-                  Slávka Vavřinová
-                </a>
+              <div className="contact__box">
+                <div className="contact">
+                  <img className="email" src={email} alt="E-mail" />
+                  <p>slavka.vav@gmail.com</p>
+                </div>
+                <div className="contact">
+                  <img className="github" src={github} alt="Logo GitHub" />
+                  <a
+                    className="Slavka"
+                    href="https://github.com/SlavkaVavrinova"
+                  >
+                    Slávka Vavřinová
+                  </a>
+                </div>
               </div>
             </>
           )}
@@ -44,15 +49,17 @@ export const Contact = () => {
           title="Verča Sípalová"
           render={(data) => (
             <>
-              <div className="contact">
-                <img className="email" src={email} alt="E-mail" />
-                <p>ver.kosik@gmail.com</p>
-              </div>
-              <div className="contact">
-                <img className="github" src={github} alt="Logo GitHub" />
-                <a className="Verca" href="https://github.com/VerS10">
-                  Verča Sípalová
-                </a>
+              <div className="contact__box">
+                <div className="contact">
+                  <img className="email" src={email} alt="E-mail" />
+                  <p>ver.kosik@gmail.com</p>
+                </div>
+                <div className="contact">
+                  <img className="github" src={github} alt="Logo GitHub" />
+                  <a className="Verca" href="https://github.com/VerS10">
+                    Verča Sípalová
+                  </a>
+                </div>
               </div>
             </>
           )}

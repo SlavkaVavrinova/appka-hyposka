@@ -28,7 +28,7 @@ export const MapBox = (props) => {
       const dataPerson = dokumenty.map((dokument) => {
         const data = dokument.data();
         data.id = dokument.id;
-        data.ikonka = data.typ === 'Bankéř/ka' ? bankPoint : consultantPoint;
+        data.ikonka = data.select === 'poradce' ? consultantPoint : bankPoint;
 
         console.log(data);
         return data;
@@ -111,7 +111,7 @@ export const MapBox = (props) => {
             if (filtr === 'Vše') {
               return true;
             }
-            if (filtr === person.typ) {
+            if (filtr === person.select) {
               return true;
             }
             return false;

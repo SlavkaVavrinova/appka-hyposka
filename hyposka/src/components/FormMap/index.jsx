@@ -7,7 +7,7 @@ import validator from 'validator';
 
 export const FormMap = () => {
   const [name, setName] = useState('');
-  const [select, setSelect] = useState('bankéř');
+  const [select, setSelect] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [address, setAddress] = useState('');

@@ -1,16 +1,24 @@
+.contact__box {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
 .contact {
   display: flex;
   align-items: center;
-  height: 3rem;
+  padding: 1rem 0;
+  height: 2rem;
 }
 
 .email {
-  height: 3rem;
+  height: 2rem;
   margin: 1rem;
 }
 
 .github {
-  height: 3rem;
+  height: 2rem;
   margin: 1rem;
 }
 

@@ -26,14 +26,16 @@ export const Navigation = () => {
           ></button>
           {isMenuOpened ? (
             <>
-              <Link to="/">Domu</Link>
-              <Link to="/kviz">Kvíz</Link>
+              <div className="links-mobile">
+                <Link to="/">Domu</Link>
+                <Link to="/kviz">Kvíz</Link>
 
-              <Link to="/mapa">Mapa</Link>
+                <Link to="/mapa">Mapa</Link>
 
-              <Link to="/bonus">Bonusy</Link>
+                <Link to="/bonus">Bonusy</Link>
 
-              <Link to="/kontakt">Kontakt</Link>
+                <Link to="/kontakt">Kontakt</Link>
+              </div>
             </>
           ) : null}
         </div>

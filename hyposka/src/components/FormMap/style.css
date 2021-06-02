@@ -1,10 +1,8 @@
 .form-map {
   display: flex;
   flex-direction: column;
-  width: 90%;
   padding: 30px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 30px 0;
   border-radius: 0 50px 50px 50px;
   border: 5px solid #0c3932;
   box-shadow: 2px 2px 5px #0c3932;
