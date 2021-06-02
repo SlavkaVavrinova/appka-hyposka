@@ -63,6 +63,9 @@
   }
   .banner__button button {
     width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+
     padding: 1rem;
     font-size: 100%;
     text-transform: uppercase;

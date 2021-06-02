@@ -76,7 +76,7 @@ export const MapBox = (props) => {
   const [otevrenyPopup, setOtevrenyPopup] = useState(null);
 
   const [filtr, setFiltr] = useState('Vše');
-
+  const bankéř = '';
   return (
     <>
       <ReactMapGL
@@ -107,49 +107,49 @@ export const MapBox = (props) => {
         }}
       >
         {persons
-          .filter((person) => {
+          .filter((data) => {
             if (filtr === 'Vše') {
               return true;
             }
-            if (filtr === person.select) {
+            if (filtr === data.select) {
               return true;
             }
             return false;
           })
-          .map((person) => (
-            <React.Fragment key={person.id}>
+          .map((data) => (
+            <React.Fragment key={data.id}>
               <Marker
-                latitude={person.latitude}
-                longitude={person.longitude}
+                latitude={data.latitude}
+                longitude={data.longitude}
                 offsetLeft={-25}
                 offsetTop={-50}
               >
                 <div
                   onClick={() => {
-                    setOtevrenyPopup(person.id);
+                    setOtevrenyPopup(data.id);
                   }}
                   className="mapa__marker"
                 >
                   <img
-                    onClick={props.viewPerson.bind(null, person)}
-                    src={person.ikonka}
+                    onClick={props.viewPerson.bind(null, data)}
+                    src={data.ikonka}
                     width={50}
                     height={50}
                     alt=""
                   />
                 </div>
               </Marker>
-              {otevrenyPopup === person.id ? (
+              {otevrenyPopup === data.id ? (
                 <Popup
                   offsetTop={-60}
-                  latitude={person.latitude}
-                  longitude={person.longitude}
+                  latitude={data.latitude}
+                  longitude={data.longitude}
                   onClose={() => {
                     setOtevrenyPopup(null);
                   }}
                 >
-                  <h2>{person.name}</h2>
-                  <p>{person.select}</p>
+                  <h2>{data.name}</h2>
+                  <p>{data.select}</p>
                 </Popup>
               ) : null}
             </React.Fragment>
@@ -162,8 +162,8 @@ export const MapBox = (props) => {
           onChange={(event) => setFiltr(event.target.value)}
         >
           <option>Vše</option>
-          <option>Bankéř/ka</option>
-          <option>Finanční poradce/poradkyně</option>
+          <option>bankéř</option>
+          <option>poradce</option>
         </select>
       </label>
     </>

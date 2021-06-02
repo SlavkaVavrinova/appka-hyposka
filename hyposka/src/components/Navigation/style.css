@@ -66,6 +66,13 @@
 }
 
 @media screen and (min-width: 768px) {
+  .logo {
+    height: 7rem;
+  }
+
+  .logo:hover {
+    height: 7.2rem;
+  }
   .navigation__large {
     display: flex;
     flex-direction: row;
@@ -73,6 +80,8 @@
     align-items: center;
     color: #ffffff;
     justify-content: flex-end;
+    font-size: 150%;
+    font-weight: 500;
   }
 
   .navigation__large a {

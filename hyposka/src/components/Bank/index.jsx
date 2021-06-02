@@ -129,8 +129,8 @@ export const Bank = () => {
           nemusí být kvůli tomu, že to je hodná banka, ale spíš ta, která nemusí
           hrát čistě.
         </p>
+        <p>Chci vytisknout závěrečný souhrn, který jsem si označil/a: </p>
         <div className="buttons-row">
-          <h3>Chci vytisknout závěrečný souhrn dokumentů:</h3>
           <div className="buttons-row__buttons">
             <Link to="/tisk">
               <button className="button__back">Tisk</button>

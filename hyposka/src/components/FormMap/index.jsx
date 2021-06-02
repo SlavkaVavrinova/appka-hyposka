@@ -7,7 +7,7 @@ import validator from 'validator';
 
 export const FormMap = () => {
   const [name, setName] = useState('');
-  const [select, setSelect] = useState('');
+  const [select, setSelect] = useState('bankéř');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [address, setAddress] = useState('');
@@ -126,9 +126,8 @@ export const FormMap = () => {
             value={select}
             onChange={(event) => setSelect(event.target.value)}
           >
-            <option value="bankéř" selected="selected">
-              Pracovník banky
-            </option>
+            <option value="bankéř">Pracovník banky</option>
+
             <option value="poradce">Finanční poradce</option>
           </select>
         </label>

@@ -74,7 +74,9 @@ button,
   width: 60%;
   margin: auto;
 }
-button:hover {
+
+button:hover,
+.home-enter {
   background: linear-gradient(45deg, #632e37, #1a4e45);
   box-shadow: inset 1px 1px 0 0 #cad8d6;
 }
@@ -164,12 +166,33 @@ a {
   .button__small:hover {
     width: 30vw;
   }
-  .button__small {
-    width: 60%;
+  .button__contact-and-map {
+    width: 30vw;
+  }
+  .button__contact-and-map:hover {
+    width: 30vw;
   }
 
-  .button__small:hover {
-    width: 10vw;
+  .button__back,
+  .button__forward {
+    width: 20vw;
+  }
+  .button__back:hover,
+  .button__forward:hover {
+    width: 20vw;
+  }
+  .buttons-row__print {
+    flex: 0 0 30%;
+    text-align: left;
+  }
+  .buttons-row {
+    display: flex;
+    align-content: space-between;
+  }
+  .buttons-row__buttons {
+    flex: 0 0 70%;
+    display: flex;
+    align-items: flex-end;
   }
 }
 

@@ -56,4 +56,19 @@
   .container__right-side button {
     align-self: flex-end;
   }
+  .container__button {
+    width: 20vw;
+    margin-right: 0;
+    margin-left: auto;
+  }
+  .container__button:hover {
+    width: 20vw;
+  }
+  .card-title__large {
+    display: block;
+    text-align: left;
+  }
+  .container__right-side {
+    padding: 30px;
+  }
 }
