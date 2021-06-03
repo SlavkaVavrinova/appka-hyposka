@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
+import ReactToPrint from 'react-to-print';
 import './style.css';
 
 import left from './img/left.svg';
@@ -91,7 +92,7 @@ export const AnnuityCalculator = () => {
       </tr>,
     );
   }
-
+  const componentRef = useRef();
   return (
     <>
       <div className="annuity__input">
@@ -118,6 +119,7 @@ export const AnnuityCalculator = () => {
           />
         </label>
       </div>
+
       <div className="form-costs__container-minimum">
         <strong>Výše splátky hypotéky:</strong>
         <p className="form-costs__minimum"> {`${Math.trunc(payment)} Kč`}</p>
@@ -125,36 +127,48 @@ export const AnnuityCalculator = () => {
       <button className="annuity__plan" onClick={() => setPlan(!plan)}>
         Zobrazit splátky
       </button>
-      {plan && (
-        <>
-          <table>
-            <thead>
-              <tr>
-                <th>Datum splátky</th>
-                <th>Zaplacený úrok</th>
-                <th>Úmor dluhu</th>
-                <th>Zůstatek úvěru</th>
-              </tr>
-            </thead>
-            <tbody>{rows}</tbody>
-          </table>
-          <div>
-            <div className="plan-arrows">
-              <span onClick={handleClick.bind(null, page - 1)}>
-                <img src={left} alt="Šipka vlevo" />
-              </span>
-              <span onClick={handleClick.bind(null, page + 1)}>
-                <img src={right} alt="Šipka vpravo" />
-              </span>
+      <div className="print-black" ref={componentRef}>
+        {plan && (
+          <>
+            <table>
+              <thead>
+                <tr>
+                  <th>Datum splátky</th>
+                  <th>Zaplacený úrok</th>
+                  <th>Úmor dluhu</th>
+                  <th>Zůstatek úvěru</th>
+                </tr>
+              </thead>
+              <tbody>{rows}</tbody>
+            </table>
+            <div className="noPrint">
+              <div>
+                <div className="plan-arrows">
+                  <span onClick={handleClick.bind(null, page - 1)}>
+                    <img src={left} alt="Šipka vlevo" />
+                  </span>
+                  <span onClick={handleClick.bind(null, page + 1)}>
+                    <img src={right} alt="Šipka vpravo" />
+                  </span>
+                </div>
+              </div>
+              <ReactToPrint
+                trigger={() => (
+                  <button className="button__print">
+                    Chci vytisknout stranu {page} splátkového plánu!
+                  </button>
+                )}
+                content={() => componentRef.current}
+              />
             </div>
             <div className="plan-pages">
               <span>
                 Strana {page}/{nrOfPages}
               </span>
             </div>
-          </div>
-        </>
-      )}
+          </>
+        )}
+      </div>
     </>
   );
 };

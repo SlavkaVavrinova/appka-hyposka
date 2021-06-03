@@ -20,7 +20,7 @@ import { Contact } from './components/Contact/index';
 import { Navigation } from './components/Navigation/index';
 
 import { SecondNav } from './components/SecondNav';
-import { Print } from './components/Print/index';
+import Example, { Print } from './components/Print/index';
 import ScrollToTop from './components/ScrollToTop';
 
 const App = () => {
