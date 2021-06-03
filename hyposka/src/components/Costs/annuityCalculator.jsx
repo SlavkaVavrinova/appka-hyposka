@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import './style.css';
 
+import left from './img/left.svg';
+import right from './img/right.svg';
+
 export const AnnuityCalculator = () => {
   const [nrOfMonth, setNrOfMonths] = useState(0);
   const [loanAmount, setLoanAmount] = useState(0);
@@ -114,35 +117,41 @@ export const AnnuityCalculator = () => {
             value={nrOfMonth}
           />
         </label>
-
-        <div className="form-costs__container-minimum">
-          <strong>Výše splátky nové hypotéky:</strong>
-          <p className="form-costs__minimum"> {Math.trunc(payment)}</p>
-        </div>
-
-        <button className="annuity__plan" onClick={() => setPlan(!plan)}>
-          Zobrazit splátky
-        </button>
       </div>
-
+      <div className="form-costs__container-minimum">
+        <strong>Výše splátky hypotéky:</strong>
+        <p className="form-costs__minimum"> {`${Math.trunc(payment)} Kč`}</p>
+      </div>
+      <button className="annuity__plan" onClick={() => setPlan(!plan)}>
+        Zobrazit splátky
+      </button>
       {plan && (
         <>
           <table>
             <thead>
               <tr>
-                <th>měsíc</th>
-                <th>úrok</th>
-                <th>úmor</th>
-                <th>zůstatek úvěru</th>
+                <th>Datum splátky</th>
+                <th>Zaplacený úrok</th>
+                <th>Úmor dluhu</th>
+                <th>Zůstatek úvěru</th>
               </tr>
             </thead>
             <tbody>{rows}</tbody>
           </table>
           <div>
-            <span onClick={handleClick.bind(null, page - 1)}>left </span>
-            <span onClick={handleClick.bind(null, page + 1)}>right</span>
-            <span>Stránka: {page}</span>
-            <span>Počet stránek: {nrOfPages}</span>
+            <div className="plan-arrows">
+              <span onClick={handleClick.bind(null, page - 1)}>
+                <img src={left} alt="Šipka vlevo" />
+              </span>
+              <span onClick={handleClick.bind(null, page + 1)}>
+                <img src={right} alt="Šipka vpravo" />
+              </span>
+            </div>
+            <div className="plan-pages">
+              <span>
+                Strana {page}/{nrOfPages}
+              </span>
+            </div>
           </div>
         </>
       )}

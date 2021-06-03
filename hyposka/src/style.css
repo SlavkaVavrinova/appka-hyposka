@@ -53,7 +53,8 @@ h3 {
 }
 
 button,
-.home-enter {
+.home-enter,
+.annuity__plan {
   width: 60vw;
   margin-right: 20vw;
   margin-left: 20vw;
@@ -86,6 +87,10 @@ a {
   display: block;
 }
 
+.buttons-row {
+  padding-bottom: 1rem;
+}
+
 .button__back {
   width: 35vw;
   border: 1px solid #0c3932;
@@ -100,7 +105,6 @@ a {
 
 .button__forward {
   width: 35vw;
-
   margin: 0;
 }
 
@@ -129,22 +133,16 @@ a {
   font-size: 90%;
   font-style: italic;
 }
-.home-enter {
-  width: 50vw;
-}
 
 .print {
   height: 2rem;
   width: 2rem;
 }
 
-.buttons-row__print {
-  text-align: right;
-}
 @media (min-width: 540px) {
   body {
     background-color: #ffffff;
-
+    font-size: 100%;
     line-height: 1.5;
   }
 
@@ -159,40 +157,51 @@ a {
   button:hover {
     width: 30%;
   }
-  .button__small {
-    width: 30vw;
-  }
 
-  .button__small:hover {
-    width: 30vw;
-  }
   .button__contact-and-map {
-    width: 30vw;
+    width: 30%;
   }
-  .button__contact-and-map:hover {
-    width: 30vw;
+  .button__contact-and-map:hover,
+  .annuity__plan {
+    width: 30%;
   }
 
-  .button__back,
-  .button__forward {
-    width: 20vw;
+  .annuity__plan {
+    width: 30%;
+    margin-right: 0;
+    margin-left: 70%;
   }
+
+  .button__back {
+    margin: 0 15px 0 0;
+    width: 200px;
+  }
+
+  .button__forward {
+    margin: 0 0 0 15px;
+    width: 200px;
+  }
+
   .button__back:hover,
   .button__forward:hover {
-    width: 20vw;
+    width: 200px;
   }
-  .buttons-row__print {
-    flex: 0 0 30%;
-    text-align: left;
-  }
+
   .buttons-row {
     display: flex;
-    align-content: space-between;
+    justify-content: space-between;
+    width: 100%;
   }
+
+  .buttons-row__print {
+    text-align: left;
+    flex: 0 0 30%;
+    align-self: flex-end;
+  }
+
   .buttons-row__buttons {
-    flex: 0 0 70%;
     display: flex;
-    align-items: flex-end;
+    justify-content: flex-end;
   }
 }
 
@@ -200,6 +209,7 @@ a {
   body {
     margin: 0 auto;
     max-width: 980px;
+    font-size: 125%;
   }
   h1 {
     font-size: 200%;

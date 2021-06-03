@@ -81,32 +81,3 @@ export const Costs = () => {
     </>
   );
 };
-
-/*Částky životního minima v Kč za měsíc
-pro jednotlivce
-
-3 860
-
-pro první osobu v domácnosti
-
-3 550
-
-pro druhou a další osobu v domácnosti, která není nezaopatřeným dítětem
-
-3 200
-
-pro nezaopatřené dítě ve věku
-
-do 6 let
-
-1 970
-
-6 až 15 let
-
-2 420
-
-15 až 26 let (nezaopatřené)
-
-2 770
-
-*/

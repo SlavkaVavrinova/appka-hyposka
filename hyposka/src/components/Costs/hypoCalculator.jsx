@@ -8,6 +8,9 @@ export const HypoCalculator = () => {
   const [pocet15Deti, setPocet15Deti] = useState(0);
   const [pocet26Deti, setPocet26Deti] = useState(0);
 
+  const [incomInput, setIncomInput] = useState(0);
+  const [costInput, setCostInput] = useState(0);
+
   console.log(pocetOsob);
 
   const livingMinimum =
@@ -17,13 +20,22 @@ export const HypoCalculator = () => {
     pocet15Deti * 2420 +
     pocet26Deti * 2770;
 
+  const restForMortgage = incomInput - (costInput + livingMinimum);
+
   return (
     <>
       <h2>HYPOŠKALKULAČKA</h2>
       <p>
-        Žádáš s manželkou/manželem, partnerkou/partnerem - příjmy sečti, výdaje
-        také
+        <strong>Nejsem banka, nemohu ti hypotéku slíbit.</strong> Mohu ti ukázat
+        <strong> základní výpočet</strong>, který by měla banka jistě dodržet.
+        Připrav se, že banka bude mimo spátky kalkulovat i s nějakou rezervou a
+        <strong> bude přísnější než já</strong>.
       </p>
+      <p className="text-center"> Nevychází ti moje kalkulace? </p>
+      <p className="text-center">
+        <em>Pravděpodobně nebude vhodná doba na hypoteční úvěr.</em>
+      </p>
+
       <h3>Životní minimum rodiny</h3>
       <div className="form-costs">
         <label className="form-cost__select">
@@ -94,23 +106,39 @@ export const HypoCalculator = () => {
         </p>
         <p className="form-costs__minimum">{`${livingMinimum} Kč`}</p>
       </div>
-
+      <p>
+        Žádáš s manželkou/manželem, partnerkou/partnerem - příjmy sečti, výdaje
+        také
+      </p>
       <div className="form-costs">
         <label>
-          Součet pravidelných <strong>výdajů</strong> žadatelů{' '}
-          <input type="number" min={0} />
+          Součet průměrných <strong>příjmů</strong> žadatelů
+          <input
+            type="number"
+            min={0}
+            value={incomInput}
+            onChange={(event) => {
+              setIncomInput(Number(event.target.value));
+            }}
+          />
         </label>
-
         <label>
-          Součet průměrných <strong>příjmů</strong> žadatelů{' '}
-          <input type="number" min={0} />
+          Součet pravidelných <strong>výdajů</strong> žadatelů
+          <input
+            type="number"
+            min={0}
+            value={costInput}
+            onChange={(event) => {
+              setCostInput(Number(event.target.value));
+            }}
+          />
         </label>
       </div>
+
       <div className="form-costs__container-minimum">
-        <p>
-          <strong>Výše splátky nové hypotéky může být</strong>
-        </p>
-        <p className="form-costs__minimum">{` 0 Kč`}</p>
+        <strong>Výše splátky nové hypotéky může být</strong>
+
+        <p className="form-costs__minimum">{`${restForMortgage} Kč`}</p>
       </div>
     </>
   );
