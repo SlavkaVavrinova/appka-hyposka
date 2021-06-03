@@ -203,6 +203,23 @@ export const Print = (props) => {
             </ul>
           </>
         )}
+
+        {props.listToPrint['TextCosts'] && (
+          <>
+            <h3 className="print-black">
+              Nezapomenout zahrnout do pravidelných výdajů:
+            </h3>
+            <ul>
+              <li>Splátky úvěrů a půjček</li>
+              <li>Leasing</li>
+              <li>Nepodepsals někomu ručení?</li>
+              <li>Nějaký spotřebič, telefon na splátky</li>
+              <li>Alimenty</li>
+              <li>Životní minimum</li>
+              <li>Nenarozené děti</li>
+            </ul>
+          </>
+        )}
       </main>
     </>
   );

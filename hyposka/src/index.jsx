@@ -53,7 +53,7 @@ const App = () => {
 
           <Route path="/vydaje" exact>
             <SecondNav />
-            <Costs />
+            <Costs addToPrint={addToPrint} listToPrint={listToPrint} />
           </Route>
           <Route path="/banka" exact>
             <SecondNav />

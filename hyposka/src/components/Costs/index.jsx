@@ -2,57 +2,19 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { HypoCalculator } from './hypoCalculator';
 import { AnnuityCalculator } from './annuityCalculator';
+import { TextCosts } from './TextCosts';
 
 import './style.css';
 
-export const Costs = () => {
+export const Costs = (props) => {
   return (
     <>
       <main>
-        <h1>Výdaje</h1>
-        <p>
-          V předchozím kroku jsme prošli různé formy příjmu. Další otázka
-          bankéře bude: <em>Jaké máte pravidelné výdaje?</em> Zdá se to jako
-          banalita, ale nezapomeň sdělit vše. Někdo by si to mohl vyložit jako
-          úmyslné zamlčení, když na něco zapomeneš.
-        </p>
-        <p> Zde pro připomenutí, co vše je výdajem: </p>
-        <ul>
-          <li>Splátky úvěrů a půjček</li>
-          <li>Leasing</li>
-          <li>Nepodepsals někomu ručení?</li>
-          <li>Nějaký spotřebič, telefon na splátky</li>
-          <li>Alimenty</li>
-          <li>Životní minimum</li>
-          <li>Nenarozené děti</li>
-        </ul>
-        <p>
-          <strong>TIP:</strong> Máš pocit, žes někdy pozdě zaplatil úvěr a bojíš
-          se zamítnutí hypotéky. Doporučuji vše hlásit předem a říci detailně
-          proč se to stalo. Upřímnost může pomoci tam, kde by systém hypotéku
-          předem zamítl. Chceš si vše zjistit předem, aby výpis z bankovního
-          registru nebyl překvapení? Nech si zaslat výpisy předem. V bance ho
-          ukážeš a ona ti může rovnou sdělit, jestli je šance o hypotéku žádat.{' '}
-        </p>
-        <p>Zde najdeš více: </p>
-        <ul>
-          <li>
-            <a href="https://www.solus.cz/" target="_blank">
-              <strong> Solus</strong>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://www.cbcb.cz/" target="_blank">
-              <strong> Cbcb</strong>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.cncb.cz/" target="_blank">
-              <strong> Cncb</strong>
-            </a>
-          </li>
-        </ul>
+        <TextCosts
+          addToPrint={props.addToPrint}
+          checkedToPrint={props.listToPrint}
+          printName="TextCosts"
+        />
         <p>
           Prošli jsme příjmy a výdaje. Zajímá tě, jakou výši hypotéky na to bude
           možné poskytnout?

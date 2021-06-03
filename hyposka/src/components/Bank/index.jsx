@@ -130,16 +130,33 @@ export const Bank = () => {
           hrát čistě.
         </p>
         <p>Chci vytisknout závěrečný souhrn, který jsem si označil/a: </p>
+
+        <Link to="/print">
+          <button className="button__print">Tisk</button>
+        </Link>
         <div className="buttons-row">
           <div className="buttons-row__buttons">
-            <Link to="/tisk">
-              <button className="button__back">Tisk</button>
+            <Link to="/vydaje">
+              <button className="button__back ">Zpět</button>
             </Link>
             <Link to="/">
               <button className="button__forward">Ukončit</button>
             </Link>
           </div>
         </div>
+        <p>Pokračovat do dalších sekcí</p>
+        <Link to="/kviz">
+          <button>Kvíz</button>
+        </Link>
+        <Link to="/mapa">
+          <button>Mapa</button>
+        </Link>
+        <Link to="/bonusy">
+          <button>Bonusy</button>
+        </Link>
+        <Link to="/kontakt">
+          <button>Kontakt</button>
+        </Link>
       </main>
     </>
   );
