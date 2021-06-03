@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-export const TextBuild = () => {
+export const TextBuild = (props) => {
+  const [checked, setChecked] = useState(
+    props.checkedToPrint[props.printName] === true,
+  );
+  const handleChange = (event) => {
+    const value = event.target.checked;
+    setChecked(value);
+    props.addToPrint(props.printName, value);
+  };
   return (
     <>
       <p> Banku bude zajímat nejvíce co a za kolik se bude stavět. </p>
@@ -16,7 +24,8 @@ export const TextBuild = () => {
       <p>Naopak víš, co chceš postavit? </p>
       <p>
         Připrav si <strong>projektovou dokumentaci</strong>. Jsi v začátku a
-        nemáš ji? Nevadí, připrav si <strong>obrázek v katalogu s cenou</strong>
+        nemáš ji? Nevadí, připrav si{' '}
+        <strong>obrázek v katalogu s cenou </strong>
         nebo jen rozpočet. Ten nemusí být finální, ale měl bys mít přestavu,
         kolik bude dům stát.
       </p>
@@ -103,7 +112,13 @@ export const TextBuild = () => {
           <label className="" htmlFor="">
             Přidat do tisku:
           </label>
-          <input className="print" type="checkbox" />
+          <input
+            className="print"
+            type="checkbox"
+            checked={checked}
+            onChange={handleChange}
+          />
+          <Link to="/print">Prohlédnout tisk</Link>
         </div>
         <div className="buttons-row__buttons">
           <Link to="/">

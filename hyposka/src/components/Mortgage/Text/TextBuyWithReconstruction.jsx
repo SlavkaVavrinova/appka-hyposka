@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-export const TextBuyWithReconstruction = () => {
+export const TextBuyWithReconstruction = (props) => {
+  const [checked, setChecked] = useState(
+    props.checkedToPrint[props.printName] === true,
+  );
+  const handleChange = (event) => {
+    const value = event.target.checked;
+    setChecked(value);
+    props.addToPrint(props.printName, value);
+  };
   return (
     <>
       <p>
@@ -39,7 +47,7 @@ export const TextBuyWithReconstruction = () => {
       <p>
         <strong>
           Místo navýšení hodnoty o první část rekonstrukce, dojde k snížení
-          celkové současné hodnoty.
+          celkové současné hodnoty.{' '}
         </strong>
         Dům bez stropu a s rozbouranou koupelnou má menší hodnotu než původní
         plán, výměna podlah a kohoutků v koupelně. To byl jen příklad, u
@@ -72,7 +80,13 @@ export const TextBuyWithReconstruction = () => {
           <label className="" htmlFor="">
             Přidat do tisku:
           </label>
-          <input className="print" type="checkbox" />
+          <input
+            className="print"
+            type="checkbox"
+            checked={checked}
+            onChange={handleChange}
+          />
+          <Link to="/print">Prohlédnout tisk</Link>
         </div>
         <div className="buttons-row__buttons">
           <Link to="/">

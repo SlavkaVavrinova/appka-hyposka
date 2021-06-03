@@ -20,9 +20,17 @@ import { Contact } from './components/Contact/index';
 import { Navigation } from './components/Navigation/index';
 
 import { SecondNav } from './components/SecondNav';
+import { Print } from './components/Print/index';
 import ScrollToTop from './components/ScrollToTop';
 
 const App = () => {
+  const [listToPrint, setListToPrint] = useState({});
+  const addToPrint = (componentName, isSelected) => {
+    const clonedList = { ...listToPrint }; // shallow copy
+    clonedList[componentName] = isSelected;
+    setListToPrint(clonedList);
+  };
+
   return (
     <>
       <Router>
@@ -35,12 +43,14 @@ const App = () => {
           </Route>
           <Route path="/hypoteka" exact>
             <SecondNav />
-            <Mortgage />
+            <Mortgage addToPrint={addToPrint} listToPrint={listToPrint} />
           </Route>
           <Route path="/prijem" exact>
             <SecondNav />
-            <Income />
+
+            <Income addToPrint={addToPrint} listToPrint={listToPrint} />
           </Route>
+
           <Route path="/vydaje" exact>
             <SecondNav />
             <Costs />
@@ -65,7 +75,11 @@ const App = () => {
             <Header />
             <Contact />
           </Route>
+          <Route path="/print" exact>
+            <Print listToPrint={listToPrint} />
+          </Route>
         </Switch>
+
         <Footer />
       </Router>
     </>

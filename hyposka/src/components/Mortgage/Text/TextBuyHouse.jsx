@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-export const TextBuyHouse = () => {
+export const TextBuyHouse = (props) => {
+  const [checked, setChecked] = useState(
+    props.checkedToPrint[props.printName] === true,
+  );
+  const handleChange = (event) => {
+    const value = event.target.checked;
+    setChecked(value);
+    props.addToPrint(props.printName, value);
+  };
   return (
     <>
       <p>
@@ -17,9 +25,10 @@ export const TextBuyHouse = () => {
           to stejné a taky se bude dělat většinou později.
         </li>
         <li>
-          se bude dělat většinou později. Fajn je rezervační smlouva, ale tu ti
-          dají jen za podpis. Podepíšeš 🡪 platíš rezervační poplatek a prostě
-          kupuješ. se bude dělat většinou později.
+          se bude dělat většinou později. Fajn je
+          <strong> rezervační smlouva</strong>, ale tu ti dají jen za podpis.
+          Podepíšeš 🡪 platíš rezervační poplatek a prostě kupuješ. se bude dělat
+          většinou později.
         </li>
 
         <li>
@@ -58,7 +67,13 @@ export const TextBuyHouse = () => {
           <label className="" htmlFor="">
             Přidat do tisku:
           </label>
-          <input className="print" type="checkbox" />
+          <input
+            className="print"
+            type="checkbox"
+            checked={checked}
+            onChange={handleChange}
+          />
+          <Link to="/print">Prohlédnout tisk</Link>
         </div>
         <div className="buttons-row__buttons">
           <Link to="/">

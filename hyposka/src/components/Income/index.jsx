@@ -1,9 +1,10 @@
 import React from 'react';
 import { Card } from '../Card/index';
 
-import { Entrepreneur } from './Text/Entrepreneur';
-import { Revenue } from './Text/Revenue';
 import { Employee } from './Text/Employee';
+import { Entrepreneur } from './Text/Entrepreneur';
+import { Rent } from './Text/Rent';
+import { Revenue } from './Text/Revenue';
 import { Rentier } from './Text/Rentier';
 
 import oznameni from './img/oznameni.jpeg';
@@ -12,14 +13,14 @@ import najem from './img/najem.jpeg';
 import relax from './img/pohoda.jpeg';
 import priznani from './img/priznani.jpeg';
 
-export const Income = () => {
+export const Income = (props) => {
   return (
     <>
       <main>
         <p>V dalším kroku projdeme, co bude banka chtít asi od tebe. </p>
         <p>
           Na schůzku si vezmi minimálně
-          <strong>občanku a lépe ještě nějaký druhý doklad</strong>. Samozřejmě
+          <strong> občanku a lépe ještě nějaký druhý doklad</strong>. Samozřejmě
           to bude potřeba až u žádosti o hypotéku, ne u informativní schůzky do
           budoucna.
         </p>
@@ -39,7 +40,11 @@ export const Income = () => {
           title="Zaměstnanec "
           text="Příjem mi vyplácí zaměstnavatel."
         >
-          <Employee />
+          <Employee
+            addToPrint={props.addToPrint}
+            checkedToPrint={props.listToPrint}
+            printName="Employee"
+          />
         </Card>
         <Card
           photo={priznani}
@@ -47,15 +52,37 @@ export const Income = () => {
           title="Podnikatel"
           text="Podnikám, příjem mám od zákazníků a na konci roku si zpracovávám daňové přiznání."
         >
-          <Entrepreneur />
+          <Entrepreneur
+            addToPrint={props.addToPrint}
+            checkedToPrint={props.listToPrint}
+            printName="Entrepreneur"
+          />
         </Card>
+
+        <Card
+          photo={najem}
+          alt="Nájemní smlouva"
+          title="Z pronájmu"
+          text="Příjem mám z pronájmu bytu, domu atd. Na konci roku ho uvádím v daňovém přiznání."
+        >
+          <Rent
+            addToPrint={props.addToPrint}
+            checkedToPrint={props.listToPrint}
+            printName="Rent"
+          />
+        </Card>
+
         <Card
           photo={oznameni}
           alt="Výměr dávky / důchodu"
           title="Jsem na mateřské /v důchodu"
           text="Příjem mi posílá Okresní správa sociálního zabezpečení nebo pracovní úřad."
         >
-          <Revenue />
+          <Revenue
+            addToPrint={props.addToPrint}
+            checkedToPrint={props.listToPrint}
+            printName="Revenue"
+          />
         </Card>
         <Card
           photo={relax}
@@ -63,7 +90,11 @@ export const Income = () => {
           title="Rentiér "
           text="Šťastlivec, který pobírá nějakou rentu "
         >
-          <Rentier />
+          <Rentier
+            addToPrint={props.addToPrint}
+            checkedToPrint={props.listToPrint}
+            printName="Rentier"
+          />
         </Card>
       </main>
     </>

@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-export const TextBuyFlat = () => {
+export const TextBuyFlat = (props) => {
+  const [checked, setChecked] = useState(
+    props.checkedToPrint[props.printName] === true,
+  );
+  const handleChange = (event) => {
+    const value = event.target.checked;
+    setChecked(value);
+    props.addToPrint(props.printName, value);
+  };
   return (
     <>
       <p> Vezmi do banky něco, kde je vidět cena bytu:</p>
@@ -22,7 +30,7 @@ export const TextBuyFlat = () => {
 
         <li>
           Takže jak, nemáme nic. Vezmi s sebou alespoň
-          <strong>inzerát s cenou a údaji k tomu, co se bude kupovat</strong>.
+          <strong> inzerát s cenou a údaji k tomu, co se bude kupovat</strong>.
         </li>
       </ul>
       <p>
@@ -66,7 +74,7 @@ export const TextBuyFlat = () => {
       </p>
       <p>
         Neudělá. Zaplatit ho hypotékou proto můžeš, ale
-        <strong>do zástavy musíš dát nějakou jinou nemovitost</strong>
+        <strong> do zástavy musíš dát nějakou jinou nemovitost</strong>
         (druhý byt, chatu, dům extramilujících rodičů atd.) Neudělá.
       </p>
       <div className="buttons-row">
@@ -74,7 +82,13 @@ export const TextBuyFlat = () => {
           <label className="" htmlFor="">
             Přidat do tisku:
           </label>
-          <input className="print" type="checkbox" />
+          <input
+            className="print"
+            type="checkbox"
+            checked={checked}
+            onChange={handleChange}
+          />
+          <Link to="/print">Prohlédnout tisk</Link>
         </div>
         <div className="buttons-row__buttons">
           <Link to="/">

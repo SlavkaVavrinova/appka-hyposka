@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-export const Employee = () => {
+export const Employee = (props) => {
+  const [checked, setChecked] = useState(
+    props.checkedToPrint[props.printName] === true,
+  );
+  const handleChange = (event) => {
+    const value = event.target.checked;
+    setChecked(value);
+    props.addToPrint(props.printName, value);
+  };
+
   return (
     <>
+      Do tašky přibal: nájemní smlouvu Daňové přiznání Banka bude do budoucna
+      ráda za výpis z účtu, kde je příchozí nájem vidět. I zde platí, že to
+      nemusí být hned na první schůzce.
       <p>
         Ideální je, když máš již smlouvu na dobu neurčitou. V současnosti je
         pravděpodobné, že můžeš mít i smlouvu na dobu určitou. Je možné, že
@@ -45,7 +57,13 @@ export const Employee = () => {
           <label className="" htmlFor="">
             Přidat do tisku:
           </label>
-          <input className="print" type="checkbox" />
+          <input
+            className="print"
+            type="checkbox"
+            checked={checked}
+            onChange={handleChange}
+          />
+          <Link to="/print">Prohlédnout tisk</Link>
         </div>
         <div className="buttons-row__buttons">
           <Link to="/hypoteka">

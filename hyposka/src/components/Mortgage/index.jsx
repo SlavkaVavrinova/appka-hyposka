@@ -40,7 +40,11 @@ export const Mortgage = (props) => {
           title="Koupit dům"
           text="Chci koupit rodinný dům, kde plánuji bydlet. Pouze koupě bez rekonstrukce"
         >
-          <TextBuyHouse />
+          <TextBuyHouse
+            addToPrint={props.addToPrint}
+            checkedToPrint={props.listToPrint}
+            printName="TextBuyHouse"
+          />
         </Card>
         <Card
           photo={pictureBuyLand}
@@ -48,7 +52,11 @@ export const Mortgage = (props) => {
           title="Koupit stavební pozemek"
           text="Chci koupit pozemek, kde budu stavět, ale zatím ho jen kupuji."
         >
-          <TextBuyLand />
+          <TextBuyLand
+            addToPrint={props.addToPrint}
+            checkedToPrint={props.listToPrint}
+            printName="TextBuyLand"
+          />
         </Card>
         <Card
           photo={pictureBuyFlat}
@@ -56,7 +64,11 @@ export const Mortgage = (props) => {
           title="Koupit byt"
           text="Chci koupit byt ihned k nastěhování. Rekonstrukce není v plánu"
         >
-          <TextBuyFlat />
+          <TextBuyFlat
+            addToPrint={props.addToPrint}
+            checkedToPrint={props.listToPrint}
+            printName="TextBuyFlat"
+          />
         </Card>
 
         <Card
@@ -65,7 +77,11 @@ export const Mortgage = (props) => {
           title="Koupit chatu"
           text="Chci si pořádit chatu a rekreovat se. Žádná práce, pouze odpočinek"
         >
-          <TextBuyCottage />
+          <TextBuyCottage
+            addToPrint={props.addToPrint}
+            checkedToPrint={props.listToPrint}
+            printName="TextBuyCottage"
+          />
         </Card>
         <Card
           photo={pictureBuyPension}
@@ -73,7 +89,11 @@ export const Mortgage = (props) => {
           title="Koupit hotel, fabriku, benzínku ..."
           text="Chci pořídit nemovitost pro svoje podnikání a vydělat peníze."
         >
-          <TextBuyPension />
+          <TextBuyPension
+            addToPrint={props.addToPrint}
+            checkedToPrint={props.listToPrint}
+            printName="TextBuyPension"
+          />
         </Card>
         <Card
           photo={refinancing}
@@ -81,7 +101,11 @@ export const Mortgage = (props) => {
           title="Refinancování"
           text="Blíží se ti výročí hypotéky a chceš si sjednat nejlepší podmínky pro další fixaci."
         >
-          <TextRefinancing />
+          <TextRefinancing
+            addToPrint={props.addToPrint}
+            checkedToPrint={props.listToPrint}
+            printName="TextRefinancing"
+          />
         </Card>
         <p className="text-center">Nebo něco odvážnějšího?</p>
         <Card
@@ -90,7 +114,11 @@ export const Mortgage = (props) => {
           title="Výstavba"
           text="Chci si postavit dům nebo chatu. Svépomocí nebo mi pomůže firma."
         >
-          <TextBuild />
+          <TextBuild
+            addToPrint={props.addToPrint}
+            checkedToPrint={props.listToPrint}
+            printName="TextBuild"
+          />
         </Card>
         <Card
           photo={pictureReconstruction}
@@ -98,7 +126,11 @@ export const Mortgage = (props) => {
           title="Opravit si byt, dům nebo chatu"
           text="Mám nemovitost kterou si chci zvelebit a potřebuji peníze na rekonstrukci"
         >
-          <TextReconstruction />
+          <TextReconstruction
+            addToPrint={props.addToPrint}
+            checkedToPrint={props.listToPrint}
+            printName="TextReconstruction"
+          />
         </Card>
         <p className="text-center">Jsi fajnšmekr?</p>
         <Card
@@ -107,7 +139,11 @@ export const Mortgage = (props) => {
           title=" Koupit starší nemovitost a opravit jí "
           text="Naskytla se skvělá koupě starší nemovitosti, jen nutně potřebuje rekonstrukci"
         >
-          <TextBuyWithReconstruction />
+          <TextBuyWithReconstruction
+            addToPrint={props.addToPrint}
+            checkedToPrint={props.listToPrint}
+            printName="TextBuyWithReconstruction"
+          />
         </Card>
       </main>
     </>

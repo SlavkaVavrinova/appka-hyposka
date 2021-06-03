@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-export const Revenue = (props) => {
+export const Rent = (props) => {
   const [checked, setChecked] = useState(
     props.checkedToPrint[props.printName] === true,
   );
@@ -10,14 +10,19 @@ export const Revenue = (props) => {
     setChecked(value);
     props.addToPrint(props.printName, value);
   };
+
   return (
     <>
+      <p>Do tašky přibal: </p>
+      <ul>
+        <li>Nájemní smlouvu</li>
+        <li>Daňové přiznání</li>
+      </ul>
       <p>
-        Vezmi <strong>oznámení, kde se objeví výše příspěvku.</strong> Zde
-        pozor, tuto formu bude banka akceptovat jako nějaké doplnění hlavního
-        příjmu. Pravděpodobně nebude schopná hypotéku poskytnout jen na tento
-        příjem. Ale i zde platí, vše potřebné se dozvíš až u konkrétní banky.
-      </p>
+        Banka bude do budoucna ráda za výpis z účtu, kde je příchozí nájem
+        vidět.
+      </p>{' '}
+      <p>I zde platí, že to nemusí být hned na první schůzce.</p>
       <div className="buttons-row">
         <div className="buttons-row__print">
           <label className="" htmlFor="">

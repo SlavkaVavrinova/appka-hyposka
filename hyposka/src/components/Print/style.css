@@ -1,0 +1,10 @@
+.print-black {
+  color: black;
+}
+.print-black__container {
+  display: flex;
+  justify-content: center;
+}
+.print-black__logo {
+  width: 4rem;
+}

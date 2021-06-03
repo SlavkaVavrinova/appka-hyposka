@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-export const TextReconstruction = () => {
+export const TextReconstruction = (props) => {
+  const [checked, setChecked] = useState(
+    props.checkedToPrint[props.printName] === true,
+  );
+  const handleChange = (event) => {
+    const value = event.target.checked;
+    setChecked(value);
+    props.addToPrint(props.printName, value);
+  };
   return (
     <>
       <p>
@@ -19,14 +27,17 @@ export const TextReconstruction = () => {
 
       <p>
         Nevíš, zda plánovaná rekonstrukce vyžaduje
-        <strong>nahlášení stavebnímu úřadu</strong> nebo celý proces získání
-        <strong>stavebního povolení</strong>? Je dobré se na to informovat.
+        <strong> nahlášení stavebnímu úřadu </strong> nebo celý proces získání
+        <strong> stavebního povolení</strong>? Je dobré se na to informovat.
         Očekávej, že pokud je hlášení nutné, tak banka ho bude chtít časem
         vidět. Pozor na rady kamarádů, na stavební úřad to radši nehlásit.
         Jakmile se k rekonstrukci vyjádří odhadce, tak banka bude chtít zákon
         dodržet. Jistě tě ale nic takového nenapadlo.
       </p>
-
+      <p>
+        Rekonstruuješ nemovitost v pronájmu? Budeš potřebovat
+        <strong> souhlas majielů s rekonstrukcí</strong>
+      </p>
       <p>
         Chceš půjčit polovinu a bance nic není do toho, kolik bude rekonstrukce
         stát celkem? To není bohužel pravda. Banka bude chtít jistotu, že stavba
@@ -44,7 +55,13 @@ export const TextReconstruction = () => {
           <label className="" htmlFor="">
             Přidat do tisku:
           </label>
-          <input className="print" type="checkbox" />
+          <input
+            className="print"
+            type="checkbox"
+            checked={checked}
+            onChange={handleChange}
+          />
+          <Link to="/print">Prohlédnout tisk</Link>
         </div>
         <div className="buttons-row__buttons">
           <Link to="/">
