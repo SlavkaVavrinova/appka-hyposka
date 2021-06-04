@@ -57,7 +57,7 @@ export const FormContact = () => {
         </label>
         <input value={name} onChange={(event) => setName(event.target.value)} />
         <div className="valid">
-          <label className="form-contact__email">
+          <label >
             Email <span className="required">*</span>
           </label>
           <span> {validEmail}</span>
@@ -66,7 +66,7 @@ export const FormContact = () => {
           value={email}
           onChange={(event) => setEmail(event.target.value)}
         />
-        <label className="form-map__message">
+        <label >
           Vzkaz či rada <span className="required">*</span>{' '}
         </label>
         <textarea
@@ -74,7 +74,7 @@ export const FormContact = () => {
           onChange={(event) => setMessage(event.target.value)}
           rows={5}
         />
-        <button className="button__contact-and-map">Odeslat</button>
+        <button className="button--large">Odeslat</button>
 
         <p>{response}</p>
       </form>

@@ -6,6 +6,8 @@ import cr from './../Home/img/cr.svg';
 import quiz from './../Home/img/quiz.svg';
 import bonus from './../Home/img/bonus.svg';
 
+import printer from './../Print/img/printer.svg';
+
 export const Bank = () => {
   return (
     <>
@@ -145,10 +147,11 @@ export const Bank = () => {
             </Link>
           </div>
         </div>
-
+   <h3>Chci vytisknout závěrečný souhrn</h3>
            <Link to="/print">
-          <button className="button--print">Tisk</button>
+          <button className="button--print"> <img src={printer} alt="Tiskárna" /></button>
         </Link>
+
 
         <h3>Hlavní část APPKY máš za sebou, ale můžeš pokračovat dále:</h3>
         <div className="home-container">
