@@ -69,6 +69,7 @@ button,
   color: #ffffff;
   background: linear-gradient(45deg, #4e1a23, #0c3932);
   box-shadow: 2px 2px 5px #1a4e45;
+  cursor:pointer;
 }
 
 button:hover,
@@ -115,6 +116,7 @@ a {
   display: flex;
 align-items:flex-end;
 flex-direction: column;
+margin-right:30px;
 }
 
 .buttons-row__buttons {
@@ -141,6 +143,7 @@ flex-direction: column;
   align-self: center;
   font-size: 90%;
   font-style: italic;
+  text-align:right;
 }
 
 .print {
