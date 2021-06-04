@@ -13,28 +13,25 @@ export const Rentier = (props) => {
   return (
     <>
       <p>Tady tě pošlu hned do banky, protože to asi nebude úplně jednoduché</p>
-      <div className="buttons-row">
-        <div className="buttons-row__print">
-          <label className="" htmlFor="">
-            Přidat do tisku:
-          </label>
-          <input
+       <div className="row-print">
+          <label>
+            Přidat do tisku: <input
             className="print"
             type="checkbox"
             checked={checked}
             onChange={handleChange}
           />
+          </label>
           <Link to="/print">Prohlédnout tisk</Link>
         </div>
         <div className="buttons-row__buttons">
           <Link to="/hypoteka">
-            <button className="button__back ">Zpět</button>
+            <button className="button--back ">Zpět</button>
           </Link>
           <Link to="/vydaje">
-            <button className="button__forward">Pokračovat</button>
+            <button className="button--forward">Pokračovat</button>
           </Link>
         </div>
-      </div>
     </>
   );
 };

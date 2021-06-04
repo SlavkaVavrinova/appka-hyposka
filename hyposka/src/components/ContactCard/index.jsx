@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './style.css';
 
 export const ContactCard = (props) => {
   const [display, setDisplay] = useState(false);
@@ -18,7 +17,7 @@ export const ContactCard = (props) => {
         <div className="container__right-side">
           <h2 className="card-title__large">{props.title}</h2>
           <p>{props.render()}</p>
-          <button className="container__button" onClick={handleClick}>
+          <button className="button--card" onClick={handleClick}>
             {display === true ? 'Zavřít' : 'Více'}
           </button>
         </div>

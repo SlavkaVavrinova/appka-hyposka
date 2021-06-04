@@ -59,7 +59,7 @@ export const Home = () => {
           </div>
         </div>
         <Link to="/hypoteka">
-          <button className="home-enter">vstoupit</button>
+          <button className="button--large">vstoupit</button>
         </Link>
         <div className="home-container">
           <div className="home-container__card ">
@@ -69,7 +69,7 @@ export const Home = () => {
               <p>Ověř své teoretické znalosti zpracování hypotéky.</p>
             </div>
             <Link to="/kviz">
-              <button className="button__small">vstoupit</button>
+              <button className="button--small">vstoupit</button>
             </Link>
           </div>
 
@@ -80,7 +80,7 @@ export const Home = () => {
               <p>Zadej referenci na bankéře či poradce nebo ho najdi.</p>
             </div>
             <Link to="/mapa">
-              <button className="button__small">vstoupit</button>
+              <button className="button--small">vstoupit</button>
             </Link>
           </div>
 
@@ -91,7 +91,7 @@ export const Home = () => {
               <p>Fáze jednání, pojištění, čerpání, důvěřuj ale prověřuj.</p>
             </div>
             <Link to="/bonus">
-              <button className="button__small">vstoupit</button>
+              <button className="button--small">vstoupit</button>
             </Link>
           </div>
         </div>

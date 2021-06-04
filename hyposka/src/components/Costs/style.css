@@ -57,8 +57,16 @@ tr:nth-child(even) {
   width: 4rem;
 }
 
+
+
 @media (min-width: 540px) {
   .annuity__plan {
     align-self: flex-end;
+  }
+}
+
+@media (min-width: 740px) {
+  .second-buttons-for-mobile{
+    display:none;
   }
 }

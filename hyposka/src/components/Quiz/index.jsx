@@ -19,6 +19,9 @@ export const Quiz = () => {
     }
   };
   const history = useHistory();
+  const refreschQuiz = ()=>{
+    setActiveQuestion(1)
+  }
   return (
     <>
       <main>
@@ -88,10 +91,10 @@ export const Quiz = () => {
         </div>
         <div className="buttons-row__buttons">
           <Link to="/kviz">
-            <button className="button__back">Hrát znovu</button>
+            <button className="button--back" onClick={refreschQuiz}>Hrát znovu</button>
           </Link>
           <Link to="/">
-            <button className="button__forward">Konec</button>
+            <button className="button--forward">Konec</button>
           </Link>
         </div>
       </main>

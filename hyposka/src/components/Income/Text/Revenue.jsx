@@ -18,27 +18,24 @@ export const Revenue = (props) => {
         příjmu. Pravděpodobně nebude schopná hypotéku poskytnout jen na tento
         příjem. Ale i zde platí, vše potřebné se dozvíš až u konkrétní banky.
       </p>
-      <div className="buttons-row">
-        <div className="buttons-row__print">
-          <label className="" htmlFor="">
-            Přidat do tisku:
-          </label>
-          <input
+     <div className="row-print">
+          <label>
+            Přidat do tisku: <input
             className="print"
             type="checkbox"
             checked={checked}
             onChange={handleChange}
           />
+          </label>
           <Link to="/print">Prohlédnout tisk</Link>
         </div>
         <div className="buttons-row__buttons">
           <Link to="/hypoteka">
-            <button className="button__back ">Zpět</button>
+            <button className="button--back ">Zpět</button>
           </Link>
           <Link to="/vydaje">
-            <button className="button__forward">Pokračovat</button>
+            <button className="button--forward">Pokračovat</button>
           </Link>
-        </div>
       </div>
     </>
   );

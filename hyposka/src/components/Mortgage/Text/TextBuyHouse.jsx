@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import './../style.css';
+
 
 export const TextBuyHouse = (props) => {
   const [checked, setChecked] = useState(
@@ -36,13 +38,17 @@ export const TextBuyHouse = (props) => {
         </li>
       </ul>
       <h3>Co pro odhadce?</h3>
-      <p>
-        Vytiskni<strong> elektronický výpis z katastru</strong>
-        <a href="https://nahlizenidokn.cuzk.cz/" target="_blank">
-          <strong> ZDE</strong>
-        </a>
-      </p>
-      <p>
+        <div className="lv">
+              <p>
+                Vytiskni<strong> lektronický výpis z katastru </strong>
+              </p>
+              <p>
+                <a href="https://nahlizenidokn.cuzk.cz/" target="_blank">
+                <strong>ZDE</strong>
+                 </a>
+              </p>
+              </div>
+            <p>
         Hledej v něm překvapení v podobě omezení. Není třeba se lekat, nemusí to
         být exekuce, ale hypotéka původních majitelů. Ta se dá zaplatit, ale
         musí se pohlídat, že bude zaplacena.
@@ -62,28 +68,26 @@ export const TextBuyHouse = (props) => {
         konkrétní požadavek vybrané banky. Kdyby dokumentace nebyla, tak neboj,
         metrem se to dá zvládnout také.
       </p>
-      <div className="buttons-row">
-        <div className="buttons-row__print">
-          <label className="" htmlFor="">
-            Přidat do tisku:
-          </label>
-          <input
+        <div className="row-print">
+          <label>
+            Přidat do tisku: <input
             className="print"
             type="checkbox"
             checked={checked}
             onChange={handleChange}
           />
-          <Link to="/print">Prohlédnout tisk</Link>
+          </label>
+                    <Link to="/print">Prohlédnout tisk</Link>
         </div>
         <div className="buttons-row__buttons">
           <Link to="/">
-            <button className="button__back">Domů</button>
+            <button className="button--back">Domů</button>
           </Link>
           <Link to="/prijem">
-            <button className="button__forward"> Pokračovat</button>
+            <button className="button--forward"> Pokračovat</button>
           </Link>
         </div>
-      </div>
+     
     </>
   );
 };

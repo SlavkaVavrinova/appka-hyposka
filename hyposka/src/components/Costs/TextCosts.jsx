@@ -29,18 +29,19 @@ export const TextCosts = (props) => {
         <li>Životní minimum</li>
         <li>Nenarozené děti</li>
       </ul>
-      <div className="buttons-row__print">
-        <label className="" htmlFor="">
-          Přidat do tisku:
-        </label>
-        <input
-          className="print"
-          type="checkbox"
-          checked={checked}
-          onChange={handleChange}
-        />
-        <Link to="/print">Prohlédnout tisk</Link>
-      </div>
+
+         <p>
+          Prošli jsme příjmy a výdaje. Zajímá tě, jakou výši hypotéky na to bude
+          možné poskytnout?
+        </p>
+        <p>
+          To už je ale otázka na konkrétní banku. Každá banka má jinou metodu
+          výpočtu. Můžeš kouknout na jejich webové stránky, někdy se tam
+          orientační kalkulačka dá dohledat. Já ti tady nabízím orientační
+          propočet, který ti ukáže, jaké máš výdaje a z toho odhadneš, zda je
+          tvůj příjem dostatečný. Ber to ale s rezervou, přesné částky se dozvíš
+          až z kalkulace banky.
+        </p>
       <p>
         <strong>TIP:</strong> Máš pocit, žes někdy pozdě zaplatil úvěr a bojíš
         se zamítnutí hypotéky. Doporučuji vše hlásit předem a říci detailně proč
@@ -68,6 +69,29 @@ export const TextCosts = (props) => {
           </a>
         </li>
       </ul>
+  <div className="second-buttons-for-mobile">
+      <div className="row-print">
+          <label>
+            Přidat do tisku: <input
+            className="print"
+            type="checkbox"
+            checked={checked}
+            onChange={handleChange}
+          />
+          </label>
+          
+          <Link to="/print">Prohlédnout tisk</Link>
+        </div>
+
+                  <div className="buttons-row__buttons">
+            <Link to="/prijem">
+              <button className="button--back">Zpět</button>
+            </Link>
+            <Link to="/banka">
+              <button className="button--forward">Pokračovat</button>
+            </Link>
+          </div>
+        </div> 
     </>
   );
 };

@@ -124,8 +124,8 @@ export const AnnuityCalculator = () => {
         <strong>Výše splátky hypotéky:</strong>
         <p className="form-costs__minimum"> {`${Math.trunc(payment)} Kč`}</p>
       </div>
-      <button className="annuity__plan" onClick={() => setPlan(!plan)}>
-        Zobrazit splátky
+      <button className="button--large" onClick={() => setPlan(!plan)}>
+        Zobrazit splátkový plán
       </button>
       <div className="print-black" ref={componentRef}>
         {plan && (

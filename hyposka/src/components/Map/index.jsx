@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { FormMap } from './../FormMap/index';
 import { MapBox } from './../MapBox/index';
 
-import './style.css';
-
 export const Map = () => {
   const [viewPerson, setViewPerson] = useState({});
 

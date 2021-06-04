@@ -50,28 +50,25 @@ export const TextReconstruction = (props) => {
         <li>Končící investice za nějaý čas</li>
         <li>Prodej současného bydlení atd.</li>
       </ul>
-      <div className="buttons-row">
-        <div className="buttons-row__print">
-          <label className="" htmlFor="">
-            Přidat do tisku:
-          </label>
-          <input
+    <div className="row-print">
+          <label>
+            Přidat do tisku: <input
             className="print"
             type="checkbox"
             checked={checked}
             onChange={handleChange}
           />
-          <Link to="/print">Prohlédnout tisk</Link>
+          </label>
+                    <Link to="/print">Prohlédnout tisk</Link>
         </div>
         <div className="buttons-row__buttons">
           <Link to="/">
-            <button className="button__back ">Domů</button>
+            <button className="button--back ">Domů</button>
           </Link>
           <Link to="/prijem">
-            <button className="button__forward">Pokračovat</button>
+            <button className="button--forward">Pokračovat</button>
           </Link>
-        </div>
-      </div>
+             </div>
     </>
   );
 };

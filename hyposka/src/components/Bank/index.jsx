@@ -2,6 +2,10 @@ import React from 'react';
 import './style.css';
 import { Link } from 'react-router-dom';
 
+import cr from './../Home/img/cr.svg';
+import quiz from './../Home/img/quiz.svg';
+import bonus from './../Home/img/bonus.svg';
+
 export const Bank = () => {
   return (
     <>
@@ -130,33 +134,58 @@ export const Bank = () => {
           hrát čistě.
         </p>
         <p>Chci vytisknout závěrečný souhrn, který jsem si označil/a: </p>
-
-        <Link to="/print">
-          <button className="button__print">Tisk</button>
-        </Link>
+     
         <div className="buttons-row">
           <div className="buttons-row__buttons">
             <Link to="/vydaje">
-              <button className="button__back ">Zpět</button>
+              <button className="button--back ">Zpět</button>
             </Link>
             <Link to="/">
-              <button className="button__forward">Ukončit</button>
+              <button className="button--forward">Ukončit</button>
             </Link>
           </div>
         </div>
-        <p>Pokračovat do dalších sekcí</p>
-        <Link to="/kviz">
-          <button>Kvíz</button>
+
+           <Link to="/print">
+          <button className="button--print">Tisk</button>
         </Link>
-        <Link to="/mapa">
-          <button>Mapa</button>
-        </Link>
-        <Link to="/bonusy">
-          <button>Bonusy</button>
-        </Link>
-        <Link to="/kontakt">
-          <button>Kontakt</button>
-        </Link>
+
+        <h3>Hlavní část APPKY máš za sebou, ale můžeš pokračovat dále:</h3>
+        <div className="home-container">
+          <div className="home-container__card ">
+            <h2>Kvíz</h2>
+            <div className="home-container__card-in">
+              <img src={quiz} alt="Kvíz" />
+              <p>Ověř své teoretické znalosti zpracování hypotéky.</p>
+            </div>
+            <Link to="/kviz">
+              <button className="button--small">vstoupit</button>
+            </Link>
+          </div>
+
+          <div className="home-container__card ">
+            <h2>Kde to umí</h2>
+            <div className="home-container__card-in">
+              <img src={cr} alt="Mapa České Republiky" />
+              <p>Zadej referenci na bankéře či poradce nebo ho najdi.</p>
+            </div>
+            <Link to="/mapa">
+              <button className="button--small">vstoupit</button>
+            </Link>
+          </div>
+
+          <div className="home-container__card">
+            <h2>Bonusy</h2>
+            <div className="home-container__card-in">
+              <img src={bonus} alt="Dárek" />
+              <p>Fáze jednání, pojištění, čerpání, důvěřuj ale prověřuj.</p>
+            </div>
+            <Link to="/bonus">
+              <button className="button--small">vstoupit</button>
+            </Link>
+          </div>
+          
+        </div>
       </main>
     </>
   );

@@ -20,7 +20,7 @@ export const Header = () => {
               <strong> Poskytuji informace</strong>, co tě se mnou čeká.
             </p>
             <Link to="/hypoteka">
-              <button>vstoupit</button>
+              <button className="button--banner">vstoupit</button>
             </Link>
           </div>
         </div>

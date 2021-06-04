@@ -37,8 +37,8 @@
   width: 60%;
 }
 
-.banner__button button {
-  width: 30vw;
+.button--banner{
+  width: 15em;
 
   margin-right: 40vw;
   margin-left: 30vw;
@@ -47,7 +47,7 @@
   color: #4e1a23;
 }
 
-@media (min-width: 540px) {
+@media (min-width: 740px) {
   header {
     max-width: 1200px;
   }
@@ -80,7 +80,7 @@
   }
 }
 
-@media (min-width: 970px) {
+@media (min-width: 980px) {
   .banner__p {
     display: inline-block;
   }

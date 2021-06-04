@@ -63,6 +63,9 @@
   .home-container__card-in img {
     width: 50%;
   }
+  .home-container__card-in p {
+    height: 5rem;
+  }
   .home-enter {
     width: 30%;
     margin-left: 35%;

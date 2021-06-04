@@ -23,27 +23,25 @@ export const TextBuyPension = (props) => {
         banky a tam se informuj na přesné podmínky. Jistě nějaké řešení najdeš,
         ale o <em>"provozovně"</em> se zmiň hned v začátku.
       </p>
-      <div className="buttons-row">
-        <div className="buttons-row__print">
-          <label className="" htmlFor="">
-            Přidat do tisku:
-          </label>
-          <input
+    <div className="row-print">
+          <label>
+            Přidat do tisku: <input
             className="print"
             type="checkbox"
             checked={checked}
             onChange={handleChange}
           />
+          </label>
+          
           <Link to="/print">Prohlédnout tisk</Link>
         </div>
         <div className="buttons-row__buttons">
           <Link to="/">
-            <button className="button__back ">Domů</button>
+            <button className="button--back ">Domů</button>
           </Link>
           <Link to="/prijem">
-            <button className="button__forward">Pokračovat</button>
+            <button className="button--forward">Pokračovat</button>
           </Link>
-        </div>
       </div>
     </>
   );
