@@ -48,7 +48,7 @@ export const TextBuyFlat = (props) => {
         zadají údaje s rozměry, které jsou uvedeny ve smlouvě a zjistí zástavní
         hodnotu dle cenové mapy, která je v dané lokalitě nastavena.
       </p>
-      <div className="lv">
+      <div className="link-in-text">
         <p>
           Vytiskni<strong> lektronický výpis z katastru </strong>
         </p>

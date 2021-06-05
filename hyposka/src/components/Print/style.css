@@ -3,8 +3,7 @@
 }
 
 .print-black__container {
-  display: flex;
-  justify-content: center;
+  display: none;
 }
 
 .print-black__logo {
@@ -28,15 +27,71 @@
   box-shadow: 2px 2px 5px #1a4e45;
 }
 
-.button--print img {
+.button--print img,
+.button__print-large img {
   width: 3rem;
 }
 
-.button--print:hover {
+.button--print:hover,
+.button__print-large:hover {
   background: linear-gradient(45deg, #854e58, #94b1ac);
   box-shadow: inset 1px 1px 0 0 #cad8d6;
 }
 
-.button--print:hover img {
+.button--print:hover img,
+.button__print-large:hover img {
   width: 3.1rem;
+}
+
+.button__print-large {
+  width: 90%;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0.5rem 0;
+  text-transform: uppercase;
+  border: 1px solid #94b1ac;
+  border-radius: 5px;
+  color: #ffffff;
+  background: linear-gradient(45deg, #632e37, #1a4e45);
+  box-shadow: 2px 2px 5px #1a4e45;
+}
+.print__text {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 540px) {
+  .button__print-large {
+    width: 330px;
+    margin-right: 30px;
+    margin-left: calc(100% - 360px);
+  }
+}
+
+@media print {
+  .noPrint {
+    display: none;
+  }
+  html {
+    color: black;
+  }
+  .print-black__container {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    color: black;
+  }
+  .print-black__h1 {
+    color: #000000;
+    margin-left: 1rem;
+  }
+  th {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  tr:nth-child(even) {
+    background-color: #dddada;
+  }
 }

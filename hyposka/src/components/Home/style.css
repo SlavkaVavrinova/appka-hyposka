@@ -14,7 +14,11 @@
 .conteiner__img img {
   width: 25%;
 }
-
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
 .home-container__card-in img {
   width: 20%;
   padding: 0;
@@ -61,13 +65,14 @@
 
   .home-container {
     display: flex;
-    margin: 30px;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .home-container__card {
     width: 32%;
     padding: 15px;
-    margin-right: 1vw;
+
     border-radius: 0 50px 50px 50px;
     border: 5px solid #0c3932;
     box-shadow: 2px 2px 5px #0c3932;
@@ -91,7 +96,6 @@
   .home-enter:hover {
     width: 30%;
   }
-
   .button__small {
     width: 80%;
   }

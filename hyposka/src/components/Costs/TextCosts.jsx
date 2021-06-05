@@ -30,25 +30,26 @@ export const TextCosts = (props) => {
         <li>Nenarozené děti</li>
       </ul>
 
-         <p>
-          Prošli jsme příjmy a výdaje. Zajímá tě, jakou výši hypotéky na to bude
-          možné poskytnout?
-        </p>
-        <p>
-          To už je ale otázka na konkrétní banku. Každá banka má jinou metodu
-          výpočtu. Můžeš kouknout na jejich webové stránky, někdy se tam
-          orientační kalkulačka dá dohledat. Já ti tady nabízím orientační
-          propočet, který ti ukáže, jaké máš výdaje a z toho odhadneš, zda je
-          tvůj příjem dostatečný. Ber to ale s rezervou, přesné částky se dozvíš
-          až z kalkulace banky.
-        </p>
       <p>
-        <strong>TIP:</strong> Máš pocit, žes někdy pozdě zaplatil úvěr a bojíš
-        se zamítnutí hypotéky. Doporučuji vše hlásit předem a říci detailně proč
-        se to stalo. Upřímnost může pomoci tam, kde by systém hypotéku předem
-        zamítl. Chceš si vše zjistit předem, aby výpis z bankovního registru
-        nebyl překvapení? Nech si zaslat výpisy předem. V bance ho ukážeš a ona
-        ti může rovnou sdělit, jestli je šance o hypotéku žádat.{' '}
+        Prošli jsme příjmy a výdaje. Zajímá tě, jakou výši hypotéky bude možné
+        poskytnout?
+      </p>
+      <p>
+        To už je ale otázka na konkrétní banku. Každá banka má jinou metodu
+        výpočtu. Můžeš kouknout na jejich webové stránky, někdy se tam
+        orientační kalkulačka dá dohledat. Já ti tady nabízím orientační
+        propočet, který ti ukáže, jaké máš výdaje a z toho odhadneš, zda je tvůj
+        příjem dostatečný. Ber to ale s rezervou, přesné částky se dozvíš až z
+        kalkulace banky.
+      </p>
+      <p>
+        <strong>TIP:</strong> Máš pocit, žes někdy{' '}
+        <strong>pozdě zaplatil úvěr</strong>? Bojíš se zamítnutí hypotéky?
+        Doporučuji vše hlásit předem a říci detailně, proč se to stalo.
+        Upřímnost může pomoci tam, kde by systém hypotéku předem zamítl. Chceš
+        si vše zjistit předem, aby výpis z bankovního registru nebyl překvapení?
+        Nech si zaslat výpisy předem. V bance ho ukážeš a ona ti může rovnou
+        sdělit, jestli je šance o hypotéku žádat.
       </p>
       <p>Zde najdeš více: </p>
       <ul>
@@ -69,29 +70,30 @@ export const TextCosts = (props) => {
           </a>
         </li>
       </ul>
-  <div className="second-buttons-for-mobile">
-      <div className="row-print">
+      <div className="second-buttons-for-mobile">
+        <div className="row-print">
           <label>
-            Přidat do tisku: <input
-            className="print"
-            type="checkbox"
-            checked={checked}
-            onChange={handleChange}
-          />
+            Přidat do tisku:{' '}
+            <input
+              className="print"
+              type="checkbox"
+              checked={checked}
+              onChange={handleChange}
+            />
           </label>
-          
+
           <Link to="/print">Prohlédnout tisk</Link>
         </div>
 
-                  <div className="buttons-row__buttons">
-            <Link to="/prijem">
-              <button className="button--back">Zpět</button>
-            </Link>
-            <Link to="/banka">
-              <button className="button--forward">Pokračovat</button>
-            </Link>
-          </div>
-        </div> 
+        <div className="buttons-row__buttons">
+          <Link to="/prijem">
+            <button className="button--back">Zpět</button>
+          </Link>
+          <Link to="/banka">
+            <button className="button--forward">Pokračovat</button>
+          </Link>
+        </div>
+      </div>
     </>
   );
 };

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './style.css';
 
 export const HypoCalculator = () => {
   const [osoba, setOsoba] = useState(3860);
@@ -10,8 +11,6 @@ export const HypoCalculator = () => {
 
   const [incomInput, setIncomInput] = useState(0);
   const [costInput, setCostInput] = useState(0);
-
-  console.log(pocetOsob);
 
   const livingMinimum =
     osoba +
@@ -51,54 +50,113 @@ export const HypoCalculator = () => {
             <option value={3550}>Žádám s někým z domácnosti</option>
           </select>
         </label>
-        <label>
-          Kolik dalších osob ze společné domácnosti bude o hypotéku žádat
-          <input
-            type="number"
-            name="pocetOsob"
-            min={0}
-            value={pocetOsob}
-            onChange={(event) => {
-              setPocetOsob(Number(event.target.value));
-            }}
-          />
-        </label>
-        <label>
-          Kolik je v domácnosti dětí do 6 let
-          <input
-            type="number"
-            name="pocet6Deti"
-            min={0}
-            value={pocet6Deti}
-            onChange={(event) => {
-              setPocet6Deti(Number(event.target.value));
-            }}
-          />
-        </label>
-        <label>
-          Kolik je v domácnosti dětí od 6 do 15 let
-          <input
-            type="number"
-            name="pocet15Deti"
-            min={0}
-            value={pocet15Deti}
-            onChange={(event) => {
-              setPocet15Deti(Number(event.target.value));
-            }}
-          />
-        </label>
-        <label>
-          Kolik je v domácnosti dětí 15 - 26 let (nezaopatřených)
-          <input
-            type="number"
-            name="pocet26Deti"
-            min={0}
-            value={pocet26Deti}
-            onChange={(event) => {
-              setPocet26Deti(Number(event.target.value));
-            }}
-          />
-        </label>
+        {osoba === 3550 ? (
+          <div className="form-costs__in">
+            <label>
+              Kolik dalších osob ze společné domácnosti bude o hypotéku žádat
+              <input
+                type="number"
+                name="pocetOsob"
+                min={0}
+                value={pocetOsob}
+                onChange={(event) => {
+                  setPocetOsob(Number(event.target.value));
+                }}
+              />
+            </label>
+            <label>
+              Kolik je v domácnosti dětí do 6 let
+              <input
+                type="number"
+                name="pocet6Deti"
+                min={0}
+                value={pocet6Deti}
+                onChange={(event) => {
+                  setPocet6Deti(Number(event.target.value));
+                }}
+              />
+            </label>
+            <label>
+              Kolik je v domácnosti dětí od 6 do 15 let
+              <input
+                type="number"
+                name="pocet15Deti"
+                min={0}
+                value={pocet15Deti}
+                onChange={(event) => {
+                  setPocet15Deti(Number(event.target.value));
+                }}
+              />
+            </label>
+            <label>
+              Kolik je v domácnosti dětí 15 - 26 let (nezaopatřených)
+              <input
+                type="number"
+                name="pocet26Deti"
+                min={0}
+                value={pocet26Deti}
+                onChange={(event) => {
+                  setPocet26Deti(Number(event.target.value));
+                }}
+              />
+            </label>
+          </div>
+        ) : (
+          <div className="form-costs__in">
+            <label>
+              Kolik dalších osob ze společné domácnosti bude o hypotéku žádat
+              <input
+                type="number"
+                name="pocetOsob"
+                min={0}
+                value={pocetOsob}
+                disabled={true}
+                onChange={(event) => {
+                  setPocetOsob(Number(event.target.value));
+                }}
+              />
+            </label>
+            <label>
+              Kolik je v domácnosti dětí do 6 let
+              <input
+                type="number"
+                name="pocet6Deti"
+                min={0}
+                value={pocet6Deti}
+                disabled={true}
+                onChange={(event) => {
+                  setPocet6Deti(Number(event.target.value));
+                }}
+              />
+            </label>
+            <label>
+              Kolik je v domácnosti dětí od 6 do 15 let
+              <input
+                type="number"
+                name="pocet15Deti"
+                min={0}
+                value={pocet15Deti}
+                disabled={true}
+                onChange={(event) => {
+                  setPocet15Deti(Number(event.target.value));
+                }}
+              />
+            </label>
+            <label>
+              Kolik je v domácnosti dětí 15 - 26 let (nezaopatřených)
+              <input
+                type="number"
+                name="pocet26Deti"
+                min={0}
+                value={pocet26Deti}
+                disabled={true}
+                onChange={(event) => {
+                  setPocet26Deti(Number(event.target.value));
+                }}
+              />
+            </label>
+          </div>
+        )}
       </div>
       <div className="form-costs__container-minimum">
         <p>

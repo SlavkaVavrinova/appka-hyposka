@@ -40,7 +40,6 @@ main {
 }
 
 h1 {
-  font-size: 150%;
   margin: 0;
   padding: 1rem 0;
   color: #4e1a23;
@@ -51,6 +50,15 @@ h2,
 h3 {
   color: #0c3932;
   text-align: center;
+}
+
+.important-text {
+  font-size: 125%;
+  margin: 0;
+  padding: 1rem 0;
+  color: #4e1a23;
+  text-align: center;
+  font-weight: bold;
 }
 
 button,
@@ -146,6 +154,23 @@ a {
   text-align: right;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.link-in-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.link-in-text p {
+  padding-right: 2rem;
+  margin: 0;
+  text-align: left;
+}
+
 .print {
   height: 2rem;
   width: 2rem;
@@ -155,6 +180,14 @@ a {
   body {
     font-size: 100%;
     line-height: 1.5;
+  }
+
+  main {
+    padding: 30px;
+  }
+
+  .important-text {
+    font-size: 150%;
   }
 
   .button--small {
@@ -181,6 +214,17 @@ a {
     justify-content: flex-end;
     padding-right: 30px;
   }
+
+  .link-in-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .link-in-text p {
+    padding-right: 0.5rem;
+  }
 }
 
 @media (min-width: 980px) {
@@ -195,14 +239,5 @@ a {
     font-size: 200%;
     margin: 0;
     padding: 1rem 0;
-  }
-}
-
-@media print {
-  .noPrint {
-    display: none;
-  }
-  html {
-    color: black;
   }
 }

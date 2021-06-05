@@ -2,8 +2,14 @@
 .annuity__input {
   display: flex;
   flex-direction: column;
-  text-align: right;
+  align-items: flex-end;
   padding-right: 10%;
+}
+
+.form-costs__in {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .form-costs__minimum {
@@ -57,8 +63,6 @@ tr:nth-child(even) {
   width: 4rem;
 }
 
-
-
 @media (min-width: 540px) {
   .annuity__plan {
     align-self: flex-end;
@@ -66,7 +70,7 @@ tr:nth-child(even) {
 }
 
 @media (min-width: 740px) {
-  .second-buttons-for-mobile{
-    display:none;
+  .second-buttons-for-mobile {
+    display: none;
   }
 }

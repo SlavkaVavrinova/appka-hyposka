@@ -83,13 +83,13 @@ export const Home = () => {
             </div>
           </div>
         </div>
+        <p className="important-text">Zaškrtávej si v průběhu své volby. </p>
         <p className="text-center">
-          Zaškrtávej si v průběhu své volby.
-          <strong> V závěru si vytiskneš taháček</strong> pro tvou první schůzku
-          v bance či u poradce.
+          V závěru si vytiskneš taháček pro tvou první schůzku v bance či u
+          poradce.
         </p>
         <Link to="/hypoteka">
-          <button className="button--large">vstoupit</button>
+          <button className="button--large">Vstoupit</button>
         </Link>
 
         <div className="home-container">
@@ -117,7 +117,7 @@ export const Home = () => {
             <h2>Bonusy</h2>
             <div className="home-container__card-in">
               <img src={bonus} alt="Dárek" />
-              <p>Fáze jednání, pojištění, čerpání, důvěřuj ale prověřuj.</p>
+              <p>Fáze jednání, pojištění, čerpání, důvěřuj, ale prověřuj.</p>
             </div>
             <Link to="/bonus">
               <button className="button--small">vstoupit</button>

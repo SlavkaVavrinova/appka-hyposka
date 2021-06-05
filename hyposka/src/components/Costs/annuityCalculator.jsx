@@ -4,6 +4,8 @@ import './style.css';
 
 import left from './img/left.svg';
 import right from './img/right.svg';
+import printer from './../Print/img/printer.svg';
+import logoPrint from './../Print/img/logoPrint.svg';
 
 export const AnnuityCalculator = () => {
   const [nrOfMonth, setNrOfMonths] = useState(0);
@@ -58,7 +60,7 @@ export const AnnuityCalculator = () => {
   const m11 = 1 + m6;
   const m12 = Math.pow(m11, -nrOfMonth);
   const m13 = 1 - m12;
-  const payment = loanAmount * (m6 / m13);
+  const payment = loanAmount * (m6 / m13) || 0;
 
   const getInterest = (i) => {
     const restOfLoan = calculations[i - 1]
@@ -130,6 +132,20 @@ export const AnnuityCalculator = () => {
       <div className="print-black" ref={componentRef}>
         {plan && (
           <>
+            <div className="print-black__container">
+              <img
+                className="print-black__logo"
+                src={logoPrint}
+                alt="Logo Appka Hypoška"
+              />
+              <h1 className="print-black__h1">Tisk z Appky Hypošky</h1>
+            </div>
+
+            <p className="print__text">
+              Splátkový plán pro úvěr {loanAmount} Kč, se splátkou{' '}
+              {`${Math.trunc(payment)} Kč`}, dobou splácení {nrOfMonth} měsíců a
+              úrokovou sazbou {rate}%.{' '}
+            </p>
             <table>
               <thead>
                 <tr>
@@ -141,6 +157,9 @@ export const AnnuityCalculator = () => {
               </thead>
               <tbody>{rows}</tbody>
             </table>
+            <span className="print-black__container">
+              Strana {page}/{nrOfPages}
+            </span>
             <div className="noPrint">
               <div>
                 <div className="plan-arrows">
@@ -152,19 +171,20 @@ export const AnnuityCalculator = () => {
                   </span>
                 </div>
               </div>
-              <ReactToPrint
-                trigger={() => (
-                  <button className="button__print">
-                    Chci vytisknout stranu {page} splátkového plánu!
-                  </button>
-                )}
-                content={() => componentRef.current}
-              />
-            </div>
-            <div className="plan-pages">
-              <span>
-                Strana {page}/{nrOfPages}
-              </span>
+              <div className="plan-pages">
+                <span>
+                  Strana {page}/{nrOfPages}
+                </span>
+                <h3>Chci vytisknout stranu {page} splátkového plánu</h3>
+                <ReactToPrint
+                  trigger={() => (
+                    <button className="button--print">
+                      <img src={printer} alt="Tiskárna" />
+                    </button>
+                  )}
+                  content={() => componentRef.current}
+                />
+              </div>
             </div>
           </>
         )}

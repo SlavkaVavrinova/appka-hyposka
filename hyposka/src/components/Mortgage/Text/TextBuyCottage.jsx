@@ -35,7 +35,7 @@ export const TextBuyCottage = (props) => {
         </li>
       </ul>
       <h3>Co pro odhadce?</h3>
-      <div className="lv">
+      <div className="link-in-text">
         <p>
           Vytiskni<strong> lektronický výpis z katastru </strong>
         </p>
