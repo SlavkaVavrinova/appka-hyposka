@@ -35,7 +35,7 @@ export const TextBuyLand = (props) => {
       <h3> Co pro odhadce?</h3>
       <div className="link-in-text">
         <p>
-          Vytiskni<strong> lektronický výpis z katastru </strong>
+          Vytiskni<strong> elektronický výpis z katastru </strong>
         </p>
         <p>
           <a href="https://nahlizenidokn.cuzk.cz/" target="_blank">
