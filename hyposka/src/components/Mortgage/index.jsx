@@ -46,6 +46,7 @@ export const Mortgage = (props) => {
             printName="TextBuyHouse"
           />
         </Card>
+
         <Card
           photo={pictureBuyLand}
           alt="Stavební pozemek"
@@ -58,6 +59,7 @@ export const Mortgage = (props) => {
             printName="TextBuyLand"
           />
         </Card>
+
         <Card
           photo={pictureBuyFlat}
           alt="Byt"
@@ -83,6 +85,7 @@ export const Mortgage = (props) => {
             printName="TextBuyCottage"
           />
         </Card>
+
         <Card
           photo={pictureBuyPension}
           alt="Penzion Gerta"
@@ -95,6 +98,7 @@ export const Mortgage = (props) => {
             printName="TextBuyPension"
           />
         </Card>
+
         <Card
           photo={refinancing}
           alt="Smlouva o hypotečním úvěru"
@@ -107,6 +111,7 @@ export const Mortgage = (props) => {
             printName="TextRefinancing"
           />
         </Card>
+
         <p className="text-center">Nebo něco odvážnějšího?</p>
         <Card
           photo={build}
@@ -120,6 +125,7 @@ export const Mortgage = (props) => {
             printName="TextBuild"
           />
         </Card>
+
         <Card
           photo={pictureReconstruction}
           alt="Rekonstrukce"
@@ -132,7 +138,9 @@ export const Mortgage = (props) => {
             printName="TextReconstruction"
           />
         </Card>
+
         <p className="text-center">Jsi fajnšmekr?</p>
+
         <Card
           photo={ruin}
           alt="Koupě s rekonstrukcí"

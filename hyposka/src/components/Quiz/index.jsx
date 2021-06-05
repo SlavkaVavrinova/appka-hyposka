@@ -19,9 +19,9 @@ export const Quiz = () => {
     }
   };
   const history = useHistory();
-  const refreschQuiz = ()=>{
-    setActiveQuestion(1)
-  }
+  const refreschQuiz = () => {
+    setActiveQuestion(1);
+  };
   return (
     <>
       <main>
@@ -40,6 +40,7 @@ export const Quiz = () => {
             textB="Úvodní fáze při hypnóze."
             goAhead={increment}
           ></Questions>
+
           <Questions
             className={cx('change', { 'is-active': activeQuestion === 2 })}
             key="Question2"
@@ -50,6 +51,7 @@ export const Quiz = () => {
             textB="Když muž potká ženu, tak mezi nimi vznikne fixace."
             goAhead={increment}
           ></Questions>
+
           <Questions
             className={cx('change', { 'is-active': activeQuestion === 3 })}
             key="Question3"
@@ -60,6 +62,7 @@ export const Quiz = () => {
             textB="Čím delší, tím lepší."
             goAhead={increment}
           ></Questions>
+
           <Questions
             className={cx({ 'is-active': activeQuestion === 4 })}
             key="Question4"
@@ -69,6 +72,7 @@ export const Quiz = () => {
             textB="V televizi, tam mají vždy pravdu."
             goAhead={increment}
           ></Questions>
+
           <Questions
             className={cx('change', { 'is-active': activeQuestion === 5 })}
             key="Question5"
@@ -91,7 +95,9 @@ export const Quiz = () => {
         </div>
         <div className="buttons-row__buttons">
           <Link to="/kviz">
-            <button className="button--back" onClick={refreschQuiz}>Hrát znovu</button>
+            <button className="button--back" onClick={refreschQuiz}>
+              Hrát znovu
+            </button>
           </Link>
           <Link to="/">
             <button className="button--forward">Konec</button>

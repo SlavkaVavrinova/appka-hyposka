@@ -6,10 +6,10 @@ import firebase from 'firebase/app';
 import validator from 'validator';
 
 export const FormContact = () => {
-  const [name, setName] = useState([]);
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [message, setMessage] = useState([]);
-  const [response, setResponse] = useState([]);
+  const [message, setMessage] = useState('');
+  const [response, setResponse] = useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -57,7 +57,7 @@ export const FormContact = () => {
         </label>
         <input value={name} onChange={(event) => setName(event.target.value)} />
         <div className="valid">
-          <label >
+          <label>
             Email <span className="required">*</span>
           </label>
           <span> {validEmail}</span>
@@ -66,7 +66,7 @@ export const FormContact = () => {
           value={email}
           onChange={(event) => setEmail(event.target.value)}
         />
-        <label >
+        <label>
           Vzkaz či rada <span className="required">*</span>{' '}
         </label>
         <textarea

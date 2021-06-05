@@ -8,7 +8,7 @@ export const Questions = (props) => {
   };
   const handleWrongAnswer = (event) => {
     alert(
-      'Špatná odpověď. Že jen zkoušíš, co se stane, když odpovíš špatně? Odpovídej znovu',
+      'Špatná odpověď. Že jen zkoušíš, co se stane, když odpovíš špatně? Odpovídej znovu.',
     );
   };
 

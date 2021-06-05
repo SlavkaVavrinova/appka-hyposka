@@ -21,27 +21,29 @@ export const Rent = (props) => {
       <p>
         Banka bude do budoucna ráda za výpis z účtu, kde je příchozí nájem
         vidět.
-      </p>{' '}
+      </p>
       <p>I zde platí, že to nemusí být hned na první schůzce.</p>
-        <div className="row-print">
-          <label>
-            Přidat do tisku: <input
+
+      <div className="row-print">
+        <label>
+          Přidat do tisku:{' '}
+          <input
             className="print"
             type="checkbox"
             checked={checked}
             onChange={handleChange}
           />
-          </label>
-          <Link to="/print">Prohlédnout tisk</Link>
-        </div>
-        <div className="buttons-row__buttons">
-          <Link to="/hypoteka">
-            <button className="button--back ">Zpět</button>
-          </Link>
-          <Link to="/vydaje">
-            <button className="button--forward">Pokračovat</button>
-          </Link>
-        </div>
-        </>
+        </label>
+        <Link to="/print">Prohlédnout tisk</Link>
+      </div>
+      <div className="buttons-row__buttons">
+        <Link to="/hypoteka">
+          <button className="button--back ">Zpět</button>
+        </Link>
+        <Link to="/vydaje">
+          <button className="button--forward">Pokračovat</button>
+        </Link>
+      </div>
+    </>
   );
 };

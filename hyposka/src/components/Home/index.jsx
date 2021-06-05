@@ -36,31 +36,62 @@ export const Home = () => {
           proběhne, co vzít s sebou na první návštěvu banky a na co dát pozor.
         </p>
         <h2 className="home-h">Co tě v appce čeká?</h2>
+
         <div className="conteiner__img">
           <div>
-            <img src={mortgage} alt="účel" />
-            <h3>1. Zvolíš účel </h3>
-            <p>Získáš informace, co bude dokládáno k nemovitosti</p>
+            <div className="conteiner__img-heigh">
+              <img src={mortgage} alt="účel" />
+            </div>
+            <div className="conteiner__h3-heigh">
+              <h3>1. Zvolíš účel </h3>
+            </div>
+            <div className="conteiner__p-heigh">
+              <p>Získáš informace, co bude dokládáno k nemovitosti</p>
+            </div>
           </div>
           <div>
-            <img src={income} alt="příjem" />
-            <h3>2. Doložíš příjmy</h3>
-            <p>Získáš informace, jak bance doložíš příjmy </p>
+            <div className="conteiner__img-heigh">
+              <img src={income} alt="příjem" />
+            </div>
+            <div className="conteiner__h3-heigh">
+              <h3>2. Doložíš příjmy</h3>
+            </div>
+            <div className="conteiner__p-heigh">
+              <p>Získáš informace, jak bance doložíš své příjmy. </p>
+            </div>
           </div>
           <div>
-            <img src={costs} alt="náklady" />
-            <h3>3. Posoudíš výdaje</h3>
-            <p>Získáš informace k výdajům a koukneš na kalkulačky.</p>
+            <div className="conteiner__img-heigh">
+              <img src={costs} alt="náklady" />
+            </div>
+            <div className="conteiner__h3-heigh">
+              <h3>3. Posoudíš výdaje</h3>
+            </div>
+            <div className="conteiner__p-heigh">
+              <p>Získáš informace k výdajům a koukneš na kalkulačky.</p>
+            </div>
           </div>
           <div>
-            <img src={bank} alt="banka" />
-            <h3>4. Banka/poradce</h3>
-            <p>Zjistíš, jak vybrat vhodného partnera pro hypotéku.</p>
+            <div className="conteiner__img-heigh">
+              <img src={bank} alt="banka" />
+            </div>
+            <div className="conteiner__h3-heigh">
+              <h3>4. Banka/poradce</h3>
+            </div>
+            <div className="conteiner__p-heigh">
+              <p>Zjistíš, jak vybrat vhodného partnera pro hypotéku.</p>
+            </div>
           </div>
         </div>
+        <p className="text-center">
+          Zaškrtávej si v průběhu své volby.
+          <strong> V závěru si vytiskneš taháček</strong> pro tvou první schůzku
+          v bance či u poradce.
+        </p>
         <Link to="/hypoteka">
           <button className="button--large">vstoupit</button>
         </Link>
+
         <div className="home-container">
           <div className="home-container__card ">
             <h2>Kvíz</h2>
@@ -72,7 +103,6 @@ export const Home = () => {
               <button className="button--small">vstoupit</button>
             </Link>
           </div>
-
           <div className="home-container__card ">
             <h2>Kde to umí</h2>
             <div className="home-container__card-in">
@@ -83,7 +113,6 @@ export const Home = () => {
               <button className="button--small">vstoupit</button>
             </Link>
           </div>
-
           <div className="home-container__card">
             <h2>Bonusy</h2>
             <div className="home-container__card-in">

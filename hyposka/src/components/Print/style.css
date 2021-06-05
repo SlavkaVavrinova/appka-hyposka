@@ -1,10 +1,12 @@
 .print-black {
   color: black;
 }
+
 .print-black__container {
   display: flex;
   justify-content: center;
 }
+
 .print-black__logo {
   width: 4rem;
 }
@@ -12,8 +14,8 @@
 .button--print {
   width: 150px;
   max-width: 90%;
-  margin-right: calc((100% - 150px)/2);
-  margin-left: calc((100% - 150px)/2);
+  margin-right: calc((100% - 150px) / 2);
+  margin-left: calc((100% - 150px) / 2);
   margin-top: 0;
   margin-bottom: 0;
   padding: 0.5rem 0;
@@ -22,24 +24,19 @@
   border: 1px solid #94b1ac;
   border-radius: 5px;
   color: #ffffff;
-  background: linear-gradient(45deg, #632E37, #1A4E45);
+  background: linear-gradient(45deg, #632e37, #1a4e45);
   box-shadow: 2px 2px 5px #1a4e45;
- }
+}
 
 .button--print img {
   width: 3rem;
- 
-  }
-
-
+}
 
 .button--print:hover {
-  background: linear-gradient(45deg, #854E58, #94B1AC);
+  background: linear-gradient(45deg, #854e58, #94b1ac);
   box-shadow: inset 1px 1px 0 0 #cad8d6;
 }
 
-
 .button--print:hover img {
   width: 3.1rem;
- 
-  }
+}

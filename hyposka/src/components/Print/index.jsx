@@ -143,6 +143,7 @@ export const Print = (props) => {
             </ul>
           </>
         )}
+
         {props.listToPrint['TextBuyWithReconstruction'] && (
           <>
             <h3 className="print-black">Doklady koupě s rekonstrukcí:</h3>

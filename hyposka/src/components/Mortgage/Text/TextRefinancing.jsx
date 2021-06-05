@@ -5,11 +5,13 @@ export const TextRefinancing = (props) => {
   const [checked, setChecked] = useState(
     props.checkedToPrint[props.printName] === true,
   );
+
   const handleChange = (event) => {
     const value = event.target.checked;
     setChecked(value);
     props.addToPrint(props.printName, value);
   };
+
   return (
     <>
       <p>
@@ -41,26 +43,26 @@ export const TextRefinancing = (props) => {
         hypotéky, může chtít vidět kupní smlouvu, projektovou dokumentaci a
         další. To se dozvíš na první schůzce, není potřeba to řešit dopředu.
       </p>
-   <div className="row-print">
-          <label >
-            Přidat do tisku: <input
+      <div className="row-print">
+        <label>
+          Přidat do tisku:{' '}
+          <input
             className="print"
             type="checkbox"
             checked={checked}
             onChange={handleChange}
           />
-          </label>
-          
-          <Link to="/print">Prohlédnout tisk</Link>
-        </div>
-        <div className="buttons-row__buttons">
-          <Link to="/">
-            <button className="button--back ">Domů</button>
-          </Link>
-          <Link to="/prijem">
-            <button className="button--forward">Pokračovat</button>
-          </Link>
-   
+        </label>
+
+        <Link to="/print">Prohlédnout tisk</Link>
+      </div>
+      <div className="buttons-row__buttons">
+        <Link to="/">
+          <button className="button--back ">Domů</button>
+        </Link>
+        <Link to="/prijem">
+          <button className="button--forward">Pokračovat</button>
+        </Link>
       </div>
     </>
   );

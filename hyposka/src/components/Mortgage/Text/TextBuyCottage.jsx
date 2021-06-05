@@ -18,7 +18,6 @@ export const TextBuyCottage = (props) => {
           Ideální je <strong>kupní smlouva</strong>, ale tu dostaneš až za hodně
           dlouho.
         </li>
-
         <li>
           Alternativa je <strong>smlouva o smlouvě budoucí</strong>. To je skoro
           to stejné a taky se bude dělat většinou později.
@@ -35,18 +34,17 @@ export const TextBuyCottage = (props) => {
           .
         </li>
       </ul>
-
       <h3>Co pro odhadce?</h3>
-       <div className="lv">
-              <p>
-                Vytiskni<strong> lektronický výpis z katastru </strong>
-              </p>
-              <p>
-                <a href="https://nahlizenidokn.cuzk.cz/" target="_blank">
-                <strong>ZDE</strong>
-                 </a>
-              </p>
-              </div>
+      <div className="lv">
+        <p>
+          Vytiskni<strong> lektronický výpis z katastru </strong>
+        </p>
+        <p>
+          <a href="https://nahlizenidokn.cuzk.cz/" target="_blank">
+            <strong>ZDE</strong>
+          </a>
+        </p>
+      </div>
       <p>
         Hledej v něm překvapení v podobě omezení. Není třeba se lekat, nemusí to
         být exekuce, ale hypotéka původních majitelů. Ta se dá zaplatit, ale
@@ -70,24 +68,26 @@ export const TextBuyCottage = (props) => {
         zřídit nepůjde, tak bude chtít do zástavy něco jiného (dům, byt, jinou
         chatu atd.)
       </p>
-        <div className="row-print">
-          <label>
-            Přidat do tisku: <input
+
+      <div className="row-print">
+        <label>
+          Přidat do tisku:{' '}
+          <input
             className="print"
             type="checkbox"
             checked={checked}
             onChange={handleChange}
           />
-          </label>
-          <Link to="/print">Prohlédnout tisk</Link>
-        </div>
-        <div className="buttons-row__buttons">
-          <Link to="/">
-            <button className="button--back ">Domů</button>
-          </Link>
-          <Link to="/prijem">
-            <button className="button--forward">Pokračovat</button>
-          </Link>
+        </label>
+        <Link to="/print">Prohlédnout tisk</Link>
+      </div>
+      <div className="buttons-row__buttons">
+        <Link to="/">
+          <button className="button--back ">Domů</button>
+        </Link>
+        <Link to="/prijem">
+          <button className="button--forward">Pokračovat</button>
+        </Link>
       </div>
     </>
   );

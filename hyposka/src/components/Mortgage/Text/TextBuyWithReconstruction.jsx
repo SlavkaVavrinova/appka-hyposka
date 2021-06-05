@@ -5,11 +5,13 @@ export const TextBuyWithReconstruction = (props) => {
   const [checked, setChecked] = useState(
     props.checkedToPrint[props.printName] === true,
   );
+
   const handleChange = (event) => {
     const value = event.target.checked;
     setChecked(value);
     props.addToPrint(props.printName, value);
   };
+
   return (
     <>
       <p>
@@ -75,25 +77,27 @@ export const TextBuyWithReconstruction = (props) => {
         stejného místa. Firmy v oboru se dost často znají. A i tak pak při
         stavbě je dobré hlídat, aby se spolu nezačali domlouvat.
       </p>
+
       <div className="row-print">
-          <label>
-            Přidat do tisku: <input
+        <label>
+          Přidat do tisku:{' '}
+          <input
             className="print"
             type="checkbox"
             checked={checked}
             onChange={handleChange}
           />
-          </label>
-               <Link to="/print">Prohlédnout tisk</Link>
-        </div>
-        <div className="buttons-row__buttons">
-          <Link to="/">
-            <button className="button--back ">Domů</button>
-          </Link>
-          <Link to="/prijem">
-            <button className="button--forward">Pokračovat</button>
-          </Link>
-        </div>
+        </label>
+        <Link to="/print">Prohlédnout tisk</Link>
+      </div>
+      <div className="buttons-row__buttons">
+        <Link to="/">
+          <button className="button--back ">Domů</button>
+        </Link>
+        <Link to="/prijem">
+          <button className="button--forward">Pokračovat</button>
+        </Link>
+      </div>
     </>
   );
 };

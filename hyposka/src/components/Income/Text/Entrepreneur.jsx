@@ -5,11 +5,13 @@ export const Entrepreneur = (props) => {
   const [checked, setChecked] = useState(
     props.checkedToPrint[props.printName] === true,
   );
+
   const handleChange = (event) => {
     const value = event.target.checked;
     setChecked(value);
     props.addToPrint(props.printName, value);
   };
+
   return (
     <>
       <p>
@@ -22,25 +24,26 @@ export const Entrepreneur = (props) => {
         nějakých limitů, které je schopná poskytnout bez doložení přiznání na
         základě pohybů na účtu.
       </p>
-         <div className="row-print">
-          <label>
-            Přidat do tisku: <input
+
+      <div className="row-print">
+        <label>
+          Přidat do tisku:{' '}
+          <input
             className="print"
             type="checkbox"
             checked={checked}
             onChange={handleChange}
           />
-          </label>
-          
-          <Link to="/print">Prohlédnout tisk</Link>
-        </div>
-        <div className="buttons-row__buttons">
-          <Link to="/hypoteka">
-            <button className="button--back ">Zpět</button>
-          </Link>
-          <Link to="/vydaje">
-            <button className="button--forward">Pokračovat</button>
-          </Link>
+        </label>
+        <Link to="/print">Prohlédnout tisk</Link>
+      </div>
+      <div className="buttons-row__buttons">
+        <Link to="/hypoteka">
+          <button className="button--back ">Zpět</button>
+        </Link>
+        <Link to="/vydaje">
+          <button className="button--forward">Pokračovat</button>
+        </Link>
       </div>
     </>
   );

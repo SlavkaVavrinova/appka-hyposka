@@ -18,7 +18,6 @@ export const TextBuyFlat = (props) => {
           Ideální je <strong>kupní smlouva</strong>, ale tu dostaneš až za hodně
           dlouho.
         </li>
-
         <li>
           Alternativa je <strong>smlouva o smlouvě budoucí</strong>. To je skoro
           to stejné a taky se bude dělat většinou později.
@@ -27,7 +26,6 @@ export const TextBuyFlat = (props) => {
           Fajn je <strong>rezervační smlouva</strong>, ale tu ti dají jen za
           podpis. Podepíšeš 🡪 platíš rezervační poplatek a prostě kupuješ.
         </li>
-
         <li>
           Takže jak, nemáme nic. Vezmi s sebou alespoň
           <strong> inzerát s cenou a údaji k tomu, co se bude kupovat</strong>.
@@ -51,16 +49,15 @@ export const TextBuyFlat = (props) => {
         hodnotu dle cenové mapy, která je v dané lokalitě nastavena.
       </p>
       <div className="lv">
-              <p>
-                Vytiskni<strong> lektronický výpis z katastru </strong>
-              </p>
-              <p>
-                <a href="https://nahlizenidokn.cuzk.cz/" target="_blank">
-                <strong>ZDE</strong>
-                 </a>
-              </p>
-              </div>
-          
+        <p>
+          Vytiskni<strong> lektronický výpis z katastru </strong>
+        </p>
+        <p>
+          <a href="https://nahlizenidokn.cuzk.cz/" target="_blank">
+            <strong>ZDE</strong>
+          </a>
+        </p>
+      </div>
       <p>
         Hledej v něm překvapení v podobě omezení. Není třeba se lekat, nemusí to
         být exekuce, ale hypotéka původních majitelů. Ta se dá zaplatit, ale
@@ -82,25 +79,27 @@ export const TextBuyFlat = (props) => {
         <strong> do zástavy musíš dát nějakou jinou nemovitost</strong>
         (druhý byt, chatu, dům extramilujících rodičů atd.) Neudělá.
       </p>
-        <div className="row-print">
-          <label>
-            Přidat do tisku: <input
+
+      <div className="row-print">
+        <label>
+          Přidat do tisku:{' '}
+          <input
             className="print"
             type="checkbox"
             checked={checked}
             onChange={handleChange}
           />
-          </label>
-          <Link to="/print">Prohlédnout tisk</Link>
-        </div>
-        <div className="buttons-row__buttons">
-          <Link to="/">
-            <button className="button--back ">Domů</button>
-          </Link>
-          <Link to="/prijem">
-            <button className="button--forward">Pokračovat</button>
-          </Link>
-          </div>
+        </label>
+        <Link to="/print">Prohlédnout tisk</Link>
+      </div>
+      <div className="buttons-row__buttons">
+        <Link to="/">
+          <button className="button--back ">Domů</button>
+        </Link>
+        <Link to="/prijem">
+          <button className="button--forward">Pokračovat</button>
+        </Link>
+      </div>
     </>
   );
 };

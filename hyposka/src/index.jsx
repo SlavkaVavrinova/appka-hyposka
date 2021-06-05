@@ -79,7 +79,6 @@ const App = () => {
             <Print listToPrint={listToPrint} />
           </Route>
         </Switch>
-
         <Footer />
       </Router>
     </>

@@ -2,16 +2,17 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './../style.css';
 
-
 export const TextBuyHouse = (props) => {
   const [checked, setChecked] = useState(
     props.checkedToPrint[props.printName] === true,
   );
+
   const handleChange = (event) => {
     const value = event.target.checked;
     setChecked(value);
     props.addToPrint(props.printName, value);
   };
+
   return (
     <>
       <p>
@@ -38,22 +39,21 @@ export const TextBuyHouse = (props) => {
         </li>
       </ul>
       <h3>Co pro odhadce?</h3>
-        <div className="lv">
-              <p>
-                Vytiskni<strong> lektronický výpis z katastru </strong>
-              </p>
-              <p>
-                <a href="https://nahlizenidokn.cuzk.cz/" target="_blank">
-                <strong>ZDE</strong>
-                 </a>
-              </p>
-              </div>
-            <p>
+      <div className="lv">
+        <p>
+          Vytiskni<strong> lektronický výpis z katastru </strong>
+        </p>
+        <p>
+          <a href="https://nahlizenidokn.cuzk.cz/" target="_blank">
+            <strong>ZDE</strong>
+          </a>
+        </p>
+      </div>
+      <p>
         Hledej v něm překvapení v podobě omezení. Není třeba se lekat, nemusí to
         být exekuce, ale hypotéka původních majitelů. Ta se dá zaplatit, ale
         musí se pohlídat, že bude zaplacena.
       </p>
-
       <p>
         Problematická jsou <strong>věcná břemena</strong>, týkající se užívání.
         Nechceš kupovat dům, kde někdo může bydlet s tebou. Naopak věcná břemena
@@ -62,32 +62,32 @@ export const TextBuyHouse = (props) => {
         se informuj na smlouvu a co přesně umožňuje. Soused jezdící traktorem
         tvým pozemkem by bance vadit nemusel, ale tobě třeba ano.
       </p>
-
       <p>
         Odhadce se bude shánět po projektové dokumentaci. To už ale počkej na
         konkrétní požadavek vybrané banky. Kdyby dokumentace nebyla, tak neboj,
         metrem se to dá zvládnout také.
       </p>
-        <div className="row-print">
-          <label>
-            Přidat do tisku: <input
+
+      <div className="row-print">
+        <label>
+          Přidat do tisku:{' '}
+          <input
             className="print"
             type="checkbox"
             checked={checked}
             onChange={handleChange}
           />
-          </label>
-                    <Link to="/print">Prohlédnout tisk</Link>
-        </div>
-        <div className="buttons-row__buttons">
-          <Link to="/">
-            <button className="button--back">Domů</button>
-          </Link>
-          <Link to="/prijem">
-            <button className="button--forward"> Pokračovat</button>
-          </Link>
-        </div>
-     
+        </label>
+        <Link to="/print">Prohlédnout tisk</Link>
+      </div>
+      <div className="buttons-row__buttons">
+        <Link to="/">
+          <button className="button--back">Domů</button>
+        </Link>
+        <Link to="/prijem">
+          <button className="button--forward"> Pokračovat</button>
+        </Link>
+      </div>
     </>
   );
 };

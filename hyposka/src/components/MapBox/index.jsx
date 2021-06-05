@@ -76,7 +76,7 @@ export const MapBox = (props) => {
   const [otevrenyPopup, setOtevrenyPopup] = useState(null);
 
   const [filtr, setFiltr] = useState('Vše');
-  const bankéř = '';
+
   return (
     <>
       <ReactMapGL

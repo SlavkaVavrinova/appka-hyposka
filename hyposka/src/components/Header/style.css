@@ -13,7 +13,7 @@
 }
 
 .banner__h p {
-  padding-left: 1rem;
+  padding-left: 0.2rem;
 }
 .banner p {
   font-size: 75%;
@@ -37,11 +37,10 @@
   width: 60%;
 }
 
-.button--banner{
+.button--banner {
   width: 15em;
-
-  margin-right: 40vw;
-  margin-left: 30vw;
+  margin-right: 40%;
+  margin-left: calc(60% - 15empx);
 }
 .home-h {
   color: #4e1a23;

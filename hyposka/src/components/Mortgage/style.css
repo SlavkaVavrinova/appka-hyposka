@@ -3,9 +3,10 @@
 }
 
 .lv {
-  display:flex;
+  display: flex;
   flex-direction: row;
 }
+
 .lv p {
   padding-right: 0.5rem;
 }

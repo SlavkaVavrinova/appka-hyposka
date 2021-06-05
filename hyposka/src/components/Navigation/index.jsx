@@ -39,7 +39,6 @@ export const Navigation = () => {
             </>
           ) : null}
         </div>
-
         <div className="navigation__large">
           <Link to="/kviz">Kvíz</Link>
 

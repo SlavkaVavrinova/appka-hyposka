@@ -5,11 +5,13 @@ export const TextReconstruction = (props) => {
   const [checked, setChecked] = useState(
     props.checkedToPrint[props.printName] === true,
   );
+
   const handleChange = (event) => {
     const value = event.target.checked;
     setChecked(value);
     props.addToPrint(props.printName, value);
   };
+
   return (
     <>
       <p>
@@ -50,25 +52,27 @@ export const TextReconstruction = (props) => {
         <li>Končící investice za nějaý čas</li>
         <li>Prodej současného bydlení atd.</li>
       </ul>
-    <div className="row-print">
-          <label>
-            Přidat do tisku: <input
+
+      <div className="row-print">
+        <label>
+          Přidat do tisku:{' '}
+          <input
             className="print"
             type="checkbox"
             checked={checked}
             onChange={handleChange}
           />
-          </label>
-                    <Link to="/print">Prohlédnout tisk</Link>
-        </div>
-        <div className="buttons-row__buttons">
-          <Link to="/">
-            <button className="button--back ">Domů</button>
-          </Link>
-          <Link to="/prijem">
-            <button className="button--forward">Pokračovat</button>
-          </Link>
-             </div>
+        </label>
+        <Link to="/print">Prohlédnout tisk</Link>
+      </div>
+      <div className="buttons-row__buttons">
+        <Link to="/">
+          <button className="button--back ">Domů</button>
+        </Link>
+        <Link to="/prijem">
+          <button className="button--forward">Pokračovat</button>
+        </Link>
+      </div>
     </>
   );
 };

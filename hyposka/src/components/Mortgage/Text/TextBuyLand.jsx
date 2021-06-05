@@ -5,11 +5,13 @@ export const TextBuyLand = (props) => {
   const [checked, setChecked] = useState(
     props.checkedToPrint[props.printName] === true,
   );
+
   const handleChange = (event) => {
     const value = event.target.checked;
     setChecked(value);
     props.addToPrint(props.printName, value);
   };
+
   return (
     <>
       <p>Vezmi do banky něco, kde je vidět cena pozemku:</p>
@@ -32,9 +34,13 @@ export const TextBuyLand = (props) => {
       </ul>
       <h3> Co pro odhadce?</h3>
       <div className="lv">
-        <p>Vytiskni<strong> lektronický výpis z katastru </strong></p>
-        <p><a href="https://nahlizenidokn.cuzk.cz/" target="_blank">
-            <strong>ZDE</strong></a>
+        <p>
+          Vytiskni<strong> lektronický výpis z katastru </strong>
+        </p>
+        <p>
+          <a href="https://nahlizenidokn.cuzk.cz/" target="_blank">
+            <strong>ZDE</strong>
+          </a>
         </p>
       </div>
       <p>
@@ -56,25 +62,27 @@ export const TextBuyLand = (props) => {
         Není možné stavět dům na pozemku, který je vedený jako ostatní plocha -
         parkoviště.
       </p>
-        <div className="row-print">
-          <label>
-            Přidat do tisku: <input
+
+      <div className="row-print">
+        <label>
+          Přidat do tisku:{' '}
+          <input
             className="print"
             type="checkbox"
             checked={checked}
             onChange={handleChange}
           />
-          </label>
-          <Link to="/print">Prohlédnout tisk</Link>
-        </div>
-        <div className="buttons-row__buttons">
-          <Link to="/">
-            <button className="button--back ">Domů</button>
-          </Link>
-          <Link to="/prijem">
-            <button className="button--forward">Pokračovat</button>
-          </Link>
-        </div>
+        </label>
+        <Link to="/print">Prohlédnout tisk</Link>
+      </div>
+      <div className="buttons-row__buttons">
+        <Link to="/">
+          <button className="button--back ">Domů</button>
+        </Link>
+        <Link to="/prijem">
+          <button className="button--forward">Pokračovat</button>
+        </Link>
+      </div>
     </>
   );
 };
