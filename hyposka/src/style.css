@@ -51,15 +51,6 @@ h3 {
   text-align: center;
 }
 
-.important-text {
-  font-size: 125%;
-  margin: 0;
-  padding: 1rem 0;
-  color: #4e1a23;
-  text-align: center;
-  font-weight: bold;
-}
-
 button,
 .button--large {
   width: 250px;
@@ -80,7 +71,9 @@ button,
 }
 
 button:hover,
-.button--large:hover {
+button:focus,
+.button--large:hover,
+.button--large:focus {
   background: linear-gradient(45deg, #632e37, #1a4e45);
   box-shadow: inset 1px 1px 0 0 #cad8d6;
 }
@@ -90,10 +83,35 @@ button:hover,
   margin-right: 5vw;
   margin-left: 5vw;
 }
+
 a {
   text-decoration: none;
   display: block;
   color: #1a4e45;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #632e37;
+}
+
+/* Checkbox a prohlédnout tisk */
+
+.row-print {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+/* Zpět a pokračovat */
+
+.buttons-row__buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1rem;
 }
 
 .buttons-row {
@@ -108,7 +126,9 @@ a {
   color: #0c3932;
   margin: 0;
 }
-.button--back:hover {
+
+.button--back:hover,
+.button--back:focus {
   background: linear-gradient(45deg, #94b1ac, #1a4e45);
   box-shadow: inset 1px 1px 0 0 #cad8d6;
 }
@@ -119,25 +139,22 @@ a {
   margin: 0;
 }
 
-.row-print {
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column;
-  margin-right: 30px;
-}
+/* Lv a dokazy v bance a bonusech */
 
-.buttons-row__buttons {
+.link-in-text {
   display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
-  width: 100%;
-  margin-top: 1rem;
 }
 
-.object-no-display {
-  display: none;
+.link-in-text p {
+  padding-right: 2rem;
+  margin: 0;
+  text-align: left;
 }
 
-/* Hvězdičky ve formulářích*/
+/* Hvězdičky ve formulářích */
 
 .valid {
   display: flex;
@@ -153,21 +170,27 @@ a {
   text-align: right;
 }
 
+/* Formátování */
+
+.object-no-display {
+  display: none;
+}
+
 .text-center {
   text-align: center;
 }
 
-.link-in-text {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+.important-text {
+  font-size: 125%;
+  margin: 0;
+  padding: 1rem 0;
+  color: #4e1a23;
+  text-align: center;
+  font-weight: bold;
 }
 
-.link-in-text p {
-  padding-right: 2rem;
-  margin: 0;
-  text-align: left;
+.margin {
+  margin-top: 30px;
 }
 
 @media (min-width: 740px) {
@@ -187,6 +210,7 @@ a {
   .button--small {
     width: 150px;
   }
+
   .button--back {
     margin-right: 30px;
   }
@@ -225,10 +249,12 @@ a {
   html {
     background-color: #cad8d6;
   }
+
   body {
     margin: 0 auto;
     max-width: 1100px;
   }
+
   h1 {
     font-size: 200%;
     margin: 0;
