@@ -38,7 +38,7 @@ export const Bonus = () => {
             photo={paper}
             alt="Papír"
             title="2. Papírování"
-            text="Vše co ses tu dozvěděl a co přihodila banka musíš sehnad a donést zpět do banky. Banka ti dle toho schválí hypoteční úvěr."
+            text="Vše co ses tu dozvěděl a co přihodila banka musíš sehnat a donést zpět do banky. Banka ti dle toho schválí hypoteční úvěr."
             cross={cross}
             crossAlt="Křížek"
           />
@@ -46,7 +46,7 @@ export const Bonus = () => {
             photo={pen}
             alt="Propiska"
             title="3. Podpisy"
-            text="V bace budeš zavalen/a podpisy. Začíná to smlouvou o hyotéce, rovnou dostaneš i zástavní smlouvu pro kupujícího (tu podepiješ ty i on). Utíkáš za prodávajícím, podepíšete kupní smluvu, ty zástavní smlouvy a utíkáš se zástavní smlouvou na katastrální úřad."
+            text="V bance budeš zavalen/a podpisy. Začíná to smlouvou o hypotéce, rovnou dostaneš i zástavní smlouvu pro kupujícího (tu podepisuješ ty i on). Utíkáš za prodávajícím, podepíšete kupní smlouvu, ty zástavní smlouvy a utíkáš se zástavní smlouvou na katastrální úřad."
             cross={cross}
             crossAlt="Křížek"
           />
@@ -54,7 +54,7 @@ export const Bonus = () => {
             photo={lock}
             alt="Zámek"
             title="4. Úschova"
-            text="Zpět do banky se přinese návrh na vklad té zástavní smlouvy [to je často s poplatkem, ale může se čekat bez poplatku než to projde katastrem (14 dní se čeká a pak má katastr měsíc to zpracovat). Banka pošle peníze do  úschovy."
+            text="Zpět do banky se přinese návrh na vklad té zástavní smlouvy [to je často s poplatkem, ale může se čekat bez poplatku než to projde katastrem (14 dní se čeká a pak má katastr měsíc na zpracování). Banka pošle peníze do  úschovy."
             cross={cross}
             crossAlt="Křížek"
           />
@@ -70,7 +70,7 @@ export const Bonus = () => {
             photo={party}
             alt="Párty"
             title="6. Kolaudačka"
-            text="To nejdůležitější, sezvat kamarády, rodinu a řádně to zapít. Jen pozor, aby nebyla potřeba další rekonstrukce. Nezapomeň dům je v zástavě, nesmí se ničit."
+            text="To nejdůležitější, sezvat kamarády, rodinu a řádně to zapít. Jen pozor, aby nebyla potřeba další rekonstrukce. Nezapomeň, dům je v zástavě, nesmí se ničit."
             cross={cross}
             crossAlt="Křížek"
           />
@@ -84,10 +84,10 @@ export const Bonus = () => {
           </strong>{' '}
           a peníze si předat u podpisu. Dokonce je i velká šance, že to
           katastrem projde. On zastaví chybnou identifikaci nemovitosti. Nic
-          dalšího v kupní smlouvě ho moc nezajímá.
+          dalšího v kupní smlouvě ho nezajímá.
           <p>
             <strong>
-              To že kupní smlouva projde katastrem neznamená, že je v pořádku.
+              To, že kupní smlouva projde katastrem neznamená, že je v pořádku.
             </strong>{' '}
             Může jí následně kdokoli napadnout. Nekupuješ ale rohlíky, kdyby
             byla kupní smlouva špatně, tak by ti prodávající měl peníze vrátit,
@@ -96,8 +96,8 @@ export const Bonus = () => {
               Jsi ochoten risknout, že o všechny peníze na koupi můžeš přijít?
             </strong>
           </p>
-          <p></p> Právník není levný, ale kdyby to nedopadlo dobře, tak ta suma
-          pro něj je nesrovnatelná s tou o kterou můžeš přijít.{' '}
+          <p></p> Právník není levný, ale kdyby to nedopadlo dobře, tak suma
+          vynaložená za právníka je nesrovnatelná s tou, o kterou můžeš přijít.{' '}
         </p>
 
         <div className="card-bonus">
@@ -121,7 +121,7 @@ export const Bonus = () => {
             photo={check}
             alt="lupa"
             title="Důvěřuj, ale prověřuj "
-            text="Rady co vše můžeš před realizací hypotéky zkontrolovat."
+            text="Rady, co vše můžeš před realizací hypotéky zkontrolovat."
           >
             <Check />
           </Card>
