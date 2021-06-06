@@ -1,5 +1,6 @@
 import React from 'react';
 import veruFamily from '../img/verufamily.jpg';
+import veruPC from '../img/veruPC.jpg';
 
 export const Veru = () => {
   return (
@@ -11,6 +12,7 @@ export const Veru = () => {
         změnu, a mít možnost určit si přesně čas, kdy se mohu věnovat práci a
         kdy dětem.
       </p>
+      <img className="veru__pc" src={veruPC} alt="Verca" />
       <p>
         Do digitální akademie jsem se přihlásila ze zvědavosti, a s vidinou
         rozšíření vědomostí a obzorů a mít příležitost do budoucnaucházet se o
@@ -41,6 +43,12 @@ export const Veru = () => {
         učíme nové věci, procvičujeme znalosti, je to náročné i díky tomu, že je
         offline a doma vám k tomu běhají děti. Věřím však, že náš projekt bude
         skvělý a využijeme k tomu veškeré získané znalosti.
+      </p>
+      <p>
+        A co na závěr - snad už jen mé záliby, ke kterým utíkám, když vyšetřím
+        chvilku času. Ráda sportuji, jezdím na kole, bruslích, poslední dobou
+        "čistím hlavu" běháním, ráda maluji, tvořím, přečtu si ráda pěknou knihu
+        a nejraději posedím s přáteli u dobrého vínka.
       </p>
     </>
   );
