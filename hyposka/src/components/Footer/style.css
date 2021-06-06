@@ -2,9 +2,9 @@ footer {
   display: flex;
   background-color: #0c3932;
   color: #ffffff;
-
   padding: 0 30px;
 }
+
 .footer__logo {
   width: 4vw;
 }
@@ -12,6 +12,7 @@ footer {
 .footer__copyright {
   height: 1rem;
 }
+
 .footer__text {
   display: flex;
   align-items: center;

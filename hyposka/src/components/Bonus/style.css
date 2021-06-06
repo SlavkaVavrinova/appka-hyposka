@@ -41,6 +41,7 @@
 .card-bonus .container__photo {
   width: 40%;
 }
+
 @media (min-width: 540px) {
   .container-bonus {
     display: flex;
@@ -48,9 +49,11 @@
     flex-wrap: wrap;
     margin-bottom: 2rem;
   }
+
   .container-bonus__item {
     width: calc((100%) / 2);
   }
+
   .container-bonus__img {
     width: 30%;
   }
@@ -68,6 +71,7 @@
   .container-bonus__item {
     width: calc((100%) / 3);
   }
+
   .container-bonus__box {
     position: absolute;
     bottom: 1rem;
@@ -75,6 +79,7 @@
     width: 80%;
     height: 11rem;
   }
+
   .card-bonus .container__photo {
     width: 70%;
   }

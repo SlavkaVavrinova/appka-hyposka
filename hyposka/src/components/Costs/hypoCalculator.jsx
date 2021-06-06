@@ -192,10 +192,8 @@ export const HypoCalculator = () => {
           />
         </label>
       </div>
-
       <div className="form-costs__container-minimum">
         <strong>Výše splátky nové hypotéky může být</strong>
-
         <p className="form-costs__minimum">{`${restForMortgage} Kč`}</p>
       </div>
     </>

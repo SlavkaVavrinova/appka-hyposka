@@ -26,6 +26,7 @@
 .annuity__plan {
   align-items: center;
 }
+
 .annuity__input input,
 .form-costs input,
 .form-costs select {
@@ -38,23 +39,28 @@
   justify-content: flex-end;
   padding-right: 10%;
 }
+
 table {
   width: 80%;
   margin-right: 10%;
   margin-left: 10%;
   text-align: right;
 }
+
 th {
   background-color: #0c3932;
   color: #ffffff;
 }
+
 tr:nth-child(even) {
   background-color: #cad8d6;
 }
+
 .plan-arrows {
   display: flex;
   justify-content: center;
 }
+
 .plan-pages {
   text-align: center;
 }

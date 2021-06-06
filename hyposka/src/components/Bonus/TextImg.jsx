@@ -17,7 +17,6 @@ export const TextImg = (props) => {
           alt={props.alt}
         />
         <p>{props.title}</p>
-
         <div
           className={
             display !== true
