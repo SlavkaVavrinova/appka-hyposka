@@ -15,8 +15,8 @@ export const Header = () => {
             Jednoduché kroky k vysněnému bydlení s hypotékou.
           </p>
           <p className="motto__info">
-            Nejsem banka, finanční poradce, nic nenabízím!
-            <strong> Poskytuji informace</strong>, co tě se mnou čeká.
+            <strong>Nejsem banka, finanční poradce, nic nenabízím!</strong>{' '}
+            Poskytuji informace, co tě se mnou čeká.
           </p>
           <Link to="/hypoteka">
             <button className="button--banner">vstoupit</button>

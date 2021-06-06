@@ -1,3 +1,8 @@
+.print {
+  height: 2rem;
+  width: 2rem;
+}
+
 .print-black {
   color: black;
 }

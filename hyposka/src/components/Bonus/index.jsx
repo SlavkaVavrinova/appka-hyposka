@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
+import './style.css';
 
+import { TextImg } from './TextImg';
 import { Theory } from './Text/theory';
 import { Insurance } from './Text/insurance';
 import { Card } from '../Card/index';
@@ -24,38 +26,44 @@ export const Bonus = () => {
       <main>
         <h1>Bonusy</h1>
         <h2>Fáze zpracování hypotéky</h2>
-        <div className="conteiner__img">
-          <div>
-            <img src={bank} alt="Banka" />
-            <h3>Banka</h3>
-            <p>Text</p>
-          </div>
-          <div>
-            <img src={paper} alt="Papír" />
-            <h3>Papírování</h3>
-            <p>Text</p>
-          </div>
-          <div>
-            <img src={pen} alt="Propiska" />
-            <h3>Podpisy</h3>
-            <p>Text</p>
-          </div>
-          <div>
-            <img src={lock} alt="Zámek" />
-
-            <h3>Úschova</h3>
-            <p>Text</p>
-          </div>
-          <div>
-            <img src={globe} alt="Globus" />
-            <h3>Katastr</h3>
-            <p>Text</p>
-          </div>
-          <div>
-            <img src={party} alt="Párty" />
-            <h3>Kolaudačkapárty</h3>
-            <p>Text</p>
-          </div>
+        <div className="plac-for-box"></div>
+        <div className="container-bonus">
+          <TextImg
+            photo={bank}
+            alt="Banka"
+            title="1. Banka"
+            text="Hokus pokus 1"
+          />
+          <TextImg
+            photo={paper}
+            alt="Papír"
+            title="2. Papírování"
+            text="Hokus pokus 2"
+          />
+          <TextImg
+            photo={pen}
+            alt="Propiska"
+            title="3. Podpisy"
+            text="Hokus pokus 3"
+          />
+          <TextImg
+            photo={lock}
+            alt="Zámek"
+            title="4. Úschova"
+            text="Hokus pokus 4"
+          />
+          <TextImg
+            photo={globe}
+            alt="Globus"
+            title="5. Katastr"
+            text="Hokus pokus 5"
+          />
+          <TextImg
+            photo={party}
+            alt="Párty"
+            title="6. Kolaudačka"
+            text="Hokus pokus 6"
+          />
         </div>
 
         <Card

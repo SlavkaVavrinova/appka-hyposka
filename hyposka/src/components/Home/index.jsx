@@ -37,48 +37,48 @@ export const Home = () => {
         </p>
         <h2 className="home-h">Co tě v appce čeká?</h2>
 
-        <div className="conteiner__img">
+        <div className="container__img">
           <div>
-            <div className="conteiner__img-heigh">
+            <div className="container__img-heigh">
               <img src={mortgage} alt="účel" />
             </div>
-            <div className="conteiner__h3-heigh">
+            <div className="container__h3-heigh">
               <h3>1. Zvolíš účel </h3>
             </div>
-            <div className="conteiner__p-heigh">
+            <div className="container__p-heigh">
               <p>Získáš informace, co bude dokládáno k nemovitosti</p>
             </div>
           </div>
           <div>
-            <div className="conteiner__img-heigh">
+            <div className="container__img-heigh">
               <img src={income} alt="příjem" />
             </div>
-            <div className="conteiner__h3-heigh">
+            <div className="container__h3-heigh">
               <h3>2. Doložíš příjmy</h3>
             </div>
-            <div className="conteiner__p-heigh">
+            <div className="container__p-heigh">
               <p>Získáš informace, jak bance doložíš své příjmy. </p>
             </div>
           </div>
           <div>
-            <div className="conteiner__img-heigh">
+            <div className="container__img-heigh">
               <img src={costs} alt="náklady" />
             </div>
-            <div className="conteiner__h3-heigh">
+            <div className="container__h3-heigh">
               <h3>3. Posoudíš výdaje</h3>
             </div>
-            <div className="conteiner__p-heigh">
+            <div className="container__p-heigh">
               <p>Získáš informace k výdajům a koukneš na kalkulačky.</p>
             </div>
           </div>
           <div>
-            <div className="conteiner__img-heigh">
+            <div className="container__img-heigh">
               <img src={bank} alt="banka" />
             </div>
-            <div className="conteiner__h3-heigh">
+            <div className="container__h3-heigh">
               <h3>4. Banka/poradce</h3>
             </div>
-            <div className="conteiner__p-heigh">
+            <div className="container__p-heigh">
               <p>Zjistíš, jak vybrat vhodného partnera pro hypotéku.</p>
             </div>
           </div>

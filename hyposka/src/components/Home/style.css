@@ -1,17 +1,17 @@
-.conteiner__img {
+.container__img {
   display: flex;
   flex-direction: column;
   margin: 1rem;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
-.conteiner__img div {
+.container__img div {
   text-align: center;
   align-items: center;
 }
 
-.conteiner__img img {
+.container__img img {
   width: 25%;
 }
 .home-container {
@@ -34,32 +34,32 @@
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
-  .conteiner__img {
+@media (min-width: 768px) {
+  .container__img {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
 
-  .conteiner__img div {
+  .container__img div {
     display: flex;
     flex-direction: column;
     padding: 1rem;
   }
-  .conteiner__img img {
+  .container__img img {
     width: 80%;
   }
 
-  .conteiner__img-heigh {
+  .container__img-heigh {
     height: 160px;
   }
 
-  .conteiner__h3-heigh {
+  .container__h3-heigh {
     height: 5rem;
   }
 
-  .conteiner__p-heigh {
+  .container__p-heigh {
     height: 7rem;
   }
 
