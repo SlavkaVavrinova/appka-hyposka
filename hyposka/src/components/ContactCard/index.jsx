@@ -16,7 +16,7 @@ export const ContactCard = (props) => {
         </div>
         <div className="container__right-side">
           <h2 className="card-title__large">{props.title}</h2>
-          <p>{props.render()}</p>
+          <div>{props.render()}</div>
           <button className="button--card" onClick={handleClick}>
             {display === true ? 'Zavřít' : 'Více'}
           </button>
