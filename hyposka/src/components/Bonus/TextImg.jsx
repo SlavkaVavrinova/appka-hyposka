@@ -11,17 +11,23 @@ export const TextImg = (props) => {
   return (
     <>
       <div className="container-bonus__item" onClick={handleClick}>
-        <img src={props.photo} alt={props.alt} />
+        <img
+          className="container-bonus__img"
+          src={props.photo}
+          alt={props.alt}
+        />
         <p>{props.title}</p>
-      </div>
-      <div
-        className={
-          display !== true
-            ? 'object-no-display'
-            : 'object-display container-bonus__box'
-        }
-      >
-        {props.text}
+
+        <div
+          className={
+            display !== true
+              ? 'object-no-display'
+              : 'object-display container-bonus__box'
+          }
+        >
+          {props.text}
+          <img src={props.cross} alt={props.crossAlt} />
+        </div>
       </div>
     </>
   );

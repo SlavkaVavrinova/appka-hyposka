@@ -34,7 +34,6 @@ export const Income = (props) => {
           že musíš hned u dveří sdělovat průměrný příjem
         </p>
         <p>Vyber, kdo jsi, odkud tečou tvé příjmy:</p>
-
         <Card
           photo={pasky}
           alt="Výplatní páska"
