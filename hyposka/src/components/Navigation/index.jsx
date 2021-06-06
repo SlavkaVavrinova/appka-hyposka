@@ -27,7 +27,7 @@ export const Navigation = () => {
           {isMenuOpened ? (
             <>
               <div className="links-mobile">
-                <Link to="/">Domu</Link>
+                <Link to="/">Domů</Link>
                 <Link to="/kviz">Kvíz</Link>
 
                 <Link to="/mapa">Mapa</Link>
