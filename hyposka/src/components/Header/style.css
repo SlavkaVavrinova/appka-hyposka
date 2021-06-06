@@ -5,36 +5,31 @@
   padding: 0 15px;
 }
 
-.banner__h h1 {
-  padding-bottom: 0;
-  max-width: 70%;
-  font-size: 200%;
-  font-family: 'Roboto', 'Montserrat', sans-serif;
-}
-
-.banner__h p {
-  padding-left: 0.2rem;
-}
-.banner p {
-  font-size: 75%;
-  max-width: 60%;
-}
-
-.banner__h {
+.app {
   display: flex;
   align-items: baseline;
   padding: 0;
   margin: 0;
 }
 
-.banner__p {
-  display: none;
+.app h1 {
+  padding-bottom: 0;
+  max-width: 70%;
+  font-size: 200%;
+  font-family: 'Roboto', 'Montserrat', sans-serif;
 }
 
-.banner__button p {
-  margin-right: 1rem;
-  margin-top: 0;
-  width: 60%;
+.app-rest {
+  padding-left: 0.2rem;
+  font-family: 'Great Vibes';
+}
+.motto__info {
+  font-size: 75%;
+  max-width: 60%;
+}
+
+.motto {
+  display: none;
 }
 
 .button--banner {
@@ -42,24 +37,99 @@
   margin-right: 40%;
   margin-left: calc(60% - 15empx);
 }
-.home-h {
-  color: #4e1a23;
+
+@media (min-width: 428px) {
+  .banner {
+    background-image: url(img/bannerS.svg);
+    background-size: contain;
+  }
+  .app h1 {
+    max-width: 70%;
+  }
+  .motto__info {
+    padding-top: 0;
+  }
+  .button--banner {
+    width: 10em;
+    margin-right: 40%;
+    margin-left: calc(60% - 15empx);
+    padding: 0.5em 0;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 461px) {
+  .banner {
+    background-image: url(img/bannerM.svg);
+    background-size: contain;
+  }
+
+  .motto__info {
+    padding-top: 0;
+    margin-top: 0;
+    margin-right: 45%;
+  }
+
+  .app h1 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 510px) {
+  .banner {
+    background-image: url(img/bannerL.svg);
+    background-size: contain;
+  }
+}
+
+@media (min-width: 580px) {
+  .banner {
+    background-image: url(img/bannerXl.svg);
+    background-size: contain;
+  }
+
+  .motto__info {
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 40%;
+  }
+  .button--banner {
+    width: 15em;
+    margin-right: 40%;
+    margin-left: calc(60% - 15empx);
+    padding: 0.5em 0;
+    margin-top: 0;
+  }
+}
+@media (min-width: 698px) {
+  .banner {
+    background-image: url(img/bannerXl.svg);
+    background-size: cover;
+  }
+  .motto {
+    display: block;
+    font-size: 75%;
+    padding-top: 0;
+    margin-top: 0;
+    margin-right: 40%;
+  }
+}
+@media (min-width: 840px) {
+  .banner {
+    background-image: url(img/bannerL.svg);
+    background-size: cover;
+  }
+  .motto__info {
+    font-size: 125%%;
+  }
+  motto {
+    display: block;
+  }
 }
 
 @media (min-width: 740px) {
-  header {
-    max-width: 1200px;
-  }
-
-  .banner__h h1 {
-    max-width: 70%;
-    font-size: 350%;
-  }
-  .banner p {
-    display: block;
-    font-size: 125%;
-    max-width: 60%;
-  }
   .banner__button button {
     width: 30%;
     margin-left: 35%;
@@ -76,27 +146,5 @@
   .banner__button button:hover {
     background-color: #0c3932;
     box-shadow: inset 1px 1px 0 0 #cad8d6;
-  }
-}
-
-@media (min-width: 980px) {
-  .banner__p {
-    display: inline-block;
-  }
-  header {
-    max-width: 1200px;
-  }
-  .banner {
-    background-image: url(img/banner.jpg);
-    background-size: contain;
-    padding: 0 auto;
-  }
-  .banner__h h1 {
-    max-width: 70%;
-    font-size: 350%;
-  }
-  .banner p {
-    font-size: 125%;
-    max-width: 60%;
   }
 }

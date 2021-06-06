@@ -7,21 +7,20 @@ export const Header = () => {
     <>
       <header>
         <div className="banner">
-          <div className="banner__h">
-            <h1>Appka Hypoška </h1> <p>u bydlení kámoška</p>
+          <div className="app">
+            <h1>Appka Hypoška </h1>{' '}
+            <p className="app-rest">u bydlení kámoška</p>
           </div>
-          <p className="banner__p">
+          <p className="motto">
             Jednoduché kroky k vysněnému bydlení s hypotékou.
           </p>
-          <div className="banner__button">
-            <p>
-              Nejsem banka, finanční poradce, nic nenabízím!
-              <strong> Poskytuji informace</strong>, co tě se mnou čeká.
-            </p>
-            <Link to="/hypoteka">
-              <button className="button--banner">vstoupit</button>
-            </Link>
-          </div>
+          <p className="motto__info">
+            Nejsem banka, finanční poradce, nic nenabízím!
+            <strong> Poskytuji informace</strong>, co tě se mnou čeká.
+          </p>
+          <Link to="/hypoteka">
+            <button className="button--banner">vstoupit</button>
+          </Link>
         </div>
       </header>
     </>
