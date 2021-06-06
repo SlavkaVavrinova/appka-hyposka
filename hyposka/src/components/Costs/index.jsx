@@ -15,21 +15,16 @@ export const Costs = (props) => {
           checkedToPrint={props.listToPrint}
           printName="TextCosts"
         />
-       
-     
- 
         <HypoCalculator />
-             
-    
         <AnnuityCalculator />
-                <div className="buttons-row__buttons">
-            <Link to="/prijem">
-              <button className="button--back">Zpět</button>
-            </Link>
-            <Link to="/banka">
-              <button className="button--forward">Pokračovat</button>
-            </Link>
-          </div>
+        <div className="buttons-row__buttons">
+          <Link to="/prijem">
+            <button className="button--back">Zpět</button>
+          </Link>
+          <Link to="/banka">
+            <button className="button--forward">Pokračovat</button>
+          </Link>
+        </div>
       </main>
     </>
   );

@@ -23,8 +23,8 @@ export const TextReconstruction = (props) => {
 
       <p>
         Plánuješ rekonstruovat <strong>svépomocí</strong>? O to víc se nad
-        rozpočtem zamysli. Bude rekonstrukce rozsáhlá a máš k dispozici
-        projektovou dokumentaci. Určitě ji do banky vezmi.
+        rozpočtem zamysli. Bude rekonstrukce rozsáhlá a máš připravenou
+        projektovou dokumentaci? Určitě ji do banky vezmi.
       </p>
 
       <p>
@@ -49,19 +49,20 @@ export const TextReconstruction = (props) => {
 
       <ul>
         <li>Peníze na účtu</li>
-        <li>Končící investice za nějaý čas</li>
+        <li>Končící investice za nějaký čas</li>
         <li>Prodej současného bydlení atd.</li>
       </ul>
 
       <div className="row-print">
-        <label>
-          Přidat do tisku:{' '}
+        <label className="checkbox">
+          Přidat do tisku:
           <input
             className="print"
             type="checkbox"
             checked={checked}
             onChange={handleChange}
           />
+          <span></span>
         </label>
         <Link to="/print">Prohlédnout tisk</Link>
       </div>

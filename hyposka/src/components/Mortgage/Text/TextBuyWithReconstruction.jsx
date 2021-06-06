@@ -79,14 +79,15 @@ export const TextBuyWithReconstruction = (props) => {
       </p>
 
       <div className="row-print">
-        <label>
-          Přidat do tisku:{' '}
+        <label className="checkbox">
+          Přidat do tisku:
           <input
             className="print"
             type="checkbox"
             checked={checked}
             onChange={handleChange}
           />
+          <span></span>
         </label>
         <Link to="/print">Prohlédnout tisk</Link>
       </div>

@@ -84,7 +84,7 @@ export const TextBuild = (props) => {
         <strong>TIP:</strong> Informuj se v bance na to, jak bude uvolňovat
         peníze. Hypotéka je do procentní hodnoty toho, co dáváš bance do
         zástavy. Hotovost banka může uvolňovat na části, dle toho, jak se zvedá
-        hodnota rozestavšné stavby. Banky mají čerpání řešeno různě, mohou v
+        hodnota rozestavěné stavby. Banky mají čerpání řešeno různě, mohou v
         době výstavby umožnit zaslání větších částek. Stavba na vlastním pozemku
         nebude problém, např. 7o% hodnoty pozemku bude na část stavby stačit. Co
         když na tom pozemku máš hypotéku na jeho koupi. V tomto případě už
@@ -116,14 +116,15 @@ export const TextBuild = (props) => {
       </p>
 
       <div className="row-print">
-        <label>
-          Přidat do tisku:{' '}
+        <label className="checkbox">
+          Přidat do tisku:
           <input
             className="print"
             type="checkbox"
             checked={checked}
             onChange={handleChange}
           />
+          <span></span>
         </label>
         <Link to="/print">Prohlédnout tisk</Link>
       </div>

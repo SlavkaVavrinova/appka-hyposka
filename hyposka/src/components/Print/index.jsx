@@ -3,19 +3,25 @@ import ReactToPrint from 'react-to-print';
 import logoPrint from './img/logoPrint.svg';
 import './style.css';
 
+import printer from './img/printer.svg';
+
 export const Print = (props) => {
   const componentRef = useRef();
   return (
     <>
+      <div className="margin"></div>
       <ReactToPrint
         trigger={() => (
-          <button className="button__print">Chci vytisknout PDF!</button>
+          <button className="button--print">
+            {' '}
+            <img src={printer} alt="Tiskárna" />
+          </button>
         )}
         content={() => componentRef.current}
       />
 
       <main className="print-black" ref={componentRef}>
-        <div className="print-black__container">
+        <div className="print-black__container-pdf">
           <img
             className="print-black__logo"
             src={logoPrint}

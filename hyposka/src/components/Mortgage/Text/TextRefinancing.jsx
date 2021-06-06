@@ -44,7 +44,8 @@ export const TextRefinancing = (props) => {
         další. To se dozvíš na první schůzce, není potřeba to řešit dopředu.
       </p>
       <div className="row-print">
-        <label>
+        <label className="checkbox">
+          {' '}
           Přidat do tisku:{' '}
           <input
             className="print"
@@ -52,8 +53,8 @@ export const TextRefinancing = (props) => {
             checked={checked}
             onChange={handleChange}
           />
+          <span></span>
         </label>
-
         <Link to="/print">Prohlédnout tisk</Link>
       </div>
       <div className="buttons-row__buttons">

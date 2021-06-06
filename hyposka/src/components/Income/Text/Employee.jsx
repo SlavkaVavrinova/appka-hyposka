@@ -14,9 +14,6 @@ export const Employee = (props) => {
 
   return (
     <>
-      Do tašky přibal: nájemní smlouvu Daňové přiznání Banka bude do budoucna
-      ráda za výpis z účtu, kde je příchozí nájem vidět. I zde platí, že to
-      nemusí být hned na první schůzce.
       <p>
         Ideální je, když máš již smlouvu na dobu neurčitou. V současnosti je
         pravděpodobné, že můžeš mít i smlouvu na dobu určitou. Je možné, že
@@ -49,12 +46,12 @@ export const Employee = (props) => {
         Některé banky s tím mohou mít i větší problém.
       </p>
       <p>
-        <strong>TIP: </strong> Zaměstnán ve firmě která je tvá nebo někoho z
+        <strong>TIP: </strong> Zaměstnán ve firmě, která je tvá nebo někoho z
         rodiny. Vezmi s sebou na schůzku i daňové přiznání a výkazy té
         společnosti, pokud je to možné. Ušetříš si tím jednu cestu.
       </p>
       <div className="row-print">
-        <label>
+        <label className="checkbox">
           Přidat do tisku:
           <input
             className="print"
@@ -62,6 +59,7 @@ export const Employee = (props) => {
             checked={checked}
             onChange={handleChange}
           />
+          <span></span>
         </label>
         <Link to="/print">Prohlédnout tisk</Link>
       </div>

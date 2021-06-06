@@ -25,7 +25,7 @@ export const Rent = (props) => {
       <p>I zde platí, že to nemusí být hned na první schůzce.</p>
 
       <div className="row-print">
-        <label>
+        <label className="checkbox">
           Přidat do tisku:{' '}
           <input
             className="print"
@@ -33,6 +33,7 @@ export const Rent = (props) => {
             checked={checked}
             onChange={handleChange}
           />
+          <span></span>
         </label>
         <Link to="/print">Prohlédnout tisk</Link>
       </div>

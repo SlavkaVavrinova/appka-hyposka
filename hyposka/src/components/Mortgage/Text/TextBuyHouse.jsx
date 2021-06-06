@@ -30,8 +30,7 @@ export const TextBuyHouse = (props) => {
         <li>
           Fajn je
           <strong> rezervační smlouva</strong>, ale tu ti dají jen za podpis.
-          Podepíšeš 🡪 platíš rezervační poplatek a prostě kupuješ. se bude dělat
-          většinou později.
+          Podepíšeš = platíš rezervační poplatek a prostě kupuješ.
         </li>
 
         <li>
@@ -69,7 +68,7 @@ export const TextBuyHouse = (props) => {
       </p>
 
       <div className="row-print">
-        <label>
+        <label className="checkbox">
           Přidat do tisku:{' '}
           <input
             className="print"
@@ -77,6 +76,7 @@ export const TextBuyHouse = (props) => {
             checked={checked}
             onChange={handleChange}
           />
+          <span></span>
         </label>
         <Link to="/print">Prohlédnout tisk</Link>
       </div>

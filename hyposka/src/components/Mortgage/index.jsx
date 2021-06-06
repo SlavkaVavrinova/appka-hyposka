@@ -130,7 +130,7 @@ export const Mortgage = (props) => {
           photo={pictureReconstruction}
           alt="Rekonstrukce"
           title="Opravit si byt, dům nebo chatu"
-          text="Mám nemovitost kterou si chci zvelebit a potřebuji peníze na rekonstrukci"
+          text="Mám nemovitost, kterou si chci zvelebit a potřebuji peníze na rekonstrukci"
         >
           <TextReconstruction
             addToPrint={props.addToPrint}
