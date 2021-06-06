@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import './style.css';
+
 import 'mapbox-gl/dist/mapbox-gl.css';
 import ReactMapGL, { Marker, Popup } from 'react-map-gl';
 import bankPoint from './img/bankPoint.svg';
@@ -150,22 +152,37 @@ export const MapBox = (props) => {
                 >
                   <h2>{data.name}</h2>
                   <p>{data.select}</p>
+                  <p>{data.email}</p>
+                  <p>Více pod mapou</p>
                 </Popup>
               ) : null}
             </React.Fragment>
           ))}
       </ReactMapGL>
-      <label htmlFor="">
-        Zobrazit v mapě:
-        <select
-          value={filtr}
-          onChange={(event) => setFiltr(event.target.value)}
-        >
-          <option>Vše</option>
-          <option>bankéř</option>
-          <option>poradce</option>
-        </select>
-      </label>
+      <div className="margin"></div>
+      <div className="container__map">
+        <label className="mapa__filter important-text">
+          Zobrazit v mapě:
+          <select
+            value={filtr}
+            onChange={(event) => setFiltr(event.target.value)}
+          >
+            <option>Vše</option>
+            <option>bankéř</option>
+            <option>poradce</option>
+          </select>
+        </label>
+        <div className="container__map-icons">
+          <div className="map-icons">
+            <img src={bankPoint} alt="Ikona pracovníka banky" />
+            <p>Bankéř</p>
+          </div>
+          <div className="map-icons">
+            <img src={consultantPoint} alt="Ikona finačního poradce" />
+            <p>Poradce</p>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
