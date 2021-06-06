@@ -13,12 +13,12 @@ export const Map = () => {
           Neboj žádné vyplňte formulář a kontaktuje Vás finační poradce tu není!
         </p>
         <p>
-          Toto je mapa<em> "udělej si sám"</em>. V mapě najdeš pracovníky z bank
-          a finanční poradce, kteří umí hypotéky a jejich klienti jsou s nimi
+          Toto je mapa<em> "udělej si sám"</em>. V mapě najdeš pracovníky bank a
+          finanční poradce, kteří umí hypotéky a jejich klienti jsou s nimi
           pokojeni. Jak jsme to zjistili? Pod mapou najdeš formulář, který můžeš
           vyplnit i ty. Máš v okolí někoho o kom víš, že hypotéky zpracovává a
           má spokojené kliety? Nebo ti někdo takový hypotéku zařizoval? Budeme
-          velice rádi, když referenci na něj dodáš do naší mapy.
+          velice rádi, když referenci na něj přidáš do naší mapy.
         </p>
         <p>Jak to funguje?</p>
         <p>
