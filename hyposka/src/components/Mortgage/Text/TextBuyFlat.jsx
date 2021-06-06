@@ -76,7 +76,7 @@ export const TextBuyFlat = (props) => {
       </p>
       <p>
         Neudělá. Zaplatit ho hypotékou proto můžeš, ale
-        <strong> do zástavy musíš dát nějakou jinou nemovitost</strong>
+        <strong> do zástavy musíš dát nějakou jinou nemovitost </strong>
         (druhý byt, chatu, dům extramilujících rodičů atd.) Neudělá.
       </p>
 

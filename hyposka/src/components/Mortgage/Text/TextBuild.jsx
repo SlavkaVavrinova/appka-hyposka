@@ -20,8 +20,13 @@ export const TextBuild = (props) => {
       </p>
       <p>
         Máš domeček zatím pouze v plánu a chceš si zjistit, kolik ti banka na
-        výstavbu půjčí. Tuto část můžeš přeskočit a vrhn se rovnou dále na
-        <Link to="/prijem">2. Příjem</Link>
+        výstavbu půjčí. Tuto část můžeš přeskočit.
+        <div className="link-in-text">
+          <p>Vrhni se rovnou dále:</p>
+          <p>
+            <Link to="/prijem">2. Příjem</Link>
+          </p>
+        </div>
       </p>
       <p>Naopak víš, co chceš postavit? </p>
       <p>
@@ -58,7 +63,7 @@ export const TextBuild = (props) => {
       </p>
       <ul>
         <li>Peníze na účtu</li>
-        <li>Končící investice za nějaý čas</li>
+        <li>Končící investice za nějaký čas</li>
         <li>Prodej současného bydlení atd.</li>
       </ul>
       <p>
@@ -77,10 +82,10 @@ export const TextBuild = (props) => {
       </p>
       <p>
         <strong>TIP:</strong> Informuj se v bance na to, jak bude uvolňovat
-        peníze. Hypotéka je do % hodnoty toho, co dáváš bance do zástavy.
-        Hotovost banka může uvolňoat na části, dle toho, jak se zvedá hodnota
-        rozestavšné stavby. Banky mají čerpání řešeno různě, mohou v době
-        výstavby umožnit zaslání větších částek. Stavba na vlastním pozemku
+        peníze. Hypotéka je do procentní hodnoty toho, co dáváš bance do
+        zástavy. Hotovost banka může uvolňovat na části, dle toho, jak se zvedá
+        hodnota rozestavšné stavby. Banky mají čerpání řešeno různě, mohou v
+        době výstavby umožnit zaslání větších částek. Stavba na vlastním pozemku
         nebude problém, např. 7o% hodnoty pozemku bude na část stavby stačit. Co
         když na tom pozemku máš hypotéku na jeho koupi. V tomto případě už
         uvolnění hotovosti je komplikovanější. Najdi vhodnou banku, která nabízí
@@ -89,18 +94,18 @@ export const TextBuild = (props) => {
       <p>
         <strong>TIP:</strong> Důležitá je podmínka finálního uvolnění poslední
         hotovosti. Banka může vyžadovat doložení kolaudace, prože poslední
-        peníze má určeny na dodělávky. Kolaudace se může protáhnout a hypoétka
+        peníze má určeny na dodělávky. Kolaudace se může protáhnout a hypotéka
         bude dlouho nevyplacená. Co to znamená? Úroky navíc.
       </p>
       <p>
         <strong>Tip:</strong> Rozložení čerpání znamená více úroku. Někomu to
-        ale může vyhovovat, protože 1. velká spátka začne odcházet až následně.
+        ale může vyhovovat, protože 1. velká splátka začne odcházet až následně.
         Za celou dobu nižší splátky se hotovost může vkládat do stavby.
       </p>
       <p>
         <strong>Tip:</strong> Většina bank nabízí možnost nějakou část hypotéky
         nevyčerpat. Pokud je dostatečná zástavní hodnota, tak doporučuji
-        promyslet, jestli rezervu nenastavit a pak ji nedočerpat. Je aley
+        promyslet, jestli rezervu nenastavit a pak ji nedočerpat. Je ale
         pravdou, že náklady na stavbu se většinou navyšují a nedočerpání se moc
         často nepodaří. Je ale určitě levnější než hypotéku nedočerpat.
       </p>

@@ -16,10 +16,11 @@ export const Map = () => {
         <p>
           Toto je mapa<em> "udělej si sám"</em>. V mapě najdeš pracovníky bank a
           finanční poradce, kteří umí hypotéky a jejich klienti jsou s nimi
-          pokojeni. Jak jsme to zjistili? Pod mapou najdeš formulář, který můžeš
-          vyplnit i ty. Máš v okolí někoho, o kom víš, že hypotéky zpracovává a
-          má spokojené kliety? Nebo ti někdo takový hypotéku zařizoval? Budeme
-          velice rádi, když referenci na něj přidáš do naší mapy.
+          spokojeni. Jak jsme to zjistili? Pod mapou najdeš formulář, který
+          můžeš vyplnit i ty. Máš v okolí někoho, o kom víš, že hypotéky
+          zpracovává a má spokojené kliety? Nebo ti někdo takový hypotéku
+          zařizoval? Budeme velice rádi, když referenci na něj přidáš do naší
+          mapy.
         </p>
         <p>Jak to funguje?</p>
         <p>
@@ -31,7 +32,6 @@ export const Map = () => {
           hororové příběhy, ale tady najdeš jen "top" poradce. Chceme se vyhnout
           změně na skládku těch špatných.
         </p>
-        <h2></h2>
 
         <MapBox
           viewPerson={(person) => {

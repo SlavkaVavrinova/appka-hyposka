@@ -1,6 +1,11 @@
 .print {
   height: 2rem;
   width: 2rem;
+  background-color: #0c3932;
+}
+
+.print:active {
+  background-color: #0c3932;
 }
 
 .print-black {

@@ -29,6 +29,7 @@ export const TextBuyCottage = (props) => {
         <li>
           Takže jak, nemáme nic. Vezmi s sebou alespoň
           <strong>
+            {' '}
             inzerát, kde je cena a údaje k tomu, co se bude kupovat
           </strong>
           .

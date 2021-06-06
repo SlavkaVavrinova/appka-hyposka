@@ -28,7 +28,7 @@ export const TextBuyHouse = (props) => {
           to stejné a taky se bude dělat většinou později.
         </li>
         <li>
-          se bude dělat většinou později. Fajn je
+          Fajn je
           <strong> rezervační smlouva</strong>, ale tu ti dají jen za podpis.
           Podepíšeš 🡪 platíš rezervační poplatek a prostě kupuješ. se bude dělat
           většinou později.

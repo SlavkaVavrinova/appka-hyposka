@@ -16,9 +16,9 @@ export const TextBuyPension = (props) => {
     <>
       <p>
         Bohužel nemůžu sloužit, musíš hledat
-        <strong>úvěr pro podnikatele</strong>. Banky nabízí takzvanou „Americkou
-        hypotéku“ u které se nemusí dokládat na co peníze jsou. Ale ani tou není
-        možné zaplatit nemovitost pouze na podnikání.
+        <strong> úvěr pro podnikatele</strong>. Banky nabízí takzvanou
+        „Americkou hypotéku“ u které se nemusí dokládat na co peníze jsou. Ale
+        ani tou není možné zaplatit nemovitost pouze na podnikání.
       </p>
       <p>
         Kupuješ dům pro své bydlení, ale je tam i část pro podnikání. Vyraž do

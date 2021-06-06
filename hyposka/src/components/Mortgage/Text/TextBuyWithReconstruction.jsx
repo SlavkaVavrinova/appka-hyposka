@@ -59,7 +59,7 @@ export const TextBuyWithReconstruction = (props) => {
         Určitě doporučuji se do toho pouštět s
         <strong> rezervou v penězích</strong>. Nebo když je možnost dát bance
         <strong> do zástavy něco jiného</strong>. Ne auto, ale jiný dům, byt,
-        chatu. Tam banka peníze pošle a dl v tom už nešťourá. Ale to nic nemění
+        chatu. Tam banka peníze pošle a dál v tom už nešťourá. Ale to nic nemění
         na tom, že ta rekonstrukce bude stát víc a bydlet v domě bez stropů a
         koupelny není ideální.
       </p>
