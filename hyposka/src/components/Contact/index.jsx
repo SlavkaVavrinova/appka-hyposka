@@ -25,13 +25,15 @@ export const Contact = () => {
               <div className="contact__box">
                 <div className="contact">
                   <img className="email" src={email} alt="E-mail" />
-                  <p>slavka.vav@gmail.com</p>
+
+                  <a href="mailto:slavka.vav@gmail.com">slavka.vav@gmail.com</a>
                 </div>
                 <div className="contact">
                   <img className="github" src={github} alt="Logo GitHub" />
                   <a
                     className="Slavka"
                     href="https://github.com/SlavkaVavrinova"
+                    target="_blank"
                   >
                     Slávka Vavřinová
                   </a>
@@ -52,11 +54,15 @@ export const Contact = () => {
               <div className="contact__box">
                 <div className="contact">
                   <img className="email" src={email} alt="E-mail" />
-                  <p>ver.kosik@gmail.com</p>
+                  <a href="mailto:ver.kosik@gmail.com">ver.kosik@gmail.com</a>
                 </div>
                 <div className="contact">
                   <img className="github" src={github} alt="Logo GitHub" />
-                  <a className="Verca" href="https://github.com/VerS10">
+                  <a
+                    className="Verca"
+                    href="https://github.com/VerS10"
+                    target="_blank"
+                  >
                     Verča Sípalová
                   </a>
                 </div>

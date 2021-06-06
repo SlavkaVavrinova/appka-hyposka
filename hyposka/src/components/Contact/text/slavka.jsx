@@ -1,6 +1,8 @@
 import React from 'react';
+import './../style.css';
 
-import slavkaFamily from '../img/slavkafamily.jpg';
+import slavkaFamily from '../img/slavkaFamily.jpg';
+import slavkaPc from '../img/slavkaPc.jpg';
 
 export const Slavka = () => {
   return (
@@ -9,8 +11,9 @@ export const Slavka = () => {
         Jsem mamka na mateřské dovolené se syny Marečkem 2 roky a Martínkem 4
         roky. Před mateřskou jsem pracovala přibližně 10 let v bance. Na všech
         pozicích mě vždy provázely hypotéky. Z různých témat k projektu Verča
-        vybrala právě mnou nadhozenou Appku HYPOŠKU."
+        vybrala právě mnou nadhozenou Appku Hypošku."
       </p>
+      <img className="slavka__pc" src={slavkaPc} alt="Slávka" />
       <p>
         Po inženýrském studiu Ekonomické fakulty Jihočeské Univerzity jsem
         pracovala chvilku jako recepční a hned po státnicích nastoupila za první
@@ -25,11 +28,10 @@ export const Slavka = () => {
         v budoucnu živit. Tehdy jsem se tomu zasmála. Pak ale přišel WordPress
         1, 2 a 3 a mě začalo čím dál tím víc zajímat, jak ten WordPress obejít.
         Digitální akademie byla jasná volba. Moc mě to baví a práce v tomto
-        oboru mě láká stále více.
+        oboru mě láká stále více. Už nyní na tom pracuji a plánuji další
+        školení.
       </p>
-
       <img className="slavka__family" src={slavkaFamily} alt="Slávka se syny" />
-
       <p>
         Digitální akademie je veliký záhul. Spojit ji s malými dětmi, prací v
         penzionu rodičů a okrajově se spánkem je náročné. Akademie mě ale moc
@@ -39,7 +41,7 @@ export const Slavka = () => {
         Závěrem, to, co se píše vždy na konec, mezi mé záliby patří víno, když
         mi někdo nezavírá hospody, káva, když mi nezavírají kavárny, fitko, když
         mi ho někdo nezavírá. Naštěstí akademii nikdo nezavřel, tak aspoň něco
-        teď můžeme dělat.
+        bylo možné dělat.
       </p>
     </>
   );
