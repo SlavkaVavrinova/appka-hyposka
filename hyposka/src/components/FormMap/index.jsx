@@ -144,7 +144,7 @@ export const FormMap = () => {
         </div>
         <input
           value={phone}
-          onChange={(event) => setPhone(event.target.value)}
+          onChange={(event) => setPhone(event.target.value.trim())}
         />
         <div className="valid">
           <label className="form-map__email">
@@ -154,7 +154,7 @@ export const FormMap = () => {
         </div>
         <input
           value={email}
-          onChange={(event) => setEmail(event.target.value)}
+          onChange={(event) => setEmail(event.target.value.trim())}
         />
 
         <label className="form-map__address">Zadej adresu</label>

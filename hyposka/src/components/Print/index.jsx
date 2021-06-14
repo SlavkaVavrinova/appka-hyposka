@@ -1,4 +1,6 @@
 import React, { useRef } from 'react';
+import { Link } from 'react-router-dom';
+
 import ReactToPrint from 'react-to-print';
 import logoPrint from './img/logoPrint.svg';
 import './style.css';
@@ -10,6 +12,7 @@ export const Print = (props) => {
   return (
     <>
       <div className="margin"></div>
+
       <ReactToPrint
         trigger={() => (
           <button className="button--print">
@@ -236,6 +239,16 @@ export const Print = (props) => {
             </ul>
           </>
         )}
+        <div className="buttons-row">
+          <div className="buttons-row__buttons">
+            <Link to="/banka">
+              <button className="button--back ">Zpět</button>
+            </Link>
+            <Link to="/">
+              <button className="button--forward">Ukončit</button>
+            </Link>
+          </div>
+        </div>
       </main>
     </>
   );

@@ -64,7 +64,7 @@ export const FormContact = () => {
         </div>
         <input
           value={email}
-          onChange={(event) => setEmail(event.target.value)}
+          onChange={(event) => setEmail(event.target.value.trim())}
         />
         <label>
           Vzkaz či rada <span className="required">*</span>{' '}
