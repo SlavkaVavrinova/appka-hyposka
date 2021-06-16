@@ -258,7 +258,7 @@
 
 @media (min-width: 946px) {
   .banner {
-    background-image: url(img/bannerL.svg);
+    background-image: url(img/bannerL.png);
     background-size: cover;
     padding-left: 30px;
   }
