@@ -1,5 +1,5 @@
 .banner {
-  background-image: url(./img/bannerMobil.svg);
+  background-image: url(./img/bannerMobil.png);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0 15px;
@@ -43,7 +43,7 @@
 
 @media (min-width: 428px) {
   .banner {
-    background-image: url(img/bannerS.svg);
+    background-image: url(img/bannerS.png);
     background-size: contain;
   }
 
@@ -70,7 +70,7 @@
 
 @media (min-width: 461px) {
   .banner {
-    background-image: url(img/bannerM.svg);
+    background-image: url(img/bannerM.png);
     background-size: contain;
   }
 
@@ -88,14 +88,14 @@
 
 @media (min-width: 510px) {
   .banner {
-    background-image: url(img/bannerL.svg);
+    background-image: url(img/bannerL.png);
     background-size: contain;
   }
 }
 
 @media (min-width: 580px) {
   .banner {
-    background-image: url(img/bannerXl.svg);
+    background-image: url(img/bannerXl.png);
     background-size: contain;
   }
 
@@ -128,7 +128,7 @@
 
 @media (min-width: 656px) {
   .banner {
-    background-image: url(img/bannerL.svg);
+    background-image: url(img/bannerL.png);
     background-size: cover;
   }
 
@@ -153,7 +153,7 @@
 
 @media (min-width: 698px) {
   .banner {
-    background-image: url(img/bannerXl.svg);
+    background-image: url(img/bannerXl.png);
     background-size: cover;
   }
 
@@ -178,14 +178,14 @@
 
 @media (min-width: 740px) {
   .banner {
-    background-image: url(img/bannerM.svg);
+    background-image: url(img/bannerM.png);
     background-size: cover;
   }
 }
 
 @media (min-width: 763px) {
   .banner {
-    background-image: url(img/bannerM.svg);
+    background-image: url(img/bannerM.png);
     background-size: contain;
   }
 
@@ -219,7 +219,7 @@
 
 @media (min-width: 744px) {
   .banner {
-    background-image: url(img/bannerM.svg);
+    background-image: url(img/bannerM.png);
     background-size: cover;
   }
 

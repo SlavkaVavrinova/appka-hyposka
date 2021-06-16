@@ -76,7 +76,7 @@ export const Income = (props) => {
         <Card
           photo={oznameni}
           alt="Výměr dávky / důchodu"
-          title="Jsem na mateřské /v důchodu"
+          title="Jsem na mateřské / v důchodu"
           text="Příjem mi posílá Okresní správa sociálního zabezpečení nebo pracovní úřad."
         >
           <Revenue
